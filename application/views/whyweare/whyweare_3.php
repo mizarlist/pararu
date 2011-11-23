@@ -34,9 +34,9 @@
                         <div class="left_column_in">
                             <div class="goods_menu tour_menu wwr_menu">
                                 <ul>
-                                    <li class="first"><i></i><a href="<?php echo $links['whyweare_top'][0]; ?>"><?php echo $text['goods_menu'][0]; ?></a></li>
-                                    <li><i></i><a href="<?php echo $links['whyweare_top'][1]; ?>"><?php echo $text['goods_menu'][1]; ?></a></li>
-                                    <li><i></i><a href="<?php echo $links['whyweare_top'][2]; ?>"><?php echo $text['goods_menu'][2]; ?></a></li>
+                                    <li class="first active"><i></i><a href="<?php echo $links['whyweare_top'][0]; ?>"><?php echo $text['goods_menu'][0]; ?></a></li>
+                                    <li class="active"><i></i><a href="<?php echo $links['whyweare_top'][1]; ?>"><?php echo $text['goods_menu'][1]; ?></a></li>
+                                    <li class="active"><i></i><a href="<?php echo $links['whyweare_top'][2]; ?>"><?php echo $text['goods_menu'][2]; ?></a></li>
                                     <li class="active"><i></i><a href="<?php echo $links['whyweare_top'][3]; ?>"><?php echo $text['goods_menu'][3]; ?></a></li>
                                     <div class="clear"></div>
                                 </ul>
