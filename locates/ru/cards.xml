@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <card id='card_1' name='sport'>
+        <variant id_variant='1'>Авто/мотоспорт</variant>
+        <variant id_variant='2'>Баскетбол</variant>
+        <variant id_variant='3'>Велосипед</variant>
+        <variant id_variant='4'>Волейбол</variant>
+        <variant id_variant='5'>Восточные единоборства / борьба</variant>
+        <variant id_variant='6'>Гольф</variant>
+        <variant id_variant='7'>Конный спорт</variant>
+        <variant id_variant='8'>Легкая атлетика / фитнес</variant>
+        <variant id_variant='9'>Тяжелая атлетика / бодибилдинг</variant>
+        <variant id_variant='10'>Лыжи / коньки</variant>
+        <variant id_variant='11'>Плавание</variant>
+        <variant id_variant='12'>Ролики / BMX / Скейтборд</variant>
+        <variant id_variant='13'>Спортивная гимнастика</variant>
+        <variant id_variant='14'>Теннис</variant>
+        <variant id_variant='15'>Турспорт</variant>
+        <variant id_variant='16'>Футбол</variant>
+        <variant id_variant='17'>Хоккей</variant>
+        <variant id_variant='18'>Экстрим</variant>
+        <variant id_variant='19'>Не люблю спорт</variant>
+        <variant id_variant='20'>Другое</variant>
+    </card>
+    <card id='card_2' name='music'>
+        <variant id_variant='1'>Современная</variant>
+        <variant id_variant='2'>Альтернативный рок</variant>
+        <variant id_variant='3'>Атмосферная музыка</variant>
+        <variant id_variant='4'>Блюз</variant>
+        <variant id_variant='5'>Классический Рок</variant>
+        <variant id_variant='6'>Классика</variant>
+        <variant id_variant='7'>Молодежная</variant>
+        <variant id_variant='8'>Кантри</variant>
+        <variant id_variant='9'>Эклектика</variant>
+        <variant id_variant='10'>Электронная</variant>
+        <variant id_variant='11'>Золотое Ретро</variant>
+        <variant id_variant='12'>Хардрок / Металл</variant>
+        <variant id_variant='13'>Хип-Хоп / Рэп</variant>
+        <variant id_variant='14'>Интернациональные</variant>
+        <variant id_variant='15'>Этническая / Традиционная</variant>
+        <variant id_variant='16'>Джаз</variant>
+        <variant id_variant='17'>Опера</variant>
+        <variant id_variant='18'>Рэгги / Фолк</variant>
+        <variant id_variant='19'>Медитативная</variant>
+        <variant id_variant='20'>R’n’B</variant>
+        <variant id_variant='21'>ТОП-100 / Поп</variant>
+        <variant id_variant='22'>Ретро 70х</variant>
+        <variant id_variant='23'>Воспоминания о 80х</variant>
+        <variant id_variant='24'>Хиты 90х</variant>
+        <variant id_variant='25'>Не люблю музыку</variant>
+        <variant id_variant='26'>Другое</variant>
+    </card>
+    <card id='card_3' name='pets'>
+        <variant id_variant='1'>Кошки</variant>
+        <variant id_variant='2'>Собаки</variant>
+        <variant id_variant='3'>Кролики</variant>
+        <variant id_variant='4'>Птицы</variant>
+        <variant id_variant='5'>Грызуны</variant>
+        <variant id_variant='6'>Рептилии</variant>
+        <variant id_variant='7'>Террариум</variant>
+        <variant id_variant='8'>Рыбки</variant>
+        <variant id_variant='9'>Другое</variant>
+        <variant id_variant='10'>Не люблю животных</variant>
+    </card>
+    <card id='card_4' name='books'>
+        <variant id_variant='1'>Детектив / боевики</variant>
+        <variant id_variant='2'>Детская литература</variant>
+        <variant id_variant='3'>Документальная</variant>
+        <variant id_variant='4'>Дом / Семья</variant>
+        <variant id_variant='5'>Драматургия</variant>
+        <variant id_variant='6'>Духовные / Религиозные</variant>
+        <variant id_variant='7'>Классическая литература</variant>
+        <variant id_variant='8'>Комедия</variant>
+        <variant id_variant='9'>Компьютеры</variant>
+        <variant id_variant='10'>Любовные романы</variant>
+        <variant id_variant='11'>Научная Фантастика</variant>
+        <variant id_variant='12'>Научно популярная литература</variant>
+        <variant id_variant='13'>Образование</variant>
+        <variant id_variant='14'>Приключения</variant>
+        <variant id_variant='15'>Проза</variant>
+        <variant id_variant='16'>Справочники</variant>
+        <variant id_variant='17'>Старинная литература</variant>
+        <variant id_variant='18'>Стихи</variant>
+        <variant id_variant='19'>Трагедия</variant>
+        <variant id_variant='20'>Фэнтэзи</variant>
+        <variant id_variant='21'>Юмор</variant>
+        <variant id_variant='22'>Не читаю</variant>
+        <variant id_variant='23'>Другое</variant>
+    </card>
+    <card id='card_5' name='tv'>
+        <variant id_variant='1'>Сериалы</variant>
+        <variant id_variant='2'>Ток шоу</variant>
+        <variant id_variant='3'>Научно популярные программы</variant>
+        <variant id_variant='4'>Ночной канал</variant>
+        <variant id_variant='5'>Новости</variant>
+        <variant id_variant='6'>Спорт</variant>
+        <variant id_variant='7'>Документальный криминал</variant>
+        <variant id_variant='8'>Реалити шоу</variant>
+        <variant id_variant='9'>Развлекательно шоу</variant>
+        <variant id_variant='10'>Детский канал</variant>
+        <variant id_variant='11'>Юмористический канал</variant>
+        <variant id_variant='12'>Музыкальный канал</variant>
+        <variant id_variant='13'>Не смотрю телевизор</variant>
+        <variant id_variant='14'>Друге</variant>
+    </card>
+    <card id='card_6' name='food'>
+        <variant id_variant='1'>Люблю готовить</variant>
+        <variant id_variant='2'>Люблю есть</variant>
+        <variant id_variant='3'>Гурман</variant>
+        <variant id_variant='4'>Вегетарианец</variant>
+        <variant id_variant='5'>Фаст фуд</variant>
+        <variant id_variant='6'>Люблю здоровое питание</variant>
+        <variant id_variant='7'>По настроению</variant>
+        <variant id_variant='8'>Другое</variant>
+    </card>
+    <card id='card_7' name='movie'>
+        <variant id_variant='1'>Анимационное</variant>
+        <variant id_variant='2'>Арт-Хаус</variant>
+        <variant id_variant='3'>Боевик</variant>
+        <variant id_variant='4'>Детектив</variant>
+        <variant id_variant='5'>Документальные фильмы</variant>
+        <variant id_variant='6'>Драма</variant>
+        <variant id_variant='7'>Зарубежная классика</variant>
+        <variant id_variant='8'>Историческое кино</variant>
+        <variant id_variant='9'>Комедия</variant>
+        <variant id_variant='10'>Криминальная драма</variant>
+        <variant id_variant='11'>Мелодрама</variant>
+        <variant id_variant='12'>Мультфильмы</variant>
+        <variant id_variant='13'>Научно популярные фильмы</variant>
+        <variant id_variant='14'>Романтические</variant>
+        <variant id_variant='15'>Советская классика</variant>
+        <variant id_variant='16'>Супергерои</variant>
+        <variant id_variant='17'>Трагедия</variant>
+        <variant id_variant='18'>Триллер</variant>
+        <variant id_variant='19'>Ужас</variant>
+        <variant id_variant='20'>Фантастика (Sci-Fi)</variant>
+        <variant id_variant='21'>Не люблю кино</variant>
+        <variant id_variant='22'>Другое</variant>
+    </card>
+    <card id='card_8' name='lifestyle'>
+        <variant id_variant='1'>Альтруист</variant>
+        <variant id_variant='2'>Взрослый ребенок</variant>
+        <variant id_variant='3'>Оптимист</variant>
+        <variant id_variant='4'>Разумный эгоист</variant>
+        <variant id_variant='5'>Рационалист</variant>
+        <variant id_variant='6'>Свободный человек</variant>
+        <variant id_variant='7'>Никогда не задумывался</variant>
+        <variant id_variant='8'>Другое</variant>
+    </card>
+    <card id='card_9' name='travel'>
+        <variant id_variant='1'>Авто стоп</variant>
+        <variant id_variant='2'>Авто туризм</variant>
+        <variant id_variant='3'>Байдарки</variant>
+        <variant id_variant='4'>Исследовательское</variant>
+        <variant id_variant='5'>Круиз</variant>
+        <variant id_variant='6'>Поход</variant>
+        <variant id_variant='7'>Туризм</variant>
+        <variant id_variant='8'>Экспедиции</variant>
+        <variant id_variant='9'>Не люблю разъезды</variant>
+        <variant id_variant='10'>Другое</variant>
+    </card>
+    <card id='card_10' name='plants'>
+        <variant id_variant='1'>Овощи на моем огороде</variant>
+        <variant id_variant='2'>Я выращиваю ягоды</variant>
+        <variant id_variant='3'>У меня сад с цветами</variant>
+        <variant id_variant='4'>Зимний сад</variant>
+        <variant id_variant='5'>Свое дерево / садик</variant>
+        <variant id_variant='6'>Комнатные растения</variant>
+        <variant id_variant='7'>Зеленый газон</variant>
+        <variant id_variant='8'>Не выращиваю ничего такого</variant>
+        <variant id_variant='9'>Другое</variant>
+    </card>
+    <card id='card_11' name='hobby'>
+        <variant id_variant='1'>Зооуголок</variant>
+        <variant id_variant='2'>Игры</variant>
+        <variant id_variant='3'>Интернет</variant>
+        <variant id_variant='4'>Йога</variant>
+        <variant id_variant='5'>Историческая реконструкция</variant>
+        <variant id_variant='6'>Коллекциони рование</variant>
+        <variant id_variant='7'>Компьютер</variant>
+        <variant id_variant='8'>Моделизм</variant>
+        <variant id_variant='9'>Наука</variant>
+        <variant id_variant='10'>Охота, рыбалка</variant>
+        <variant id_variant='11'>Пазлы, головоломки</variant>
+        <variant id_variant='12'>Творчество</variant>
+        <variant id_variant='13'>Шопинг</variant>
+        <variant id_variant='14'>Не имею хобби</variant>
+        <variant id_variant='15'>Другое</variant>
+    </card>
+    <card id='card_12' name='bytime'>
+        <variant id_variant='1'>Флэшмоб</variant>
+        <variant id_variant='2'>Тематическая вечеринка</variant>
+        <variant id_variant='3'>Аквапарк</variant>
+        <variant id_variant='4'>Сняться в ТВ-Передаче</variant>
+        <variant id_variant='5'>Письмо/открытку другу</variant>
+        <variant id_variant='6'>Учу другой язык</variant>
+        <variant id_variant='7'>Осваиваю музыку</variant>
+        <variant id_variant='8'>Варю мыло/крема</variant>
+        <variant id_variant='9'>Придумываю чем заняться, чтобы убить время</variant>
+        <variant id_variant='10'>Другое</variant>
+
+    </card>
+    <card id='card_0' name=''>
+        <variant id_variant='0'>Нет совпадений</variant>
+    </card>
+    <card id='names' name='names'>
+        <variant id_variant='1'>спорт</variant>
+        <variant id_variant='2'>музыка</variant>
+        <variant id_variant='3'>домашние&lt;br/&gt;животные</variant>
+        <variant id_variant='4'>книги</variant>
+        <variant id_variant='5'>телевидение</variant>
+        <variant id_variant='6'>еда</variant>
+        <variant id_variant='7'>фильмы</variant>
+        <variant id_variant='8'>стиль&lt;br/&gt;жизни</variant>
+        <variant id_variant='9'>путешествие</variant>
+        <variant id_variant='10'>сад,&lt;br/&gt;огород</variant>
+        <variant id_variant='11'>хобби</variant>
+        <variant id_variant='12'>досуг</variant>
+    </card>
+</root>

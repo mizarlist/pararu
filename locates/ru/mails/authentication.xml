@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <title>Подтверждение e-mail</title>
+    <text name='inmail'>
+        Это письмо было выслано вам сайтом Pararu.ru, так как вы указали свой e-mail при регистрации.&lt;br&gt;
+        Если вы не производили регистрацию на сайте &lt;a href="http://pararu.ru"&gt;pararu.ru&lt;/a&gt; , просто проигнорируйте данное сообщение.&lt;br&gt;
+        Для подтверждения e-mail перейдите по ссылке, расположенной ниже
+    </text>
+    <text name='link_text'>Подтвердить e-mail</text>
+    <text name='or'>Или скопируйте ссылку в адресную строку вашего браузера </text>
+</root>

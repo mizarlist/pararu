@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='step_title'>
+        <text>Эти люди подходят Вам, </text>
+        <text>, по параметрам, которые Вы уже заполнили</text>
+    </text>
+    <text name='page'>Страница:</text>
+    <text name='register_create_page1'>Создать мою страницу!</text>
+    <text name='register_go_next2'>Продолжить заполнение Анкеты</text>
+    <text name='card'>
+        <text>Пользователь как и Вы любит:</text>
+        <text>Совпадение по Гороскопу:</text>
+        <text>Вы </text>
+        <text> имеете с этим человеком </text>
+        <text>Подробнее о вашей совместимости узнайте на своем личном профиле.</text>
+        <text>Увеличить фото</text>
+        <text>Сохранить ссылку в будущем профиле</text>
+    </text>
+    <text name='be'>
+        <text>был </text>
+        <text>была </text>
+        <text>на сайте</text>
+    </text>
+    <text name='right_col_text'>
+        <text>Вы заполнили минимум информации о себе и </text>
+        <text>Pararu.ru</text>
+        <text> уже может предложить вам рассмотреть людей, которые совместимы с Вами на первый взгляд.</text>
+        <text>Здесь Вы можете оценить свою совместимость с человеком по увлечениям и гороскопу. Для того, чтобы видеть людей, которые совместимы с Вами по всем 78 параметрам </text>
+        <text>Система Ноэтической Совместимости&lt;span class="r_symb"&gt;®&lt;/span&gt;</text>
+        <text>, нажмите кнопку «продолжить анкетирование».</text>
+    </text>
+    <text name='card_user_love_title'>Пользователь как и Вы любит:</text>
+    <text name='register_go_next1'>Продолжить анкетирование</text>
+    <text name='register_baner_title'>Реклама</text>
+</root>

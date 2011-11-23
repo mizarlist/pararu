@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='center_block_title'>Мои увлечения:</text>
+    <text name='not_filled'>Не заполнено</text>
+    <text name='edit'>Редактировать</text>
+    <text name='rs_box_title'>Отметьте 5 увлечений этой темы</text>
+    <text name='rs1_not_save'>Увлечения не выбраны</text>
+    <text name='translation'>
+        <text>Увлечения не выбраны</text>
+        <text>Выбрано</text>
+        <text>из 5. Сохранить и продолжить</text>
+        <text>Сохранить и продолжить</text>
+    </text>
+    <text name='emptyMsg'>Ошибка! Попробуйте еще раз.</text>
+</root>

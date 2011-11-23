@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <text name="p_title_1">Быстрый поиск </text>
+    <text name="me_country">Любая страна</text>
+    <text name="me_city">Любой город</text>
+    <text name="is_woman">
+        <text>ищу</text>
+        <text>женщину</text>
+        <text>мужчину</text>
+    </text>
+    <text name="age">
+        <text>возраст</text>
+        <text>от</text>
+        <text>до</text>
+    </text>
+    <text name="photo_only">показывать только с фото</text>
+    <text name="find">Найти мою половинку</text>
+</root>

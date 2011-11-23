@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name="step_title">&lt;strong&gt;S.O.N.I.C.&lt;/strong&gt;</text>
+    <text name="r">&lt;span class="r_symb"&gt;®&lt;/span&gt;</text>
+    <text name="select_text1">
+        <text>Заполните 5 блоков Системы Ноэтической Совместимости</text>
+        <text>Выберете первую из пяти тему для заполнения:</text>
+    </text>
+    <text name="select_text2">
+        <text>Заполните 5 блоков Системы Ноэтической Совместимости</text>
+        <text>Выберете вторую из пяти тему для заполнения:</text>
+    </text>
+    <text name="select_text3">
+        <text>Заполните 5 блоков Системы Ноэтической Совместимости</text>
+        <text>Выберете третью из пяти тему для заполнения:</text>
+    </text>
+    <text name="select_text4">
+        <text>Заполните 5 блоков Системы Ноэтической Совместимости</text>
+        <text>Выберете четвертую из пяти тему для заполнения:</text>
+    </text>
+    <text name="select_text5">
+        <text>Заполните 5 блоков Системы Ноэтической Совместимости</text>
+        <text>Выберете последнюю из пяти тему для заполнения:</text>
+    </text>
+    <text name="bloks_names">
+        <text>Дружба</text>
+        <text>Семья</text>
+        <text>Организм</text>
+        <text>Деятельность</text>
+        <text>Мечты</text>
+    </text>
+    <text name='final'>
+        <text> Поздравляем!</text>
+        <text>Заполнение анкеты Системы Ноэтической Совместимости</text>
+        <text>завершено!</text>
+    </text>
+    <text name='register_go_next5'>Следующий шаг</text>
+    <text name="register_main_col_img_txt">Из тысяч одиноких людей мы подберем для вас тех, с кем вы сможете создать прочный союз. Мы в силах это сделать, благодаря системе, которая использует для анализа данных научный подход, позволяющий найти максимально совместимых с вами людей.</text>
+</root>

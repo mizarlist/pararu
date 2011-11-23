@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='title'>Pararu.ru — портал серьезных отношений</text>
+    <text name='bookmarks'>
+        <text>Главная</text>
+    </text>
+    <text name='center_top_menu'>
+        <text>Страница спутника </text>
+        <text>Фотоальбомы </text>
+        <text>Сравнить нас </text>
+        <text>Общение </text>
+        <text>Шаг навстречу</text>
+    </text>
+    <text name='user_menu'>
+        <text>Сравнить нас</text>
+        <text>Посмотреть фотографии</text>
+        <text>Подарить подарок</text>
+        <text>Добавить к Интересным</text>
+        <text>Удалить (в игнор.)</text>
+    </text>
+    <text name="poptitle">Удаление истории переписки</text>
+    <text name="close_btn">закрыть</text>
+    <text name="del_text">Вы действительно хотите удалить всю историю переписки с пользователем</text>
+    <text name="btn_cancel">Отменить</text>
+    <text name="btn_del">Удалить</text>
+</root>

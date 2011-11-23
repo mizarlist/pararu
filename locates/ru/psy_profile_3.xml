@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='2_3_4'>
+        <text name='30'>2_3_4==30</text>
+        <text name='60'>2_3_4==60</text>
+        <text name='100'>2_3_4==100</text>
+    </text>
+    <text name='5_6_1'>
+        <text name='30'>5_6_1==30</text>
+        <text name='60'>5_6_1==60</text>
+        <text name='100'>5_6_1==100</text>
+    </text>
+    <text name='1_2_3'>
+        <text name='30'>1_2_3==30</text>
+        <text name='60'>1_2_3==60</text>
+        <text name='100'>1_2_3==100</text>
+    </text>
+    <text name='6_5_4'>
+        <text name='30'>6_5_4==30</text>
+        <text name='60'>6_5_4==60</text>
+        <text name='100'>6_5_4==100</text>
+    </text>
+    <text name='6_1_2'>
+        <text name='30'>6_1_2==30</text>
+        <text name='60'>6_1_2==60</text>
+        <text name='100'>6_1_2==100</text>
+    </text>
+    <text name='5_4_3'>
+        <text name='30'>5_4_3==30</text>
+        <text name='60'>5_4_3==60</text>
+        <text name='100'>5_4_3==100</text>
+    </text>
+</root>

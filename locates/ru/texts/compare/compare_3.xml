@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='title'>Сравнение наших Ноэтических* Характеров:</text>
+    <text name='subtitle'>Cовместимость:</text>
+    <text name='fromsumm'>из общих</text>
+    <text name='prim'>*&lt;b&gt;Ноэтический&lt;/b&gt; (Noetic) здесь означает сексуальную, психологическую, эмоциональную, социальную и духовную совместимость.</text>
+    <text name='up'>наверх</text>
+    <text name='compatibility'>
+        <text name='sum'>Ваша общая Совместимость</text>
+        <text name='psy'>Психологическая (Эмоциональная) Совместимость</text>
+        <text name='sex'>Сексуальная Совместимость</text>
+        <text name='soc'>Социально-Культуральная Совместимость</text>
+        <text name='spi'>Духовная Совместимость</text>
+        </text>
+    <text name="nic_disabled">К сожалению, сравнить ваши ноэтические характеры невозможно, так как один из вас не заполнил тест ноэтической совместимости.</text>
+</root>

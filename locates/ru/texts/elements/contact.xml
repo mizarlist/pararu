@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='in'>в</text>
+    <text name='spam'>это спам</text>
+    <text name='not_read'>
+        <text>непрочитанное</text>
+        <text>непрочитанных</text>
+        <text>непрочитанных</text>
+    </text>
+    <text name='message'>
+        <text>сообщение</text>
+        <text>сообщения</text>
+        <text>сообщений</text>
+    </text>
+</root>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name="eyescolor" type="radio_group" each="radiobutton" other="true" print="Цвет глаз" cols='3'>
+        <text>Другое</text>
+        <text>Черные</text>
+        <text>Голубые</text>
+        <text>Карие</text>
+        <text>Серые</text>
+        <text>Зеленые</text>
+    </text>
+    <text name="haircolor" type="radio_group" each="radiobutton" other="true" print="Цвет волос" cols='3'>
+        <text>Другое</text>
+        <text>Рыжий</text>
+        <text>Каштановый</text>
+        <text>Блондин</text>
+        <text>Русый</text>
+        <text>Светло-коричневый</text>
+        <text>Темно-коричневый</text>
+        <text>Черный</text>
+        <text>Соль-с-перцем</text>
+        <text>Пепельно-серый</text>
+        <text>Без волос</text>
+    </text>
+    <text name="growth" type="radio_group" each="radiobutton" other="false" print="Рост" cols='3'>
+        <text>Низкий</text>
+        <text>Среднего роста</text>
+        <text>Высокий</text>
+    </text>
+    <text name="physique" type="radio_group" each="radiobutton" other="true" print="Телосложение" cols='2'>
+        <text>Другое</text>
+        <text>Худой/Стройный</text>
+        <text>Обычный</text>
+        <text>Атлетичный/Спортивный</text>
+        <text>Плотный</text>
+        <text>Несколько лишних килограмм</text>
+        <text>Большой и красивый</text>
+        <text>Полная фигура</text>
+        <text>Пышная фигура</text>
+        <text>Коренастый</text>
+    </text>
+    <text name="ethnos" type="radio_group" each="radiobutton" other="true" print="Этнос" cols='3'>
+        <text>Другое</text>
+        <text>Азиат</text>
+        <text>Монголоид</text>
+        <text>Черный/Африканец</text>
+        <text>Индиец</text>
+        <text>Испанец/Итальянец</text>
+        <text>Среднеазиат</text>
+        <text>Кавказец</text>
+        <text>Прибалт</text>
+        <text>Белый/Европеец</text>
+        <text>Американец</text>
+    </text>
+    <text name="family_status" type="radio_group" each="radiobutton" other="false" print="Семейное положение" cols='3'>
+        <text>Одинок</text>
+        <text>Разведен</text>
+        <text>Вдова/Вдовец</text>
+        <text>Никогда не был женат</text>
+    </text>
+    <text name="material_lavel" type="radio_group" each="radiobutton" other="false" print="Уровень дохода" cols='2'>
+        <text>До 10 тысяч рублей</text>
+        <text>От 10 до 20 тысяч рублей</text>
+        <text>От 20 до 35 тысяч рублей</text>
+        <text>От 35 до 50 тысяч рублей</text>
+        <text>От 50 до 75 тысяч рублей</text>
+        <text>От 75 до 100 тысяч рублей</text>
+        <text>От 100 до 250 тысяч рублей</text>
+        <text>Более 250 тысяч рублей</text>
+    </text>
+    <text name="education_lavel" type="radio_group" each="radiobutton" other="true" print="Уровень образования" cols='2'>
+        <text>Другое</text>
+        <text>Средняя школа</text>
+        <text>Средне-профессиональное</text>
+        <text>Техникум</text>
+        <text>Незаконченное Высшее</text>
+        <text>Высшее</text>
+        <text>Кандидат наук</text>
+        <text>Доктор наук</text>
+        <text>Без формального образования</text>
+    </text>
+    <text name="baby_exist" type="radio_group" each="radiobutton" other="false" print="Есть ли дети до 18 лет?" cols='2'>
+        <text>да</text>
+        <text>нет</text>
+    </text>
+    <text name="baby_want" type="radio_group" each="radiobutton" other="false" print="Желание завести ребенка" cols='1'>
+        <text>Да, я определенно хочу иметь или принять ребенка</text>
+        <text>Возможно</text>
+        <text>Я еще не принял решения</text>
+        <text>Нет, я не могу и/или не хочу становиться родителем</text>
+    </text>
+    <text name="religion" type="radio_group" each="radiobutton" other="true" print="Религия" cols='3'>
+        <text>Другое</text>
+        <text>Атеист</text>
+        <text>Буддист</text>
+        <text>Даос</text>
+        <text>Католик</text>
+        <text>Православный</text>
+        <text>Протестант</text>
+        <text>Индуизм</text>
+        <text>Иудей</text>
+        <text>Мусульманин/Ислам</text>
+        <text>Духовен, но не религиозен</text>
+        <text>Не религиозен</text>
+    </text>
+    <text name="spirituality" type="radio_group" each="radiobutton" other="true" print="Соблюдение религиозных обрядов" cols='1'>
+        <text>Другое</text>
+        <text>Посещаю религиозные службы регулярно</text>
+        <text>Посещаю религиозные службы время от времени</text>
+        <text>Религия для меня не важна</text>
+    </text>
+    <text name="political_views" type="radio_group" each="radiobutton" other="true" print="Политические взгляды" cols='3'>
+        <text>Другое</text>
+        <text>Либерал</text>
+        <text>Консерватор</text>
+        <text>Демократ</text>
+        <text>Коммунист</text>
+        <text>Не определился</text>
+        <text>Не политичен</text>
+        <text>Зеленый</text>
+    </text>
+    <text name="atmosphere_views" type="radio_group" each="radiobutton" other="true" print="Отношение к окружающей среде" cols='1'>
+        <text>Другое</text>
+        <text>Я против загрязнения окружающей среды</text>
+        <text>Я безразличен к вопросам окружающей среды</text>
+    </text>
+    <text name="smoke_times" type="radio_group" each="radiobutton" other="false" print="Сколько вы курите" cols='3'>
+        <text>Никогда</text>
+        <text>Несколько раз в год</text>
+        <text>Один раз в неделю</text>
+        <text>Несколько раз в неделю</text>
+        <text>Много раз в день</text>
+    </text>
+    <text name="drink_times" type="radio_group" each="radiobutton" other="false" print="Как часто Вы пьете" cols='3'>
+        <text>Никогда</text>
+        <text>Несколько раз в год</text>
+        <text>Один раз в неделю</text>
+        <text>Несколько раз в неделю</text>
+        <text>Много раз в день</text>
+    </text>
+    <text name="humor_sense" type="radio_group" each="radiobutton" other="true" print="Чувство юмора" cols='2'>
+        <text>Другое</text>
+        <text>Черный юмор</text>
+        <text>Интеллектуальный</text>
+        <text>Ироничный</text>
+        <text>Ниже пояса</text>
+        <text>Посмеиваюсь над недостатками</text>
+        <text>Политический</text>
+        <text>Грязный юмор</text>
+        <text>Сарказм</text>
+        <text>За словом в карман не лезу</text>
+        <text>Острю</text>
+    </text>
+    <text name="profession" type="radio_group" each="radiobutton" other="true" print="Профессия" cols='2'>
+        <text>Другое</text>
+        <text>Администратор</text>
+        <text>Военный</text>
+        <text>Артист, музыкант, писатель</text>
+        <text>Конструктор, Инженер</text>
+        <text>Преподаватель</text>
+        <text>Мэнеджер</text>
+        <text>Экономист</text>
+        <text>Предприниматель</text>
+        <text>Пожарный, полицейский</text>
+        <text>Юристы (судья, прокурор, адвокат)</text>
+        <text>Средний медперсонал</text>
+        <text>Врачи</text>
+        <text>Политик, работник правительства</text>
+        <text>Риелтор</text>
+        <text>Продавец, маркетолог</text>
+        <text>Студент</text>
+        <text>Техник, Технолог</text>
+        <text>Работник сферы туризма</text>
+        <text>Работа, связанная с перевозками</text>
+        <text>IT</text>
+    </text>
+    <text name="languages" type="check_group" each="checkbox" other="true" print="Языки, на которых говорите" cols='3'>
+        <text>Другое</text>
+        <text>Русский</text>
+        <text>Английский</text>
+        <text>Немецкий</text>
+        <text>Французский</text>
+        <text>Итальянский</text>
+        <text>Арабский</text>
+        <text>Китайский</text>
+        <text>Финский</text>
+        <text>Датский</text>
+        <text>Греческий</text>
+        <text>Иврит</text>
+        <text>Хинди</text>
+        <text>Японский</text>
+        <text>Корейский</text>
+        <text>Малайский</text>
+        <text>Норвежский</text>
+        <text>Польский</text>
+        <text>Португальский</text>
+        <text>Испанский</text>
+        <text>Шведский</text>
+        <text>Турецкий</text>
+        <text>Украинский</text>
+        <text>Армянский</text>
+        <text>Грузинский</text>
+        <text>Латышский</text>
+        <text>Литовский</text>
+        <text>Эстонский</text>
+        <text>Азербайджанский</text>
+        <text>Таджикский</text>
+        <text>Казахский</text>
+        <text>Киргизский</text>
+        <text>Молдавский</text>
+        <text>Белорусский</text>
+        <text>Калмыкский</text>
+        <text>Татарский</text>
+        <text>Башкирский</text>
+    </text>
+</root>

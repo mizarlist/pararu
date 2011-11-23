@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <interval name='100500'>позже, чем через год</interval>
+    <interval name='730'>в следующем году</interval>
+    <interval name='365'>в этом году</interval>
+    <interval name='60'>в следующем месяце</interval>
+    <interval name='30'>в этом месяце</interval>
+    <interval name='14'>на следующей неделе</interval>
+    <interval name='7'>на этой неделе</interval>
+    <interval name='2'>послезавтра</interval>
+    <interval name='1'>завтра</interval>
+    <interval name='0'>сейчас</interval>
+    <interval name='-0'>сегодня</interval>
+    <interval name='-1'>вчера</interval>
+    <interval name='-2'>позавчера</interval>
+    <interval name='-7'>на этой неделе</interval>
+    <interval name='-14'>на прошлой неделе</interval>
+    <interval name='-30'>в этом месяце</interval>
+    <interval name='-60'>в прошлом месяце</interval>
+    <interval name='-365'>в этом году</interval>
+    <interval name='-730'>в прошлом году</interval>
+    <interval name='-100500'>более года назад</interval>
+</root>

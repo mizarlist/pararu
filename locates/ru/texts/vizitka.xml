@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='age_text'>
+        <text>год</text>
+        <text>года</text>
+        <text>лет</text>
+    </text>
+    <text name='do_count'>показать&lt;br/&gt;совместимость</text>
+    <text name='be'>
+        <text>был </text>
+        <text>была </text>
+        <text>на сайте</text>
+    </text>
+    <text name='actions'>
+        <text name='do_send_msg'>Написать сообщение</text>
+        <text name='do_save'>В Сохранённые</text>
+        <text name='do_add_favor'>В Интересные!</text>
+        <text name='do_delete'>Удалить</text>
+        <text name='do_nosearch'>Скрыть</text>
+    </text>
+</root>

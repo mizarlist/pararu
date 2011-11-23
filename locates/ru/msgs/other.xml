@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='thanks_for_question'>&lt;h1&gt;Спасибо за ваш вопрос!&lt;/h1&gt; &lt;br/&gt;Мы постараемся решить его как можно быстрее&lt;br/&gt; и выслать ответ вам на e-mail.</text>
+    <text name='empty_question'>Пожалуйста, введите текст вопроса!</text>
+</root>

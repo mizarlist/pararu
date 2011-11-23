@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='types'>
+        <text name='st'>Уверенность</text>
+        <text name='ha'>Надежность</text>
+        <text name='la'>Внимательность</text>
+        <text name='fr'>Нежность</text>
+        <text name='so'>Заботливость</text>
+        <text name='no'>Беспечность</text>
+    </text>
+</root>

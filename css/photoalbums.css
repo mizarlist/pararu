@@ -1,0 +1,483 @@
+#spisok_ponravilos div, #comment_users
+{
+	font-size:12px;
+	font-weight:normal;
+	font-family:Arial;
+	color:#666666;
+	text-align:left;
+	cursor:pointer;
+}
+
+#spisok_ponravilos
+{
+
+ }
+#spisok_ponravilos div
+{
+  padding-left:15px;
+    height:20px;
+    background: #F2F2F2;
+}
+
+#spisok_ponravilos div:hover
+{
+    background: #d9d9d9;
+
+}
+
+.valid_input
+{
+    float: right;
+    margin-top: -10px;
+    margin-right: 12px;
+    font-family: Arial;
+    font-size: 10px;
+    color: #999;
+}
+
+
+#val_description_alb_edit, #val_name_alb_edit
+{
+    font-family: Arial;
+font-size: 10px;
+color: #999;
+margin-top: -11px;
+float: right;
+margin-right: -12px;
+}
+ #comment_users
+ {
+ 	cursor:default;
+
+
+
+    color:#999999;
+  
+    background-position: left 2px;
+     height:22px;
+     margin-top: -22px;
+     text-align:center;
+    background-repeat: no-repeat;
+
+
+ }
+
+#myModal8 li
+{
+    list-style: none;
+}
+
+#add_photo_p2, #btn_del_alb
+{
+    font-family: Arial;
+    font-size: 12px;
+    color:#3366CC;
+    cursor:pointer;
+}
+#txt_image
+{
+	
+	font-size:12px;
+	font-weight:normal;
+	font-family:Arial;
+	color:#000000;
+     text-align: center;
+   
+    max-width:630px;
+   margin-left:auto;
+    margin-right: auto;
+    padding-top: 15px;
+    line-height: 145%;
+     -moz-border-radius: 0px 0px 5px 5px;
+   -webkit-border-radius: 0px 0px 5px 5px;
+   border-radius: 0px 0px 5px 5px;
+    background: #F2F2F2;
+}
+
+.img_text_cont
+{
+      -moz-border-radius: 0px 0px 5px 5px; 
+   -webkit-border-radius: 0px 0px 5px 5px;
+   border-radius: 0px 0px 5px 5px;
+    background: #F2F2F2;
+    padding-bottom: 15px;
+}
+
+.shapka_modal
+{
+   -moz-border-radius: 5px 5px 0px 0px;
+   -webkit-border-radius: 5px 5px 0px 0px;
+   border-radius: 5px 5px 0px 0px;
+    background: #F2F2F2;
+}
+
+#buttons_image_modal
+{
+	
+	height:20px;
+
+}
+
+.label_dialog
+{
+   position: absolute;
+    left:20px;
+    top:12px;
+    font-family: Arial;
+    color:#0064A0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+#jcrop_ava2 div.alert_no_crop, #jcrop_albums2 div.alert_no_crop
+{
+width:271px;
+height:70px;
+background-image:url('../resource/alert.png');
+position:absolute;
+left:25px;
+top:4px;
+display:none;
+   
+
+}
+
+
+#jcrop_ava2 div.alert_no_crop div, #jcrop_albums2 div.alert_no_crop div
+
+{
+margin-top: 32px;
+font-family: Arial;
+font-size: 12px;
+line-height: 145%;
+text-align: left;
+margin-left: 22px;
+text-decoration: none;
+color:#666666;
+}
+
+#jcrop_albums2 div.alert_no_crop
+{
+    left:25px;
+
+}
+#jcrop_albums2:hover div.alert_no_crop, #jcrop_ava2:hover div.alert_no_crop
+{
+    display:block;
+}
+
+
+
+
+
+.label_dialog2
+{
+    font-size: 12px;
+    font-family: Arial;
+    color:#0082bb;
+    font-weight: bold;
+    margin-top:-4px;
+    top:16px;
+    left:20px;
+    line-height: 1.5;
+    position: absolute;
+}
+
+#buttons_image_modal a, #jcrop_albums, #jcrop_ava
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:normal;
+	color:#666666;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+
+ #jcrop_albums2, #jcrop_ava2
+ {
+     font-family:Arial;
+	font-size:12px;
+	font-weight:normal;
+	color:#999999;
+	cursor:pointer;
+ }
+
+#myModal2 div.txt1, #myModal8 div.txt1
+{
+	color:#0082BE;
+	font-family:Arial;
+	font-size:14px;
+	text-align:left;
+	font-weight:bold;
+}
+
+#myModal2 div.txt2, #myModal2 div.txt3 ,#myModal8 div.txt2, #myModal8 div.txt3
+{
+	color:#666666;
+	font-family:Arial;
+	font-size:10px;
+	font-weight:normal;
+	text-align:left;
+    width:340px;
+
+}
+
+
+
+#myModal2 li ,#myModal8 li
+{
+	list-style:disc outside;
+	color:#666666;
+	text-align:left;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:normal;
+}
+#myModal8 li
+{
+    list-style:none;
+}
+#myModal2 div.razdelitel, #myModal8 div.razdelitel
+{
+	background:#BCCFDF;
+	width:335px;
+	height:1px;
+    float:left;
+    margin-left:30px;
+}
+
+
+
+#myModal2 , #myModal8
+{
+	line-height: 145%;
+}
+
+#myModal2 div.button_load , #myModal8 div.button_load
+{
+	margin-top:50px;
+	margin-bottom:50px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+#prev_albums
+{
+	cursor:pointer;
+	float:left;
+	width:22px;
+	height:170px;
+	background-image:url('../resource/strelka_left.png');
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+
+
+#next_albums
+{
+	cursor:pointer;
+	margin-left:20px;
+	float:left;
+	width:22px;
+	height:170px;
+	background-image:url('../resource/strelka_right.png');
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+
+.ten_albums
+{
+
+	float:left;
+	width:240px;
+	height:170px;
+	margin-left:2px;
+	background-image:url('../resource/frame_alb1.png');
+	background-position:center center; 
+	background-repeat:no-repeat;
+}
+
+#name_albums
+{
+	font-family:Arial;
+	font-size:14px;
+	color:#0082BE;
+	font-weight:bold;
+}
+
+#count_photo
+{
+	font-family:Arial;
+	font-size:12px;
+	color:#0082BE;
+    margin-top:2px;
+	font-weight:normal;
+}
+
+#txt_albums
+{
+	line-height:145%;
+	height:45px;
+	margin-top:20px;
+	font-family:Arial;
+	font-size:12px;
+	color:#666666;
+	font-weight:normal;
+}
+
+a.close-reveal-modal:hover
+
+
+{
+    color:#f23c42;
+}
+
+#cont_photo img
+{
+	cursor:pointer;
+}
+
+.image_change_win
+{
+    max-width: 130px;
+    max-height: 130px;
+position:relative;
+margin-left:0px;
+margin-top:3px;
+padding: 3px;
+border: 1px solid #999999;
+border-radius: 3px;
+box-shadow: 0px 0px 5px #CCC;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+}
+#back_albums, #back_albums2
+{
+	  background-image: url("../resource/back_strelka.png");
+    background-position: -2px 3px;
+    background-repeat: no-repeat;
+    color: #3366CC;
+    cursor: pointer;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: -15px;
+    padding-left: 11px;
+}
+
+#cont_photo img
+{
+   position: absolute;
+   padding: 2px;
+    border: 1px solid #999999;
+    background: white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #cccccc;
+}
+
+#del_btn_mod
+{
+    float:right;
+    width:93px;
+    height:21px;
+    background: #00AFF0;
+    color:white;
+    padding-top:9px;
+    cursor:pointer;
+      font-family: Arial;
+    font-size: 12px; 
+}
+
+
+#cancel_del, #cancel_error
+{
+    cursor:pointer;
+    float:left;
+    width:93px;
+    height:21px;
+    color:white;
+    padding-top:9px;
+    font-family: Arial;
+    font-size: 12px;
+
+    background: #8C8C8C;
+}
+
+
+#myModal9 div.txt3
+{
+    margin-left:30px;
+    font-family: Arial;
+    font-size: 10px;
+    color:#666666;
+    text-align: left;
+    padding-top:10px;
+    line-height: 145%;
+
+    
+}
+
+#modal9_save
+{
+    margin-right:20px;
+
+    width: 285px;
+height: 22px;
+background-image: url('../resource/modal9_save.png');
+color: white;
+margin-top: -43px;
+padding-top: 8px;
+font-family: Arial;
+font-size: 12px;
+padding-left: 5px;
+float: right;
+
+cursor:pointer;
+}
+
+
+.pametka_zag
+{
+    font-family: Arial;
+    font-size:14px;
+    color:#666666;
+    font-weight: bold;
+}
+
+
+.pametka_txt
+{
+font-family: Arial;
+font-size:12px;
+color:#666666;
+line-height: 145%;
+}
+
+.pametka_razd
+{
+width:200px;
+height:1px;
+background:#BCCFDF;
+margin-bottom:11px;
+margin-top:3px;
+}
+
+.pametka
+{
+width:200px;
+height:100px;
+position: absolute;
+right:30px;
+top:215px;
+line-height: 145%;
+}
+
+
+

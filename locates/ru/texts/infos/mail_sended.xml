@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+<text name='title'>Поздравляем с успешной регистрацией!</text>
+<text name='intro'>, спасибо за регистрацию на сайте Pararu.ru&lt;br&gt;</text>
+<text name='mail_begin'>На почтовый адрес </text>
+<text name='mail_end'>, который вы указали при регистрации, было выслано письмо со ссылкой для подтверждения адреса.
+&lt;br&gt;Для продолжения пользования сайтом перейдите по высланной ссылке.
+</text>
+<text name='link'>На главную</text>
+</root>

@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<root>
+   <text name='defoult_country'>Russia</text>
+   <text name='defoult_city'>Moscow</text>
+   <text name='index_reg_form'>
+       <text>I:</text>
+       <text>Wanted:</text>
+       <text>Name:</text>
+       <text>Birthday:</text>
+       <text>hide</text>
+       <text>Country:</text>
+       <text>City:</text>
+       <text>Email / Username:</text>
+       <text>Password:</text>
+       <text>Repeat password:</text>
+       <text>How did you hear about Pararu.ru:</text>
+       <text>I have read and agree with the </text>
+       <text>conditions for registration</text>
+       <text>Jump to the creation of the profile</text>
+   </text>
+   <text name='one_combo'>
+       <text>of friends</text>
+       <text>online</text>
+       <text>through newspaper</text>
+   </text>
+   <text name='js'>
+       <text name='password'>password is too short</text>
+       <text name='password_confirm'>Passwords do not match</text>
+       <text name='i_agree'>must agree to the terms and conditions</text>
+       <text name='required'>This Field is required</text>
+       <text name='remote'>Correct this field to continue</text>
+       <text name='email'>enter a valid email address</text>
+       <text name='url'>Please enter a valid URL</text>
+       <text name='date'>Enter a valid date</text>
+       <text name='dateISO'>Enter the correct date (ISO)</text>
+       <text name='number'>Enter number</text>
+       <text name='digits'>Enter only numbers</text>
+       <text name='creditcard'>Please enter a valid credit card number</text>
+       <text name='equalTo'>Re-enter the values again</text>
+       <text name='accept'>Please, enter the correct extension</text>
+       <text name='maxlength'>can not enter more than {0} characters</text>
+       <text name='minlength'>Must be at least {0} characters</text>
+       <text name='rangelength'>Enter {0} to {1} characters</text>
+       <text name='range'>Enter a number from {0} to {1}</text>
+       <text name='max'>Enter a number less than or equal to {0}</text>
+       <text name='min'>Enter a number greater than or equal to {0}</text>
+   </text>
+</root>

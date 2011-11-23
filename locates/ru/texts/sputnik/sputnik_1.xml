@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='lastgift'>Последний подарок, сделанный этому пользователю</text>
+    <text name='gifts'>Подарки</text>
+    <text name='gifts_subtitle'>подарить подарок   |   посмотреть все подарки</text>
+    <text name='photocomment'>Некоторые фотографии</text>
+    <text name='photosubcomment'>нажмите на фотографию, чтобы увеличить</text>
+    <text name='together'>Хотите познакомиться поближе?</text>
+    <text name='together_yes'>Да, я заинтересовался!</text>
+    <text name='together_mb'>Решу позже</text>
+    <text name='together_no'>Нет, не заинтересовался</text>
+    <text name='ago'>назад</text>
+</root>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <text name="center_block_title">Настройки аккаунта</text>
+    <text name="login_flap">
+        <text>Логин (адрес электронной почты):</text>
+        <text>Новый адрес:</text>
+        <text>Ваш пароль:</text>
+    </text>
+    <text name="pass_flap">
+        <text>Пароль</text>
+        <text>'ParARu.rU' и 'pararu.ru' - разные пароли </text>
+        <text>Ваш новый пароль должен иметь не менее 6 символов.</text>
+        <text>Можно использовать комбинации буквы, цифр и знаков препинания.</text>
+        <text>Пароли регистрозависимы. Проверьте, включен ли CapsLock.</text>
+        <text>Cтарый пароль:</text>
+        <text>Новый пароль:</text>
+        <text>Повторите пароль:</text>
+        <text>сохранить изменения</text>
+    </text>
+    <text name="show_flap">
+        <text>Показатели</text>
+        <text>Если Вы перезаполнили тест, поменяли параметры поиска или изменили другие данные, а список спутников не обновился, нажмите «Пересчитать выводимые данные».</text>
+        <text>пересчитать выводимые данные</text>
+    </text>
+    <text name="set_secure_flap_title">Конфиденциальность</text>
+    <text name="set_secure_flap">
+        <text>Смотрят мои фотографии:</text>
+        <text>Возраст:</text>
+        <text>Мои взгляды:</text>
+        <text>Мои увлечения:</text>
+        <text>Результаты S.O.N.I.C:</text>
+        <text>Получать сообщение от:</text>
+    </text>
+    <text name="secure_flap_variants">
+        <text>Только я</text>
+        <text>Избранные</text>
+        <text>Люди с совпадением более 85%</text>
+        <text>Люди с совпадением более 35%</text>
+        <text>Все пользователи</text>
+    </text>
+    <text name="save_btn">сохранить изменения</text>
+    <text name="secur_inform_flap">
+        <text>Безопасность</text>
+        <text>Для обеспечения безопасности Вашего аккаунта на Plussia.ru мы можем информировать Вас, когда на него заходят с компьютера или мобильного устройства, ранее не используемого Вами.</text>
+        <text>Хотите получать уведомления о входе в Ваш аккаунт с не используемых Вами ранее устройств?</text>
+        <text>Да</text>
+        <text>Нет</text>
+        <text>сохранить изменения</text>
+    </text>
+    <text name="page_adr_flap">
+        <text>Адрес Вашей страницы</text>
+        <text>Ваш индивидуальный идентификатор:</text>
+        <text>Адрес Вашей страницы:</text>
+        <text>измениить индивидуальный идентификатор</text>
+        <text>(доступно только для членов Brilliant Club)</text>
+        <text>Новый идентификатор</text>
+        <text>Внимание! Идентификатор</text>
+        <text>- не должен начинаться с букв "id" за которыми следует любая цифра</text>
+        <text>- не может быть длиннее 126 или короче 3 символов</text>
+        <text>- может содержать только буквы латинского алфавита, цифры и знак подчеркивания</text>
+    </text>
+    <text name="main_photo_flap">
+        <text>Фото на аватар</text>
+    </text>
+    <text name="zone_flap_title">Часовой пояс</text>
+    <text name="zone_flap">
+        <text name='-2'>-2</text>
+        <text name='-1'>-1</text>
+        <text name='0'>0</text>
+        <text name='1'>+1</text>
+        <text name='2'>+2</text>
+    </text>
+    <text name="lang_flap">
+        <text>Язык</text>
+    </text>
+    <text name="logout_flap_title">Автоматически выходить из системы через</text>
+    <text name="logout_flap">
+        <text name='0'>никогда</text>
+        <text name='5'>5 минут</text>
+        <text name='10'>10 минут</text>
+        <text name='15'>15 минут</text>
+        <text name='30'>30 минут</text>
+        <text name='45'>45 минут</text>
+        <text name='60'>1 час</text>
+    </text>
+    <text name="deactivate_flap">
+        <text>Деактивировать аккаунт</text>
+        <text>Ваш логин:</text>
+        <text>Ваш пароль:</text>
+        <text>деактивировать аккаунт</text>
+    </text>
+</root>

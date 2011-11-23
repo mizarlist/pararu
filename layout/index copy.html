@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-script-Type" content="text/html/javascript; charset=utf-8" /> 
+<title>Plussia.ru — страна серьезных отношений</title>
+
+<link rel="stylesheet" type="text/css" href="/css/reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/css/text.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" />
+
+</head>
+
+
+<body>
+
+
+<div style="display:none;">
+	<div id="index_reg_form">
+		<div class="close_irf"></div>
+                <form method="post">
+			<div class="form_line">
+				<label>Я:</label>
+				<div class="in_combo" id="me_gender">
+					<div class="easy_mask"></div>
+					<input type="text" readonly="readonly" value="женщина" name="me_gender" />
+					<div class="combo_variants">
+						<div class="one_combo">женщина</div>
+						<div class="one_combo">мужчина</div>
+					</div>
+				</div><!-- #me_gender-->
+				<span class="label">Ищу:</span>
+				<div class="in_combo" id="find_gender">
+					<div class="easy_mask"></div>
+					<input type="text" readonly="readonly" value="мужчину" name="find_gender" />
+					<div class="combo_variants">
+						<div class="one_combo">мужчину</div>
+						<div class="one_combo">женщину</div>
+					</div>
+				</div><!-- #find_gender-->
+			</div><!-- .form_line-->
+
+			<div class="form_line">
+				<label>Имя:</label>
+				<input type="text" class="pluss_textin" name="me_name" id="me_name" />
+			</div>
+
+			<div class="form_line">
+				<label>Дата рождения:</label>
+				<input type="text" class="pluss_textin" name="birth_date" id="birth_date" value="5" />
+				<div class="in_combo" id="birth_month">
+					<div class="easy_mask"></div>
+					<input type="text" readonly="readonly" value="январь" name="birth_month" />
+					<div class="combo_variants">
+						<div class="one_combo">январь</div>
+						<div class="one_combo">февраль</div>
+						<div class="one_combo">март</div>
+						<div class="one_combo">апрель</div>
+						<div class="one_combo">май</div>
+						<div class="one_combo">июнь</div>
+						<div class="one_combo">июль</div>
+						<div class="one_combo">август</div>
+						<div class="one_combo">сентябрь</div>
+						<div class="one_combo">октябрь</div>
+						<div class="one_combo">декабрь</div>
+					</div>				
+				</div><!-- #birth_month-->
+				<input type="text" class="pluss_textin" name="birth_year" id="birth_year" value="1989" />
+				<div class="p_checkbox">скрыть</div>
+			</div><!-- .form_line-->
+
+			<div class="form_line">
+				<label>Страна:</label>
+				<div class="in_combo" id="me_country">
+					<div class="easy_mask"></div>
+					<input type="text" value="Россия" name="me_country" />
+					<div class="combo_variants"></div>
+				</div>
+			</div><!-- .form_line-->
+
+			<div class="form_line form_cut_line">
+				<label>Город:</label>
+				<div class="in_combo" id="me_city">
+					<div class="easy_mask"></div>
+					<input type="text" value="Москва" name="me_city" />
+					<div class="combo_variants"></div>
+				</div>
+			</div><!-- .form_line-->
+				
+			<div class="form_line">
+				<label>Эл.почта / Логин:</label>
+				<input type="text" value="" class="pluss_textin" name="me_mail" />
+			</div><!-- .form_line-->			
+				
+			<div class="form_line">
+				<label>Пароль:</label>
+				<input type="text" value="" class="pluss_textin" name="pass1" />
+			</div><!-- .form_line-->
+					
+			<div class="form_line form_cut_line">
+				<label>Повторите пароль:</label>
+				<input type="text" value="" class="pluss_textin" name="pass2" />
+			</div><!-- .form_line-->									
+									
+			<div class="form_line how_about_pluss">
+				<label>Как Вы узнали о Plussia.ru:</label>
+				<div class="in_combo" id="how_do_get">
+					<div class="easy_mask"></div>
+					<input type="text" readonly="readonly" value="от друзей" name="how_do_get" />
+					<div class="combo_variants">
+						<div class="one_combo">от друзей</div>
+						<div class="one_combo">через интернет</div>
+						<div class="one_combo">через газету</div>
+					</div>
+				</div><!-- #how_do_get-->
+			</div>
+
+
+			<div class="form_line i_agree">
+				<div class="p_checkbox">Я прочитал и согласен с условиями регистрации</div>
+				<div class="clear"></div>
+			</div><!-- .form_line-->	
+
+			<div class="form_line">
+				<div class="agree_button">Перейти к созданию профиля</div>
+			</div><!-- .form_line-->
+
+				
+		</form><!-- .form-->
+	</div><!-- #index_reg_form-->
+</div><!-- display:none-->
+
+<div id="content">
+	
+	<div class="head">
+		<div class="margins">
+			<div class="head_lang">
+				<div class="one_lang active"><a href="/ru"><img src="/images/localization/mini_flag_ru.png"</a></div>
+				<div class="one_lang"><a href="/en"><img src="/images/localization/mini_flag_en.png"</a></div>
+				<div class="one_lang"><a href="/ge"><img src="/images/localization/mini_flag_ge.png"</a></div>
+			</div>
+			
+			<div class="index_logo"><a href="/"><img src="/images/index/logo.png" /></a></div>
+	
+			<div class="index_menu">
+				<ul>
+					<li class="active"><a href="#">Экскурсия</a></li>
+					<li><a href="#">Наши Преимущества</a></li>
+					<li class="last"><a href="#">Успешные Истории</a></li>
+				</ul>
+				<a href="#"><div class="kaspersky"></div></a>
+			</div><!-- .index_menu-->
+		
+			<div class="top_links">
+				<div class="top_links_r" id="index_go_reg"><a href="#Регистрация">Регистрация</a></div>
+				<div class="top_links_i"><a href="#">Вход</a></div>
+			</div><!-- .top_links-->
+			
+			<div class="clear"></div>
+			
+			<div class="index_slides">
+				
+				<div class="index_slides_pages">
+					<div class="one_slide_page one_slide_page1">
+						<div class="one_slide_title">Мечтаете встретить близкого человека?</div>	
+						<div class="one_slide_text">Для создания действительно серьезных отношений, Вам теперь надо совершить всего 5 простых шагов.
+						</div>
+						<a href="#Регистрация"><div class="do_first_step">Сделать первый Шаг</div></a>
+						<img src="/images/index/baner_1.png" />
+						
+						
+					</div><!-- .one_slide_page1-->
+				</div><!-- .index_slides_pages-->
+				
+				
+			</div><!-- .index_slides-->
+			
+			
+		</div><!-- .head-->
+	</div><!-- .margins-->
+	
+	<div class="main">
+		<div class="margins">
+			
+			<div class="index_5_steps">
+				<div class="one_5_step one_5_step1">
+					<strong class="o5s_title">Расскажите <nobr>о себе</nobr></strong>
+					Ответьте на несколько вопросов, раскрывающих Вашу Ноэтическую Совместимость
+				</div>
+				<div class="one_5_step one_5_step2">
+					<strong class="o5s_title">Зарегистри-<br/>руйтесь</strong>
+					Получите личную страницу с подбробным описанием своего характера
+				</div>
+				<div class="one_5_step one_5_step3">
+					<strong class="o5s_title">Найдите себе пару</strong>
+					Просматривайте совместимых с Вами кандидатов для серьезных отношений
+				</div>
+				<div class="one_5_step one_5_step4">
+					<strong class="o5s_title">Общайтесь <nobr>по полной</nobr></strong>
+					Общайтесь, Влюбляйтесь, Радуйтесь и снова общайтесь...
+				</div>
+				<div class="one_5_step one_5_step5">
+					<strong class="o5s_title">Начинайте встречаться</strong>
+					Договоритесь о личной встрече и начинайте строить серьезные отноешия с любимым
+				</div>			
+				
+				<div class="index_know_more">
+					<a href="#">Узнайте больше <nobr>о возможностях</nobr> сайта<i></i></a>
+				</div>
+				
+				<div class="clear"></div>
+			</div><!-- .index_5_steps-->
+			
+			<div class="index_text_formula">
+				<div class="video">
+					<h2>Проект Plussia.ru – лучший способ поиска спутника жизни</h2>
+					<div class="embded_video">
+						<img src="/images/temp_samples/sample_index.png" width="600" />
+					</div>
+				</div><!-- .video-->
+				
+				<div class="text">
+					<h2>Формула любви</h2>
+<div class="text_in_img"><img src="/images/temp_samples/sample_index2.png" /></div>					
+Я уже более 30 лет изучаю отношения между людьми. Думаю, что, наверное, самый надежный и самый безболезненный путь, «совершеннейший способ» овладения, скажем, английским языком — это родиться англичанином...Ну, можно сказать, этого уже не наверстаешь! Кто десять, кто двадцать, кто тридцать, а все мы вместе много лет назад, так сказать, упустили эту возможность.Впрочем, возможно, что некий человек с самого юного возраста и максимально долго будет жить на территории Англии.Это уже более доступный, но тоже нелегко осуществимый путь.Можно, прилежно и регулярно занимаясь языком два, три и более раз в неделю, через 4-5 лет достигнуть уровня, удовлетворяющего нашим требованиям. Этот самый обычный, классический способ изучения языка я стремлюсь своей книгой лишь дополнить. Свои соображения я ни за что на свете не назвала бы ни советами, ни рецептами. 
+<div class="clear"></div>
+<div class="index_know_formula"><a href="#">Узнайте о системе подбора больше - тут <i></i></a></div>
+
+				</div><!-- .text-->
+				
+			</div><!-- .index_text_formula-->
+			
+			<div class="index_bottom_video">
+				<div class="one_bottom_video">
+					<div class="embded_video">
+						<img src="/images/temp_samples/sample_index3.jpg" />
+					</div>
+					<div class="text">
+						<div class="text_title">Чем именно Вам может помочь сайт Plussia.ru</div>
+Я уже более 30 лет изучаю отношения между людьми. Думаю, что, наверное, самый надежный и самый безболезненный путь, «совершеннейший способ» овладения, скажем, английским языком — это родиться англичанином...						
+					</div>
+				
+				</div><!-- .one_bottom_video-->	
+				
+				<div class="one_bottom_video">
+					<div class="embded_video">
+						<img src="/images/temp_samples/sample_index4.jpg" />
+					</div>
+					<div class="text">
+						<div class="text_title">Чем именно Вам может помочь сайт Plussia.ru</div>
+Я уже более 30 лет изучаю отношения между людьми. Думаю, что, наверное, самый надежный и самый безболезненный путь, «совершеннейший способ» овладения, скажем, английским языком — это родиться англичанином...						
+					</div>
+				
+				</div><!-- .one_bottom_video-->	
+				
+				
+				<div class="one_bottom_video last">
+					<div class="embded_video">
+						<img src="/images/temp_samples/sample_index5.jpg" />
+					</div>
+					<div class="text">
+						<div class="text_title">Чем именно Вам может помочь сайт Plussia.ru</div>
+Я уже более 30 лет изучаю отношения между людьми. Думаю, что, наверное, самый надежный и самый безболезненный путь, «совершеннейший способ» овладения, скажем, английским языком — это родиться англичанином...						
+					</div>
+				
+				</div><!-- .one_bottom_video-->					
+								
+					
+			</div><!-- .index_bottom_video-->
+			
+		</div><!-- .margins-->
+	</div><!-- .main-->
+	
+	
+	<div class="clear"></div>
+	<div id="empty"></div>
+</div><!-- #content-->
+
+<div id="footer">	
+	<div class="margins">
+		<div class="bookmarks_menu">
+			<div class="one_bookmark one_bookmark9"></div>
+			<div class="one_bookmark one_bookmark8"></div>
+			<div class="one_bookmark one_bookmark7"></div>
+			<div class="one_bookmark one_bookmark6"></div>
+			<div class="one_bookmark one_bookmark5"></div>
+			<div class="one_bookmark one_bookmark4"></div>
+			<div class="one_bookmark one_bookmark3"></div>
+			<div class="one_bookmark one_bookmark2"></div>
+			<div class="one_bookmark one_bookmark1"></div>
+		</div><!-- .bookmarks_menu-->
+		
+		<div class="footer_menu">
+			<div class="rights"><a href="#">Политика конфиденциальности</a> © 2010 Plussia.ru</div>
+			<ul class="footer_menu_ul">
+				<li><a href="#">о сайте</a></li>
+				<li><a href="#">техподдержка</a></li>
+				<li><a href="#">вакансии</a></li>
+				<li><a href="#">блог</a></li>
+				<li><a href="#">правила</a></li>
+				<li><a href="#">реклама</a></li>
+				<li><a href="#">магазинам</a></li>
+				<li class="last"><a href="#">выход</a></li>
+			</ul><!-- .footer_menu_ul-->
+			
+			<div class="lang_sel">
+				<div class="lang_flag">
+					<span>
+						<img src="/images/localization/flag_ru.png" />
+					</span>
+				</div>
+				<div class="lang_active">русский</div>
+				<ul class="lang_menu">
+					<li><a href="/en">английский</a></li>
+					<li><a href="/ge">немецкий</a></li>
+					<!-- Текущий язык помещается в список последним  -->
+					<li><a href="/ru">русский</a></li>									
+				</ul>
+			</div><!-- .lang_sel-->
+		</div><!-- .footer_menu-->
+		
+	</div><!-- .margins-->
+</div><!-- #footer-->				
+
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/plugins.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+	
+</body>
+
+
+</html>
+

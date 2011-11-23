@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='title'>Справочный центр</text>
+    <text name='columns'>
+        <text name='1'>
+            <text name='title'>Использование Pararu.ru</text>
+            <text name='1'>
+                <text name='title'>Регистрация</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Регистрация
+                </text>
+            </text>
+            <text name='2'>
+                <text name='title'>Логин и пароль</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Логин и пароль
+                </text>
+            </text>
+            <text name='3'>
+                <text name='title'>Избранные</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Избранные
+                </text>
+            </text>
+            <text name='4'>
+                <text name='title'>Поиск</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Поиск
+                </text>
+            </text>
+            <text name='5'>
+                <text name='title'>Мобильные сервисы</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Мобильные сервисы
+                </text>
+            </text>
+            <text name='6'>
+                <text name='title'>Профиль</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Профиль
+                </text>
+            </text>
+            <text name='7'>
+                <text name='title'>Сообщения</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Сообщения
+                </text>
+            </text>
+            <text name='8'>
+                <text name='title'>Главная страница</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Главная страница
+                </text>
+            </text>
+            <text name='9'>
+                <text name='title'>Предложения</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Предложения
+                </text>
+            </text>
+            <text name='10'>
+                <text name='title'>Конфиденциальность</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Конфиденциальность
+                </text>
+            </text>
+            <text name='11'>
+                <text name='title'>Безопасность</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Безопасность
+                </text>
+            </text>
+            <text name='12'>
+                <text name='title'>Предупреждения</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Предупреждения
+                </text>
+            </text>
+            <text name='13'>
+                <text name='title'>Интеллектуальная собственность</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Интеллектуальная собственность
+                </text>
+            </text>
+            <text name='14'>
+                <text name='title'>Статус</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Статус
+                </text>
+            </text>
+            <text name='15'>
+                <text name='title'>Поиск и устранение неисправностей</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_1 Поиск и устранение неисправностей
+                </text>
+            </text>
+        </text>
+        <text name='2'>
+            <text name='title'>Использование Pararu.ru2</text>
+            <text name='1'>
+                <text name='title'>Регистрация2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Регистрация
+                </text>
+            </text>
+            <text name='2'>
+                <text name='title'>Логин и пароль2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Логин и пароль
+                </text>
+            </text>
+            <text name='3'>
+                <text name='title'>Избранные2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Избранные
+                </text>
+            </text>
+            <text name='4'>
+                <text name='title'>Поиск2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Поиск
+                </text>
+            </text>
+            <text name='5'>
+                <text name='title'>Мобильные сервисы2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Мобильные сервисы
+                </text>
+            </text>
+            <text name='6'>
+                <text name='title'>Профиль2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Профиль
+                </text>
+            </text>
+            <text name='7'>
+                <text name='title'>Сообщения2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Сообщения
+                </text>
+            </text>
+            <text name='8'>
+                <text name='title'>Главная страница2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Главная страница
+                </text>
+            </text>
+            <text name='9'>
+                <text name='title'>Предложения2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Предложения
+                </text>
+            </text>
+            <text name='10'>
+                <text name='title'>Конфиденциальность2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Конфиденциальность
+                </text>
+            </text>
+            <text name='11'>
+                <text name='title'>Безопасность2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Безопасность
+                </text>
+            </text>
+            <text name='12'>
+                <text name='title'>Предупреждения2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Предупреждения
+                </text>
+            </text>
+            <text name='13'>
+                <text name='title'>Интеллектуальная собственность2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Интеллектуальная собственность
+                </text>
+            </text>
+            <text name='14'>
+                <text name='title'>Статус2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Статус
+                </text>
+            </text>
+            <text name='15'>
+                <text name='title'>Поиск и устранение неисправностей2</text>
+                <text name='img'>/images/temp_samples/help.png</text>
+                <text name='text'>
+                    column_2 Поиск и устранение неисправностей
+                </text>
+            </text>
+        </text>
+        <text name='3'>
+            <text name='title'>Использование Pararu.ru3</text>
+            <text name='1'>
+                <text name='title'>Регистрация3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Регистрация
+                </text>
+            </text>
+            <text name='2'>
+                <text name='title'>Логин и пароль3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Логин и пароль
+                </text>
+            </text>
+            <text name='3'>
+                <text name='title'>Избранные3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Избранные
+                </text>
+            </text>
+            <text name='4'>
+                <text name='title'>Поиск3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Поиск
+                </text>
+            </text>
+            <text name='5'>
+                <text name='title'>Мобильные сервисы3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Мобильные сервисы
+                </text>
+            </text>
+            <text name='6'>
+                <text name='title'>Профиль3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Профиль
+                </text>
+            </text>
+            <text name='7'>
+                <text name='title'>Сообщения3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Сообщения
+                </text>
+            </text>
+            <text name='8'>
+                <text name='title'>Главная страница3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Главная страница
+                </text>
+            </text>
+            <text name='9'>
+                <text name='title'>Предложения3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Предложения
+                </text>
+            </text>
+            <text name='10'>
+                <text name='title'>Конфиденциальность3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Конфиденциальность
+                </text>
+            </text>
+            <text name='11'>
+                <text name='title'>Безопасность3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Безопасность
+                </text>
+            </text>
+            <text name='12'>
+                <text name='title'>Предупреждения3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Предупреждения
+                </text>
+            </text>
+            <text name='13'>
+                <text name='title'>Интеллектуальная собственность3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Интеллектуальная собственность
+                </text>
+            </text>
+            <text name='14'>
+                <text name='title'>Статус3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Статус
+                </text>
+            </text>
+            <text name='15'>
+                <text name='title'>Поиск и устранение неисправностей3</text>
+                <text name='img'></text>
+                <text name='text'>
+                    column_3 Поиск и устранение неисправностей
+                </text>
+            </text>
+        </text>
+    </text>
+</root>

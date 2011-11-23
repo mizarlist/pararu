@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='curr_compare_title'>
+        <text>У вас </text>
+        <text> совпадений по увлечениям, из них </text>
+        <text> в разделе:</text>
+    </text>
+    <text name="title_l">Ваши увлечения:</text>
+    <text name="title_r">Увлечения спутника:</text>
+</root>

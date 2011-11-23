@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <node name='footer_menu'>
+        <node name='confidence'>Пользовательское соглашение</node>
+        <node name='ul'>
+            <node>о сайте</node>
+            <node>техподдержка</node>
+            <node>вакансии</node>
+            <node>блог</node>
+            <node>правила</node>
+            <node>реклама</node>
+            <node>магазинам</node>
+            <node>выход</node>
+        </node>
+    </node>
+</root>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='title'>Наши совпадения по Увлечениям:</text>
+    <text name='compare_info1'>совпадений</text>
+    <text name='compare_info2'>Cовместимость:</text>
+    <text name='equals'>
+        <text>совпадение</text>
+        <text>совпадения</text>
+        <text>совпадения</text>
+        <text>совпадения</text>
+        <text>совпадений</text>
+    </text>
+    <text name='show_more'>показать подробнее</text>
+    <text name='from'>из общих</text>
+    <text name='no_eq'>&lt;center&gt;нет совпадений&lt;/center&gt;</text>
+</root>

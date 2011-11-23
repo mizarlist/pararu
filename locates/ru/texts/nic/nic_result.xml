@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='titles'>
+        <text>Ноэтический характер: </text>
+        <text>Скрытый тип</text>
+        <text>Сексуальный портрет</text>
+        <text>Эмоциональный портрет</text>
+        <text>Социально-культурный портрет</text>
+        <text>Духовный портрет</text>
+    </text>
+    <text name='images'>
+        <text></text>
+        <text>/images/profile/compare/nic_logo/logo1.png</text>
+        <text>/images/profile/compare/nic_logo/logo2.png</text>
+        <text>/images/profile/compare/nic_logo/logo3.png</text>
+        <text>/images/profile/compare/nic_logo/logo4.png</text>
+        <text>/images/profile/compare/nic_logo/logo5.png</text>
+    </text>
+    <text name='up'>наверх</text>
+</root>

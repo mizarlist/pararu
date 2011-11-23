@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='dell_all'>Удалить всю историю переписки</text>
+    <text name="your_mes">Ваше сообщение:</text>
+    <text name="ostalos">осталось</text>
+    <text name="simvolov">символов</text>
+    <text name="step">Сделать Шаг на встречу &#9658;</text>
+    <text name="send">Отправить</text>
+    <text name="adm">Администрация</text>
+    <text name="adm_msg">Подтвердите, что данное сообщение является спамом:</text>
+    <text name="adm_ans">
+        <text>это спам</text>
+        <text>удалить сообщение</text>
+        <text>восстановить сообщение</text>
+    </text>
+</root>

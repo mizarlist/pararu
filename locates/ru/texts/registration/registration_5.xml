@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name="step_title">Какого спутника вы ищите?</text>
+    <text name="step_title_litle">(не выбирайте вариантов ответа, если пункт не важен)</text>
+    <text name="register_go_next5">Следующий шаг</text>
+    <text name="register_main_col_img_txt">Browse through several different topics and see what members are saying. Browse through several different topics and see what members are saying.</text>
+</root>

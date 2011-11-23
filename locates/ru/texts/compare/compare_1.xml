@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='curr_compare_title'>Наши совпадения по Взглядам, Анкете и бонусам Кармы:</text>
+    <text name='compareable'>Cовместимость:</text>
+    <text name='from'>из общих</text>
+    <text name='t_headers_1'>
+        <text>Вы искали:</text>
+        <text>Качества этого спутника:</text>
+    </text>
+    <text name='t_headers_2'>
+        <text>Спутник искал:</text>
+        <text>Ваши качества:</text>
+    </text>
+    <text name='no_spdata_1'>&lt;center&gt;Вы не заполнили, кого хотите найти&lt;center&gt;</text>
+    <text name='no_spdata_2'>&lt;center&gt;Спутник не заполнил, кого хочет найти&lt;center&gt;</text>
+    <text name='no_data'>не указано</text>
+</root>

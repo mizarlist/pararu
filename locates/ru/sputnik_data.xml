@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name="baby_exist" type="radio_group" each="radiobutton" other="false" print="Готовы ли Вы принять спутника, у которого уже есть ребенок младше 18 лет, живущий вместе с ним?">
+        <text>нет</text>
+        <text>да</text>
+    </text>
+    <text name="religion" type="check_group" each="checkbox" other="true" print="Какие у Вас ожидания к религии Вашего партнера?">
+        <text>Другое</text>
+        <text>Атеист</text>
+        <text>Буддист/Даос</text>
+        <text>Католик</text>
+        <text>Православный</text>
+        <text>Протестант</text>
+        <text>Индуизм</text>
+        <text>Иудей</text>
+        <text>Мусульманин/Ислам</text>
+        <text>Духовен, но не религиозен</text>
+        <text>Не религиозен</text>
+    </text>
+    <text name="political_views" type="check_group" each="checkbox" other="true" print="Какие политические взгляды Вы приветствуете у будущего Партнера?">
+        <text>Другое</text>
+        <text>Либерал</text>
+        <text>Консерватор</text>
+        <text>Демократ</text>
+        <text>Коммунист</text>
+        <text>Не определился</text>
+        <text>Не политичен</text>
+        <text>Зеленый</text>
+    </text>
+    <text name="atmosphere_views" type="check_group" each="checkbox" other="true" print="Какое отношение к окружающей среде должно быть у Вашего Партнера?">
+        <text>Другое</text>
+        <text>Я против загрязнения окружающей среды</text>
+        <text>Я безразличен к вопросам окружающей среды</text>
+    </text>
+</root>

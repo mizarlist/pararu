@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name="chat">Вы общались с этим человеком</text>
+    <text name="favor">Вы в избранном у этого человека</text>
+    <text name="present">Этот человек дарил вам подарок</text>
+</root>

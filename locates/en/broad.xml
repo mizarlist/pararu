@@ -1,0 +1,29 @@
+<root>
+    <node name='months'>
+        <node name='1'>January</node>
+        <node name='2'>February</node>
+        <node name='3'>March</node>
+        <node name='4'>April</node>
+        <node name='5'>May</node>
+        <node name='6'>June</node>
+        <node name='7'>July</node>
+        <node name='8'>August</node>
+        <node name='9'>September</node>
+        <node name='10'>October</node>
+        <node name='11'>November</node>
+        <node name='12'>December</node>
+    </node>
+    <node name='me_gender'>
+        <node>man</node>
+        <node>woman</node>
+    </node>
+    <node name='sputnik_gender'>
+        <node>man</node>
+        <node>woman</node>
+    </node>
+    <node name='langs'>
+        <node name='ru'>russian</node>
+        <node name='en'>english</node>
+        <node name='ge'>german</node>
+    </node>
+</root>

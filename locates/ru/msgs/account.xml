@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+<text name='old_pass_uncorrect'>Пароль неверен</text>
+<text name='pass_noeq'>Пароли не совпадают</text>
+<text name='pass_len_5'>Пароль должен содержать не менее 5 символов</text>
+<text name='zone_uncorrect'>Неизвестный часовой пояс</text>
+<text name='lang_uncorrect'>Неизвестный язык</text>
+<text name='logout_uncorrect'>Интервал не поддерживается</text>
+<text name='pageaddr_length'>Идентификатор не может быть длиннее 126 или короче 3 символов</text>
+<text name='pageaddr_uncorrect'>Идентификатор не должен начинаться с букв "id" за которыми следует любая цифра</text>
+<text name='pageaddr_reserv'>Имя зарезервировано. Пожалуйста, выберите другое.</text>
+<text name='pageaddr_uncorrectchars'>Идентификатор может содержать только буквы латинского алфавита, цифры и знак подчеркивания</text>
+<text name='pageaddr_nofree'>Идентификатор уже занят</text>
+<text name='saved'>Изменения сохранены!</text>
+<text name='check_mail'>На ваш e-mail было выслано письмо с дальнейшими инструкциями</text>
+<text name='mail_uncorect'>E-mail не корректен</text>
+<text name='mail_exuist'>E-mail занят</text>
+<text name='login_pass_uncorrect'>Логин или пароль не верны</text>
+</root>

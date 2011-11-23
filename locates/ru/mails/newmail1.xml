@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+<title>Подтверждение изменения e-mail</title>
+<text name='inmailhead'>
+        Это письмо было выслано вам сайтом Pararu.ru, так как вы пытаетесь изменить ваш e-mail адрес.&lt;br&gt;
+        Если вы не имеете аккаунта на &lt;a href="http://pararu.ru"&gt;pararu.ru&lt;/a&gt; или не хотите изменить ваш e-mail адрес, просто проигнорируйте данное сообщение.&lt;br&gt;
+</text>
+<text name='p1'>Адрес будет изменен с </text>
+<text name='p2'> на </text>
+<text name='inmail'>Для изменения вашего e-mail адреса перейдите по ссылке, расположенной ниже</text>
+<text name='afterlink'>Ссылка действительна в течение 12 часов.</text>
+</root>

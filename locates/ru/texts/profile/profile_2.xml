@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='wellcome'>Пользователи, которые заинтересовались мной</text>
+    <text name='page'>Страница</text>
+    <text name='empty'>Нет пользователей, которые добавили вас в интересные.</text>
+</root>

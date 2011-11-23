@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <zodiac name='1'>Овен</zodiac>
+    <zodiac name='2'>Телец</zodiac>
+    <zodiac name='3'>Близнецы</zodiac>
+    <zodiac name='4'>Рак</zodiac>
+    <zodiac name='5'>Лев</zodiac>
+    <zodiac name='6'>Дева</zodiac>
+    <zodiac name='7'>Весы</zodiac>
+    <zodiac name='8'>Скорпион</zodiac>
+    <zodiac name='9'>Стрелец</zodiac>
+    <zodiac name='10'>Козерог</zodiac>
+    <zodiac name='11'>Водолей</zodiac>
+    <zodiac name='12'>Рыбы</zodiac>
+</root>

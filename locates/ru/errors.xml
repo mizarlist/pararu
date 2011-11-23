@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <error id='1'>
+        <title>Произошла ошибка</title>
+        <message>Введены неверные данные.</message>
+    </error>
+    <error id='2'>
+        <title>Произошла неизвестная ошибка</title>
+        <message>Будем признательны за сообщение о неполадке в службу технической поддержки.</message>
+    </error>
+    <error id='3'>
+        <title>Ошибка регистрации</title>
+        <message>Этот e-mail уже занят.</message>
+    </error>
+    <error id='4'>
+        <title>Ошибка</title>
+        <message>Попробуйте повторить позже.</message>
+    </error>
+    <error id='5'>
+        <title>Ошибка входа</title>
+        <message>Неверно введены логин или пароль.</message>
+    </error>
+    <error id='6'>
+        <title>Ошибка входа</title>
+        <message>Вы не подтвердили подлинность введенного e-mail адреса.</message>
+    </error>
+</root>

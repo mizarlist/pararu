@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='head_menu'>
+        <text>Моя страница</text>
+        <text>Экскурсии</text>
+        <text>Управление счетом</text>
+        <text>Аккаунт</text>
+        <text>Выход</text>
+    </text>
+</root>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+<text name='curr_compare_title'>Наши совпадения по Психологическому Характеру:</text>
+<text name='life_count'>Cовместимость:</text>
+<text name='from'>из общих</text>
+<text name='block_title'>
+    <text>Подобие характеров</text>
+    <text>Различие характеров</text>
+    <text>Спутник дополняет Вас</text>
+    <text>Вы дополняете спутника</text>
+</text>
+<text name="nic_disabled">К сожалению, сравнить ваши психологические характеры невозможно, так как один из вас не заполнил тест ноэтической совместимости.</text>
+</root>

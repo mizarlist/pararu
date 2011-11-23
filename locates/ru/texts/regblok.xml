@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='defoult_country'>Россия</text>
+    <text name='defoult_city'>Москва</text>
+    <text name='index_reg_form'>
+        <text>Я:</text>
+        <text>Ищу:</text>
+        <text>Имя:</text>
+        <text>Дата рождения:</text>
+        <text>скрыть</text>
+        <text>Страна:</text>
+        <text>Город:</text>
+        <text>Эл.почта / Логин:</text>
+        <text>Пароль:</text>
+        <text>Повторите пароль:</text>
+        <text>Как Вы узнали о Pararu.ru:</text>
+        <text>Я прочитал и согласен с </text>
+        <text>условиями регистрации</text>
+        <text>Перейти к созданию профиля</text>
+    </text>
+    <text name='one_combo'>
+        <text>от друзей</text>
+        <text>через интернет</text>
+        <text>через газету</text>
+    </text>
+    <text name='js'>
+        <text name='password'>Слишком короткий пароль</text>
+        <text name='password_confirm'>Пароли не совпадают</text>
+        <text name='i_agree'>Необходимо согласиться с условиями</text>
+        <text name='required'>Это поле необходимо заполнить</text>
+        <text name='remote'>Исправьте это поле чтобы продолжить</text>
+        <text name='email'>Введите правильный email адрес</text>
+        <text name='url'>Введите верный URL</text>
+        <text name='date'>Введите правильную дату</text>
+        <text name='dateISO'>Введите правильную дату (ISO)</text>
+        <text name='number'>Введите число</text>
+        <text name='digits'>Введите только цифры</text>
+        <text name='creditcard'>Введите правильный номер вашей кредитной карты</text>
+        <text name='equalTo'>Повторите ввод значения еще раз</text>
+        <text name='accept'>Пожалуйста, введите значение с правильным расширением</text>
+        <text name='maxlength'>Нельзя вводить более {0} символов</text>
+        <text name='minlength'>Должно быть не менее {0} символов</text>
+        <text name='rangelength'>Введите от {0} до {1} символов</text>
+        <text name='range'>Введите число от {0} до {1}</text>
+        <text name='max'>Введите число меньше или равное {0}</text>
+        <text name='min'>Введите число больше или равное {0}</text>
+    </text>
+</root>

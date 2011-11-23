@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='error'>Ошибка! Пожалуйста, обратитесь к администратору.</text>
+    <text name='delete'>Пользователь удален</text>
+    <text name='added'>Пользователь добавлен в </text>
+    <text name='types'>
+        <text name='interes'>интересные</text>
+        <text name='saved'>сохраненные</text>
+        <text name='ignor'>игнорируемые</text>
+    </text>
+</root>

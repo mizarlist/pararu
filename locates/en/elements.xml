@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <node name='footer_menu'>
+        <node name='confidence'>Privacy Policy</node>
+        <node name='ul'>
+            <node>about site</node>
+            <node>tech support</node>
+            <node>jobs</node>
+            <node>blog</node>
+            <node>rules</node>
+            <node>ads</node>
+            <node>shopping</node>
+            <node>output</node>
+        </node>
+    </node>
+</root>

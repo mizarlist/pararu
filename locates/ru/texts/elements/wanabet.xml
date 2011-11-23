@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name="p_title_1">Хотите познакомиться поближе?</text>
+    <text name="rs1_together_yes">Да, я заинтересовался!</text>
+    <text name="rs1_together_mb">Решу позже</text>
+    <text name="rs1_together_no">Нет, не интересно</text>
+</root>

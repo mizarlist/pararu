@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <text name='title'>Pararu.ru — портал серьезных отношений</text>
+    <text name='bookmarks'>
+        <text>Главная</text>
+        <text>NIC System</text>
+    </text>
+    <text name='center_top_menu'>
+        <text>Взгляды</text>
+        <text>Увлечения</text>
+        <text>Тест S.O.N.I.C.&lt;sup&gt;®&lt;/sup&gt;</text>
+        <text>Результаты теста</text>
+    </text>
+</root>

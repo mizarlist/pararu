@@ -1,0 +1,41 @@
+
+<root>
+    <node name='months'>
+        <node name='1'>Январь</node>
+        <node name='2'>Февраль</node>
+        <node name='3'>Март</node>
+        <node name='4'>Апрель</node>
+        <node name='5'>Май</node>
+        <node name='6'>Июнь</node>
+        <node name='7'>Июль</node>
+        <node name='8'>Август</node>
+        <node name='9'>Сентябрь</node>
+        <node name='10'>Октябрь</node>
+        <node name='11'>Ноябрь</node>
+        <node name='12'>Декабрь</node>
+    </node>
+    <node name='time_specs'>
+        <node name='min'>м</node>
+        <node name='hour'>ч</node>
+        <node name='day'>д</node>
+        <node name='week'>нед</node>
+        <node name='month'>мес</node>
+    </node>
+    <node name='age'>Возраст</node>
+    <node name='gender'>Пол</node>
+    <node name='me_gender'>
+        <node>мужчина</node>
+        <node>женщина</node>
+    </node>
+    <node name='sputnik_gender'>
+        <node>мужчину</node>
+        <node>женщину</node>
+    </node>
+    <node name='langs'>
+        <node name='ru'>русский</node>
+    </node>
+    <node name='country'>Страна</node>
+    <node name='city'>Город/Район</node>
+    <node name='region'>Область</node>
+    <node name='not_spec'>не указано</node>
+</root>

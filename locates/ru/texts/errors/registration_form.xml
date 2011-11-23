@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='title'>Ошибка в форме регистрации</text>
+
+    <text name='start_text_one'>Вы не заполнили поле </text>
+    <text name='start_text_many'>Вы не заполнили поля </text>
+
+    <text name='me_gender'>"Ваш пол"</text>
+    <text name='find_gender'>"пол спутника"</text>
+    <text name='me_name'>"имя"</text>
+    <text name='birth_date'>"дата рождения"</text>
+    <text name='birth_month'>"месяц рождения"</text>
+    <text name='birth_year'>"год рождения"</text>
+    <text name='me_country_id'>"страна"</text>
+    <text name='me_city_id'>"город"</text>
+    <text name='me_mail'>"e-mail"</text>
+    <text name='password'>"пароль"</text>
+    <text name='password_confirm'>"подтверждение пароля"</text>
+    <text name='i_agree'>"согласие с условиями регистрации"</text>
+</root>

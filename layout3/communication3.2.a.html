@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-script-Type" content="text/html/javascript; charset=utf-8" />
+        <title>Plussia.ru — страна серьезных отношений</title>
+
+        <link rel="stylesheet" type="text/css" href="/css/reset.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/css/text.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/css/style_in.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/css/style_add.css" media="screen" />
+
+
+
+
+        <script type="text/javascript" src="/js/jquery.js"></script>
+        <script type="text/javascript" src="/js/plugins.js"></script>
+        <script type="text/javascript" src="/js/main_in.js"></script>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/custom.js"></script>
+        <script type="text/javascript" src="/js/change.js"></script>
+
+        <script type="text/javascript" src="/js/jquery.limit.js"></script>
+        <script>
+            jQuery(document).ready(function(){
+                $('.form_mes textarea').limit('100','.form_mes .b-time .num');
+            });
+        </script>
+
+    </head>
+
+
+    <body>
+
+
+        <div id="content">
+            <div class="margins">
+                <div class="head">
+                    <div class="logo"></div>
+
+                    <div class="icon_buttons">
+                        <div id="top_btn1" class="icon_button"><div class="count"><span><i></i>16</span></div></div>
+                        <div id="top_btn2" class="icon_button"><div class="count"><span><i></i>3</span></div></div>
+                        <div id="top_btn3" class="icon_button active"><div class="count"><span><i></i>7</span></div></div>
+                        <div id="top_btn4" class="icon_button"></div>
+                        <div id="top_btn5" class="icon_button"></div>
+                    </div>
+
+                    <ul id="head_menu">
+                        <li>Моя страница</li>
+                        <li>Экскурсии</li>
+                        <li>Управление счетом</li>
+                        <li>Аккаунт</li>
+                        <li class="last">Выход</li>
+                    </ul>
+                </div><!-- .head-->
+
+
+                <div class="center_block_wrap">
+
+                    <div id="center_top_menu" class="center_top_menu">
+                        <ul>
+                            <li id="ct_sput_page"><i></i>Сообщения </li>
+                            <li id="ct_sput_comp" class="active"><i></i>Обмен сообщениями </li>
+                            <li id="ct_sput_talk"><i></i>Шаг на встречу </li>
+
+
+                        </ul>
+                    </div><!-- .center_top_menu-->
+
+                    <div id="center_block">
+                        <div class="del_history">
+                            <a href="#" rel="popuprel" class="popup">Удалить всю историю переписки</a>
+                        </div>
+                        <div class="your_mes">Ваше сообщение:</div>
+                        <div class="form_mes">
+                            <span class="b-time f-right m10">осталось <span class="num">100</span> символов</span>
+                            <form action="#" method=post>
+                                <textarea class="txtarea" name="message" wrap="virtual" cols="65" rows="3"></textarea><br>
+                            </form>
+                        </div>
+                        <div class="step"><a href="#">Сделать Шаг на встречу &#9658;</a></div>
+                        <div class="btn_send">Отправить</div>
+                        <div class="cl"></div>
+                        <div id="b-msg-list">
+
+                            <div class="bl_msg">
+                                <div class="bl_msg_inner_blue">
+                                    <div class="bl-tl"></div>
+                                    <div class="bl-tr"></div>
+                                    <div class="b-photo"><img src="images/pic_small.png" alt="" /></div>
+                                    <div class="b-msg-padd">
+                                        <div class="b-msg-padd-inner">
+                                            <h2 class="h-head"><a class="b-bluecol" href="">Администрация</a></h2>
+                                            <div class="b-time mb10">три часа назад</div>
+                                            <p>Подтвердите, что данное сообщение является спамом: <a class="b-spam" href="#">это спам</a>, <a href="#">удалить сообщение</a>, <a href="#">восстановить сообщение</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="bl-bl"></div>
+                                    <div class="bl-br"></div>
+                                </div>
+                                <div class="cl"></div>
+                            </div>
+
+                            <div class="bl_msg">
+                                <div class="bl_msg_inner_rose f-right">
+                                    <div class="bl-tl"></div>
+                                    <div class="bl-tr"></div>
+                                    <div class="b-tile-right"></div>
+                                    <div class="b-photo"><img src="images/pic_small.png" alt="" /></div>
+                                    <div class="b-msg-padd">
+                                        <div class="b-msg-padd-inner">
+                                            <span class="b-time f-right m10"><a class="b-spam" href="#">это спам</a> | <a class="b-cls" iduser="1" idsputnik="2" idmessage="3" href="#">X</a></span>
+                                            <h2 class="h-head"><a class="b-redcol" href="">Маргарита</a></h2>
+                                            <div class="b-time mb10">три часа назад</div>
+                                            <p>Вась, мне Антонио звонил, он тебе звонил, а телефон выключен был</p>
+                                        </div>
+                                    </div>
+                                    <div class="bl-bl"></div>
+                                    <div class="bl-br"></div>
+                                </div>
+                                <div class="cl"></div>
+                            </div>
+
+                            <div class="bl_msg">
+                                <div class="bl_msg_inner_blue">
+                                    <div class="bl-tl"></div>
+                                    <div class="bl-tr"></div>
+                                    <div class="b-tile-left"></div>
+                                    <div class="b-photo"><img src="images/pic_small.png" alt="" /></div>
+                                    <div class="b-msg-padd">
+                                        <div class="b-msg-padd-inner">
+                                            <span class="b-time f-right m10"><a class="b-cls" iduser="1" idsputnik="2" idmessage="3" href="#">X</a></span>
+                                            <h2 class="h-head"><a class="b-bluecol" href="">Василий</a></h2>
+                                            <div class="b-time mb10">19 часов назад</div>
+                                            <p>У меня нет, Марго, ни виниловых пластинок, ни кассет, ни дисков... привезу фотки в Москву</p>
+                                        </div>
+                                    </div>
+                                    <div class="bl-bl"></div>
+                                    <div class="bl-br"></div>
+                                </div>
+                                <div class="cl"></div>
+                            </div>
+
+                            <div class="bl_msg">
+                                <div class="bl_msg_inner_blue f-right">
+                                    <div class="bl-tl"></div>
+                                    <div class="bl-tr"></div>
+                                    <div class="b-tile-right"></div>
+                                    <div class="b-photo"><img src="images/pic_small.png" alt="" /></div>
+                                    <div class="b-msg-padd">
+                                        <div class="b-msg-padd-inner">
+                                            <span class="b-time f-right m10"><a class="b-spam" href="#">это спам</a> | <a class="b-cls" iduser="1" idsputnik="2" idmessage="3" href="#">X</a></span>
+                                            <h2 class="h-head"><a class="b-redcol" href="">Маргарита</a></h2>
+                                            <div class="b-time mb10">три часа назад</div>
+                                            <p>Вась, мне Антонио звонил, он тебе звонил, а телефон выключен был</p>
+                                        </div>
+                                    </div>
+                                    <div class="bl-bl"></div>
+                                    <div class="bl-br"></div>
+                                </div>
+                                <div class="cl"></div>
+                            </div>
+
+                            <div class="bl_msg">
+                                <div class="bl_msg_inner_rose" style="width:360px">
+                                    <div class="bl-tl"></div>
+                                    <div class="bl-tr"></div>
+                                    <div class="b-tile-left"></div>
+                                    <div class="b-photo"><img src="images/pic_small.png" alt="" /></div>
+                                    <div class="b-msg-padd">
+                                        <div class="b-msg-padd-inner">
+                                            <span class="b-time f-right m10"><a class="b-spam" href="#">это спам</a> | <a class="b-cls" iduser="1" idsputnik="2" idmessage="3" href="#">X</a></span>
+                                            <h2 class="h-head"><a class="b-redcol" href="">Маргарита</a></h2>
+                                            <div class="b-time mb10">три часа назад</div>
+                                            <p>Вась, мне Антонио звонил, он тебе звонил, а телефон выключен был</p>
+                                        </div>
+                                    </div>
+                                    <div class="bl-bl"></div>
+                                    <div class="bl-br"></div>
+                                </div>
+                                <div class="cl"></div>
+                            </div>
+
+                            <div class="bl_msg f-bubble">
+                                <div class="bl_msg_inner_rose f-right"  style="width:340px">
+                                    <div class="bl-tl"></div>
+                                    <div class="bl-tr"></div>
+                                    <div class="b-bubble-right"></div>
+                                    <div class="b-photo"><img src="images/pic_small.png" alt="" /></div>
+                                    <div class="b-msg-padd">
+                                        <div class="b-msg-padd-inner">
+                                            <span class="b-time f-right m10"><a class="b-cls" iduser="1" idsputnik="2" idmessage="3" href="#">X</a></span>
+                                            <h2 class="h-head"><a class="b-redcol" href="">Маргарита</a></h2>
+                                            <div class="b-time mb10">три часа назад</div>
+                                            <p>Маргарита отметила, что ей особо онравились следующие Ваши фотографии:</p>
+                                            <p>23 ноя 2010<br/>
+							  -<a href="">фотографию</a>, ей нравится: Да.. просто нравится!							  
+                                            </p>
+                                            <p>23 ноя 2010<br/>
+							  -<a href="">фотографию</a>, ей нравится: Да.. просто нравится!							  
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bl-bl"></div>
+                                    <div class="bl-br"></div>
+                                </div>
+                                <div class="cl"></div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div><!-- #center_block -->
+                </div><!-- #center_block -->
+
+                <div id="left_block">
+                    <div class="user_photo">
+                        <div id="user_gift_photo">
+                            <img src="images/profile/gift1.png" />
+                            <img src="images/profile/gift1.png" />
+                            <img src="images/profile/gift1.png" />
+                            <img src="images/profile/gift1.png" />
+                        </div>
+                        <div id="edit_user_photo"></div>
+                        <div class="user_photo_in">
+                            <img src="images/temp_samples/profile_man2.jpg" />
+                        </div>
+                    </div><!-- .user_photo-->
+
+                    <div class="user_name">
+				Василий
+                        <div id="edit_user_name">ред.</div>
+                    </div><!-- .user_name-->
+
+                    <div class="user_menu">
+                        <div id="user_menu1" class="menu_line active"><i class="ico"></i><span>Спутники</span>
+                            <div class="count_old"><i></i>16</div>
+                            <div class="count_new"><i></i>+3</div>
+                        </div>
+                        <div id="user_menu2" class="menu_line"><i class="ico"></i><span>Общение</span></div>
+                        <div id="user_menu3" class="menu_line"><i class="ico"></i><span>S.O.N.I.C.<sup>®</sup></span></div>
+                        <div id="user_menu4" class="menu_line"><i class="ico"></i><span>Обо мне</span></div>
+                        <div id="user_menu5" class="menu_line"><i class="ico"></i><span>Поиск</span></div>
+                        <div id="user_menu6" class="menu_line"><i class="ico"></i><span>Управление счетом</span></div>
+                    </div><!-- .user_menu-->
+
+                    <div class="page_complete">
+                        <div id="user_complete">
+                            <div class="complete_txt">Страница заполнена на 73%</div>
+                            <div class="complete_bar" style="width: 73%;"></div>
+                        </div>
+                        <div id="user_complete_help"></div>
+                    </div><!-- .page_complete-->
+
+                    <div id="left_block_load">
+
+                        <div class="left_user_sonic">
+                            <div class="p_title_1">Уточнение S.O.N.I.C.<sup>®</sup></div>
+                            <div class="sub_decription">Отметьте ваши любимые виды спорта (не более 5)</div>
+                            <div class="p_checkbox" id="some_id1">Спортивная</div>
+                            <div class="p_checkbox" id="some_id2">Гонки</div>
+                            <div class="p_checkbox" id="some_id3">Теннис</div>
+                            <div class="p_checkbox" id="some_id4">Баскетбол</div>
+                            <div class="p_checkbox" id="some_id5">Лыжи</div>
+                            <div class="p_checkbox" id="some_id6">Плавание</div>
+                            <div class="rs1_save">Сохранить эти ответы<i></i></div>
+                            <div class="hide_sonic">Свернуть</div>
+                            <div class="full_sonic">Заполнить полностью</div>
+                            <div class="clear"></div>
+                        </div><!-- .left_user_sonic-->
+
+                        <div class="left_user_info">
+                            <div class="lui_title">
+					Участники сайта о Системе Ноэтической Совместимости
+                                <i class="b_arr"></i>
+                            </div>
+
+                            <div class="lui_text">
+                                <i>"This is so accurate it is scary. It is good to read and understand oneself from a different perspective."</i><br/>
+                                <br/>
+                                <a href="#">Geraldine</a><br/>
+                                <a href="#">Pietermaritzburg</a>, <i>South Africa</i>
+                            </div>
+                            <div class="full_lui">оставить свой отзыв</div>
+                            <div class="clear"></div>
+                        </div><!-- .left_user_info-->
+
+                    </div><!-- #left_block_load -->
+
+
+                </div><!-- #left_block -->
+
+                <div id="right_block">
+                    <div class="other_user_right">
+
+                        <div class="user_photo">
+                            <div id="user_gift_photo">
+                                <img src="images/profile/gift1.png" />
+                                <img src="images/profile/gift1.png" />
+                                <img src="images/profile/gift1.png" />
+                                <img src="images/profile/gift1.png" />
+                            </div>
+                            <div id="edit_user_photo"></div>
+                            <div class="user_photo_in">
+                                <img src="images/temp_samples/profile_woman2.jpg" />
+                            </div>
+                        </div><!-- .user_photo-->
+
+                        <div class="user_name">
+					Маргарита   
+                        </div><!-- .user_name-->
+
+                        <div class="user_menu">
+                            <div id="user_menu6" class="menu_line active"><i class="ico"></i><span>Сравнить нас</span></div>
+                            <div id="user_menu7" class="menu_line"><i class="ico"></i><span>Посмотреть фотографии</span></div>
+                            <div id="user_menu8" class="menu_line"><i class="ico"></i><span>Подарить подарок</span></div>
+                            <div id="user_menu9" class="menu_line"><i class="ico"></i><span>Добавить к Интересным</span></div>
+                            <div id="user_menu10" class="menu_line"><i class="ico"></i><span>Удалить (в игнор.)</span></div>
+                        </div><!-- .user_menu-->
+
+                    </div><!-- .other_user_right -->
+
+                    <div class="right_favor">
+                        <div class="p_title_1">Мой список Избранных <div class="pt_control up"></div></div>
+                        <div class="one_fav_photo"><a title="Нина Петровна" href="#"><img src="images/temp_samples/favor1.jpg" /></a></div>
+                        <div class="one_fav_photo"><a title="Нина Сергеевна" href="#"><img src="images/temp_samples/favor2.jpg" /></a></div>
+                        <div class="one_fav_photo"><a title="Сергей Нинин" href="#"><img src="images/temp_samples/favor3.jpg" /></a></div>
+                        <div class="one_fav_photo"><a title="Нина Нина" href="#"><img src="images/temp_samples/favor4.jpg" /></a></div>
+                        <div class="one_fav_photo"><a title="Нина Ивановна" href="#"><img src="images/profile/no_photo_female1.png" /></a></div>
+                        <div class="clear"></div>
+                    </div><!-- .right_favor-->
+
+
+
+                </div><!-- #right_block -->
+
+
+                <div class="clear"></div>
+                <div id="empty"></div>
+            </div>
+        </div><!-- #content-->
+
+        <div id="footer">
+            <div class="margins">
+                <div class="bookmarks_menu">
+                    <div class="one_bookmark one_bookmark9"></div>
+                    <div class="one_bookmark one_bookmark8"></div>
+                    <div class="one_bookmark one_bookmark7"></div>
+                    <div class="one_bookmark one_bookmark6"></div>
+                    <div class="one_bookmark one_bookmark5"></div>
+                    <div class="one_bookmark one_bookmark4"></div>
+                    <div class="one_bookmark one_bookmark3"></div>
+                    <div class="one_bookmark one_bookmark2"></div>
+                    <div class="one_bookmark one_bookmark1"></div>
+                </div><!-- .bookmarks_menu-->
+
+                <div class="footer_menu">
+                    <div class="rights"><a href="#">Политика конфиденциальности</a> © 2010 Plussia.ru</div>
+
+
+                    <div class="lang_sel">
+                        <div class="lang_flag">
+                            <span>
+                                <img src="images/localization/flag_ru.png" />
+                            </span>
+                        </div>
+                        <div class="lang_active">русский</div>
+                        <ul class="lang_menu">
+                            <li><a href="/en">английский</a></li>
+                            <li><a href="/ge">немецкий</a></li>
+                            <!-- Текущий язык помещается в список последним  -->
+                            <li><a href="/ru">русский</a></li>
+                        </ul>
+                    </div><!-- .lang_sel-->
+
+                    <ul class="footer_menu_ul">
+                        <li><a href="#">о сайте</a></li>
+                        <li><a href="#">техподдержка</a></li>
+                        <li><a href="#">вакансии</a></li>
+                        <li><a href="#">блог</a></li>
+                        <li><a href="#">правила</a></li>
+                        <li><a href="#">реклама</a></li>
+                        <li><a href="#">магазинам</a></li>
+                        <li class="last"><a href="#">выход</a></li>
+                    </ul><!-- .footer_menu_ul-->
+
+                </div><!-- .footer_menu-->
+
+            </div><!-- .margins-->
+        </div><!-- #footer-->
+        <!--popup удалить сообщения -->
+        <div class="popupbox" id="popuprel">
+            <div id="intabdiv">
+                <div style="position:relative">
+                    <h2><a class="close_btn" href="#">закрыть x</a></h2>
+                    <span class="poptitle">Удаление истории переписки</span>
+                </div>
+                <div id="del_content">
+                    <div id="del_photo"><img src="images/temp_samples/small_2.jpg"></div>
+                    <div id="del_text"><p>Вы действительно хотите удалить всю историю переписки с пользователем Маргарита?</p></div>
+                </div>
+                <div id="del_btns">
+                    <span class="btn_cancel"><a href="#">Отменить</a></span>
+                    <span class="btn_del"><a href="#">Удалить</a></span>
+                </div>
+            </div>
+        </div>
+        <!--конец popup удалить сообщения -->
+    </body>
+
+
+</html>

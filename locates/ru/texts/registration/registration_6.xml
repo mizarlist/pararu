@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name="step_title">Поздравляем, </text>
+    <text name="step_title_descr">Вы закончили заполнение Системы Анализа Совместимости!</text>
+    <text name="congrat_text">Вы закончили заполнение Системы Анализа портала Plussia.ru и Ваша личная страница уже создана. Вы ее увидите, когда нажмете ниже на кнопку «Перейти к моей странице». Не забудьте добавить свою фотографию, так как по мнению британских исследователей социальных сетей, в интернете профили с фотографией на 80% более успешны, чем без фото.</text>
+    <text name="congrat_ul">
+        <text>Что дальше?</text>
+        <text>Жизнь профиль и платные услуги сервиса?</text>
+        <text>Можно ли перезаполнить анкетные данные и &lt;strong&gt;S.O.N.I.C.&lt;/strong&gt;® ?</text>
+        <text>Могу ли редактировать/уточнять/заполнять профиль?</text>
+    </text>
+    <text name="register_go_next6">Перейти к моей странице</text>
+    <text name="register_main_col_img_txt">Browse through several different topics and see what members are saying. Browse through several different topics and see what members are saying.</text>
+</root>

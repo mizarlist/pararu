@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name="nic_disabled">К сожалению, данный пользоваетль не заполнил анкету ноэтической совместимости.</text>
+    <text name='compare_menu'>
+        <text>Взгляды</text>
+        <text>Увлечения</text>
+        <text>Ноэтическое сравнение</text>
+        <text>Характер</text>
+        <text>Гороскоп</text>
+    </text>
+</root>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='title'>Pararu.ru — портал серьезных отношений</text>
+    <text name='bookmarks'>
+        <text>Главная</text>
+        <text>Поиск</text>
+    </text>
+    <text name='center_top_menu'>
+        <text>Быстрый </text>
+        <text>Расширенный </text>
+    </text>
+</root>

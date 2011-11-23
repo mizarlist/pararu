@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='edit_user_name'>ред.</text>
+    <text name='userleftmenu'>
+        <text>Спутники</text>
+        <text>Общение</text>
+        <text></text>
+        <text>Обо мне</text>
+        <text>Поиск</text>
+        <text>Управление счетом</text>
+    </text>
+</root>

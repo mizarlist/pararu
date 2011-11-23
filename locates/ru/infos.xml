@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <info id='1'>
+        <title>Пароль неверен</title>
+        <message>Данная проверочная ссылка не действительна. Убедитесь, что вы полностью и правильно скопировали ссылку в адресную строку браузера.</message>
+    </info>
+    <info id='2'>
+        <title>Аккаунт деактивирован</title>
+        <message>Аккаунт был успешно деактивирован.</message>
+    </info>
+    <info id='3'>
+        <title>Изменение e-mail</title>
+        <message>E-mail адрес был изменен.</message>
+    </info>
+    <info id='4'>
+        <title>Изменение e-mail</title>
+        <message>Подтверждено успешно.&lt;br&gt;
+        На ваш новый e-mail было выслано письмо с дальнейшими инструкциями.</message>
+    </info>
+</root>

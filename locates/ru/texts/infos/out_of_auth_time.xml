@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='title'>Ссылка не действительна</text>
+    <text name='mess'>С момента регистрации прошло более суток. Пожалуйста, зарегистрируйтесь заново на </text>
+    <text name='link'>главной странице сайта</text>
+</root>
