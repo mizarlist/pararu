@@ -82,6 +82,19 @@ function CreateRegFormInit(){
             return false;
         }
     });    
+
+/* Вывод формы регистрации */ 
+    $('.register_menu .reg_me_in').bind({
+        click: function() {
+            $.blockUI({
+                message: $('#index_reg_form'),
+                css: { height: '418px', top: '45%', marginTop: '-209px', border: 'none', background: 'none', cursor: 'default' }
+            });
+            return false;
+        }
+    });     
+    
+    
     $('.close_irf').bind({ click: function() { $.unblockUI(); }});    
     $('#index_reg_form  .agree_button').bind({ click: function() { $("#index_reg_form form").submit(); }});    
     

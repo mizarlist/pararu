@@ -389,6 +389,9 @@ color: #264b94;
 	color: #0082be;
 /*	letter-spacing: 0.04em;??*/
 }
+.register_menu ul li.reg_me_in{
+	cursor: pointer;
+}
 .register_menu ul li a{
 	color: #0082be;	
 	text-decoration: none;

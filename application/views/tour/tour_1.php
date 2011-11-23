@@ -21,7 +21,7 @@
                             <li class="active"><i></i><a href="<?php echo $links['intro_top'][1]; ?>"><?php echo $text['top_menu'][1]; ?></a></li>
                             <li><i></i><a href="<?php echo $links['intro_top'][2]; ?>"><?php echo $text['top_menu'][2]; ?></a></li>
                             <li><i></i><a href="<?php echo $links['intro_top'][3]; ?>"><?php echo $text['top_menu'][3]; ?></a></li>
-                            <li class="last"><i></i><?php echo $text['top_menu'][4]; ?></li>
+                            <li class="last reg_me_in"><i></i><?php echo $text['top_menu'][4]; ?></li>
                         </ul>
                     </div>
                 </div><!-- .margins-->
