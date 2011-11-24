@@ -80,8 +80,9 @@
                     <div class="bookmarks_menu">
 
                         <div class="path">
+                            <a href="/" class="go_hart"></a>
                             <a href="/"><?php echo $text['bookmarks'][0]; ?></a>
-                            <a href="/aboutme"><?php echo $text['bookmarks'][1]; ?></a>
+                            <a href="/aboutme" class="last"><?php echo $text['bookmarks'][1]; ?></a>
                         </div>
 
                     </div><!-- .bookmarks_menu-->

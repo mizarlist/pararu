@@ -97,8 +97,9 @@
             <div class="margins">
                 <div class="bookmarks_menu">
                     <div class="path">
+                        <a href="/" class="go_hart"></a>
                         <a href="<?php echo $links['intro_top'][1]; ?>"><?php echo $text['bookmarks_menu'][0]; ?></a>
-                        <a href="<?php echo $links['tour_top'][5]; ?>"><?php echo $text['bookmarks_menu'][1]; ?></a>
+                        <a href="<?php echo $links['tour_top'][5]; ?>" class="last"><?php echo $text['bookmarks_menu'][1]; ?></a>
                     </div>
 
                     <?php echo $bookmarks; ?>

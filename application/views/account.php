@@ -74,9 +74,10 @@
                     <div class="bookmarks_menu">
 
                         <div class="path">
+                            <a href="/" class="go_hart"></a>
                             <a href="/"><?php echo $text['bookmarks'][0]; ?></a>
                             <a href="/profile"><?php echo $text['bookmarks'][1]; ?></a>
-                            <a href="/account"><?php echo $text['bookmarks'][2]; ?></a>
+                            <a href="/account" class="last"><?php echo $text['bookmarks'][2]; ?></a>
                         </div>
 
                     </div><!-- .bookmarks_menu-->

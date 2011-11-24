@@ -103,8 +103,9 @@
                         <div class="bookmarks_menu">
 
                             <div class="path">
+                                <a href="/" class="go_hart"></a>
                                 <a href="/"><?php echo $text['bookmarks'][0]; ?></a>
-                                <a href="/<?php echo $adr; ?>"><?php echo $adr; ?></a>
+                                <a href="/<?php echo $adr; ?>" class="last"><?php echo $adr; ?></a>
                             </div>
 
                         </div><!-- .bookmarks_menu-->

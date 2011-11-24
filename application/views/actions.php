@@ -71,8 +71,9 @@
                     <div class="bookmarks_menu">
 
                         <div class="path">
+                            <a href="/" class="go_hart"></a>
                             <a href="/"><?php echo $text['bookmarks'][0]; ?></a>
-                            <a href="/actions"><?php echo $text['bookmarks'][1]; ?></a>
+                            <a href="/actions" class="last"><?php echo $text['bookmarks'][1]; ?></a>
                         </div>
 
                     </div><!-- .bookmarks_menu-->

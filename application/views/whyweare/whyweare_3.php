@@ -85,8 +85,9 @@
             <div class="margins">
                 <div class="bookmarks_menu">
                     <div class="path">
+                        <a href="/" class="go_hart"></a>
                         <a href="<?php echo $links['intro_top'][2]; ?>"><?php echo $text['bookmarks_menu'][0]; ?></a>
-                        <a href="<?php echo $links['whyweare_top'][3]; ?>"><?php echo $text['bookmarks_menu'][1]; ?></a>
+                        <a href="<?php echo $links['whyweare_top'][3]; ?>" class="last"><?php echo $text['bookmarks_menu'][1]; ?></a>
                     </div>
 
                     <?php echo $bookmarks; ?>

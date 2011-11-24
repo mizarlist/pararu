@@ -162,7 +162,8 @@
             <div class="margins">
                 <div class="bookmarks_menu">
                     <div class="path">
-                        <a href="/registration"><?php echo $text['bookmark']; ?></a>
+                        <a href="/" class="go_hart"></a>
+                        <a href="/registration" class="last"><?php echo $text['bookmark']; ?></a>
                     </div>
                     <div class="one_bookmark one_bookmark9"></div>
                     <div class="one_bookmark one_bookmark8"></div>
