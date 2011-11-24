@@ -395,6 +395,62 @@ function TEST_BOX_RP2(){
 }
 
 
+/*
+	Активация элементов управления на странице со списком спутников текущего пользователя
+ */
+function ActivateVizitkaControls(){
+
+    $(".one_quick_card ").each( function() {
+        var this_profile = $(this);
+        var this_user_id = this_profile.attr('id').substr(17);
+        
+        var this_user_url = parseInt(this_user_id)+1000000;
+        this_user_url = (this_user_url+'').substr(1);
+
+        $('.save_in_prof',this_profile).bind({
+            click: function() {
+                if($(this).hasClass('save_in_prof')) send_mode = 'saved';
+                else if($(this).hasClass('do_add_favor')) send_mode = 'interes';
+                else if($(this).hasClass('do_delete')) send_mode = 'delete';
+                else if($(this).hasClass('do_nosearch')) send_mode = 'nosearch';
+
+
+                SendControlData(send_mode,this_user_id, true);
+            }
+        });
+    });
+
+
+}
+
+
+function SendControlData(mode, user_id, reload_sputniks){
+    var send_data = {};
+    var reload_sputniks = reload_sputniks || false;
+    send_data.as = mode;
+    send_data.user_id = user_id;
+
+    $.post("/profile", {
+        functional: "save_user",
+        data: send_data,
+        ahah: 'true'
+    },
+    function(data) {
+        do_not_unblock = false;
+        UpdateInterstCounts();
+        if(data.substring(0,10) == 'show_text_'){
+            blockPage_msg(data.substr(10));
+            setTimeout(function(){
+                $.unblockUI();
+            }, 2000);
+            do_not_unblock = true;
+        }
+
+    }
+    );
+}
+
+
 
 // Шаг 2 на странице регистрации
 function CreateRegStep2(){
@@ -425,7 +481,7 @@ function CreateRegStep2(){
 	//Включение кнопок перехода к следующему шагу
 	$('#register_go_next1, #register_go_next2').bind({  click: function() { GoToNextRegSrep(); }});
 	
-
+	ActivateVizitkaControls();
 	
     function GoToNextRegSrep(){
 	    	blockPage_msg();

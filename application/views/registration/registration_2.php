@@ -88,7 +88,7 @@ if(!isset($cards_only) || !$cards_only) {
             </div>';
     }
 
-    echo '<div class="register_create_page1">'.$text['register_create_page1'].'</div>
+    echo '<a href="/profile" class="register_create_page1">'.$text['register_create_page1'].'</a>
             <div class="register_go_next2" id="register_go_next2">'.$text['register_go_next2'].'</div>
             <div class="clear"></div>
             </div><!-- #register_step2-->
