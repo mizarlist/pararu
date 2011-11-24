@@ -149,6 +149,10 @@ html, body {
 
 }
 
+#head_menu a.active{
+	font-weight: bold;
+}
+
 
 .p_checkbox{
     color: #666666;
