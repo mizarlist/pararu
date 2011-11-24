@@ -4777,3 +4777,28 @@ m_fix{
     top:-20px;
 }
 
+
+#spt_ignore{
+	position: relative;
+}
+
+#spt_ignore:after{
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 16px;
+	width: 20px;
+	background: url(/images/black_line.png);
+}
+
+
+
+
+
+
+
+
+
+
