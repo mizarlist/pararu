@@ -36,6 +36,7 @@ class Controller_Login extends Plussia_Controller {
             die();
         } else {
             $view = View::factory('login');
+            $view->regblok = Plussia_Viewer::getRegblok();
             $this->response->body($view);
         }
     }
