@@ -352,7 +352,7 @@ class Plussia_Viewer {
             $view->active = $card['active'];
 
             if ($type == 'new') {
-                $diff = Plussia_Help::getDateDiff($card['dt_added'], $now);
+                $diff = Plussia_Help::getDateDiff($now, $card['dt_added']);
                 $view->new = $diff > $oldtime ? false : true;
             } else {
                 $view->new = false;
