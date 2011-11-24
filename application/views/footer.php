@@ -1,4 +1,4 @@
-<img class="footer_some_pic" src="/images/footer_pics/pic<?php echo $footer_some_pic_num; ?>.png" />
+<a href="/successes"><img class="footer_some_pic" src="/images/footer_pics/pic<?php echo $footer_some_pic_num; ?>.png" /></a>
 <div class="footer_menu">
     <div class="rights"><a href="#"><?php echo $elements['footer_menu']['confidence']; ?></a> Pararu.ru © 2010-2011 </div>
 

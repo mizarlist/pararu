@@ -1061,7 +1061,7 @@ input.error {
 
 .footer_some_pic{
 	position: absolute;
-	bottom: 64px;
+	bottom: 61px;
 	right: 7px;
 }
 
@@ -2292,6 +2292,8 @@ background-position: 0 0;
 	margin-right: 9px;
 	cursor: pointer;	
 }
+
+#register_step4 .nic_step_select ul li
 
 #register_step4 .nic_step_select ul li:hover{
 	border: 1px solid #00a0f5;
