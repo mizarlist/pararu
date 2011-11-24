@@ -126,7 +126,7 @@ class Plussia_Calc {
         $t5 = self::zodiak($uid1, $uid2);
 
         $all = $t1 + $t2 + $t3 + $t4 + $t5;
-        $all = round($all, 2);
+        $all = round($all, 0);
         $bindResult && Session::instance()->bind('user_compare_proc:' . $uid1 . '_' . $uid2, $all);
         return $all;
     }
