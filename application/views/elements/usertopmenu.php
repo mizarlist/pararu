@@ -1,5 +1,5 @@
 <div class="head">
-    <div class="logo"></div>
+    <a href="/" class="logo"></a>
 
     <div class="icon_buttons">
         <div id="top_btn1" class="icon_button<?php echo ($active_index==1 ? ' active' : ''); ?>"><div class="count"><span<?php echo $values['new_users'] ? '' : ' style = "display: none;"'; ?>><i></i><?php echo $values['new_users']; ?></span></div></div>
