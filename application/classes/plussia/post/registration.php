@@ -56,8 +56,8 @@ class Plussia_Post_Registration {
         $user_data = array('is_woman' => $_POST['me_gender_id'],
             'name' => $_POST['me_name'],
             'country_id' => $_POST['me_country_id'],
-            'region_id' => $_POST['me_city_id'],
-            'city_id' => $_POST['me_region'],
+            'region_id' => $_POST['me_region'],
+            'city_id' => $_POST['me_city_id'],
             'birthday' => $_POST['birth_year'] . '-' . $month . '-' . $_POST['birth_date']);
 
         $sputnik_data = array('is_woman' => ($_POST['find_gender_id'] == '0' ? '1' : '0'));
