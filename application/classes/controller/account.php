@@ -26,7 +26,7 @@ class Controller_Account extends Plussia_Controller {
         $view->userphoto = Plussia_Viewer::getUserphoto();
         $view->pagecomplete = Plussia_Viewer::getPagecoplete();
         $view->userleftmenu = Plussia_Viewer::getUserleftmenu();
-        $view->usertopmenu = Plussia_Viewer::getUsertopmenu();
+        $view->usertopmenu = Plussia_Viewer::getUsertopmenu(null, 'account');
         $this->response->body($view);
     }
 

@@ -113,10 +113,11 @@ class Plussia_Viewer {
         return $view->render();
     }
 
-    public static function getUsertopmenu($active_index = null) {
+    public static function getUsertopmenu($active_index = null, $type = '') {
         $user = Plussia_Dispatcher::getUser();
 
         $view = View::factory('elements/usertopmenu');
+        $view->type = $type;
         $view->text = XML_Texts::factory('elements/usertopmenu')->getAssoc();
         $view->links = Plussia_Links::userpage_top();
         $view->active_index = $active_index;

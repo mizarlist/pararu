@@ -24,7 +24,7 @@ class Controller_Profile extends Plussia_Controller {
         $view->userphoto = Plussia_Viewer::getUserphoto();
         $view->pagecomplete = Plussia_Viewer::getPagecoplete();
         $view->userleftmenu = Plussia_Viewer::getUserleftmenu();
-        $view->usertopmenu = Plussia_Viewer::getUsertopmenu();
+        $view->usertopmenu = Plussia_Viewer::getUsertopmenu(null, 'profile');
 
         $view->values = array(
             'new_users' => $user->getRSCount('new'),

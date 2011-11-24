@@ -10,10 +10,10 @@
     </div>
 
     <ul id="head_menu">
-        <a href="<?php echo $links[0]; ?>"><?php echo $text['head_menu'][0]; ?></a>
+        <a href="<?php echo $links[0]; ?>"<?php echo ($type=='profile' ? ' class="active"' : '') ?>><?php echo $text['head_menu'][0]; ?></a>
         <a href="<?php echo $links[1]; ?>"><?php echo $text['head_menu'][1]; ?></a>
         <a href="<?php echo $links[2]; ?>"><?php echo $text['head_menu'][2]; ?></a>
-        <a href="<?php echo $links[3]; ?>"><?php echo $text['head_menu'][3]; ?></a>
+        <a href="<?php echo $links[3]; ?>"<?php echo ($type=='account' ? ' class="active"' : '') ?>><?php echo $text['head_menu'][3]; ?></a>
         <a class="last" href="<?php echo $links[4]; ?>"><?php echo $text['head_menu'][4]; ?></a>
     </ul>
 </div><!-- .head-->
