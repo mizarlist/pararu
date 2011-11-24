@@ -2,9 +2,9 @@
     <div id="user_gift_photo">
 
         <?php
-        foreach ($gifts as $gift) {
-            echo '<img src="' . $gift . '" />';
-        }
+//        foreach ($gifts as $gift) {
+//            echo '<img src="' . $gift . '" />';
+//        }
         ?>
 
     </div>
