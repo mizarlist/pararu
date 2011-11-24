@@ -8,9 +8,13 @@ class Controller_Aboutme extends Plussia_Controller {
     }
 
     public function index() {
+
+        $page = (isset($_GET['page']) && $_GET['page'] == 'photo') ? 2 : 1;
+
         $view = $this->view;
+        $view->page = $page;
         $view->text = XML_Texts::factory('aboutme_text')->getAssoc();
-        $view->centerblock = Plussia_Viewer::getAboutmeCenterblock();
+        $view->centerblock = Plussia_Viewer::getAboutmeCenterblock($page);
         $view->leftuserinfo = Plussia_Viewer::getLeftuserinfo();
         $view->leftusersonic = Plussia_Viewer::getLeftusersonic();
         $view->loveusers = Plussia_Viewer::getLoveusers();

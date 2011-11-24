@@ -33,8 +33,8 @@
 
                     <div id="center_top_menu" class="center_top_menu">
                         <ul>
-                            <li id="ct_aboutme" class="active"><i></i><?php echo $text['center_top_menu'][0]; ?></li>
-                            <li id="ct_myphotos"><i></i><?php echo $text['center_top_menu'][1]; ?></li>
+                            <li id="ct_aboutme" <?php echo($page==1 ? 'class="active"' : '') ?>><i></i><?php echo $text['center_top_menu'][0]; ?></li>
+                            <li id="ct_myphotos" <?php echo($page==2 ? 'class="active"' : '') ?>><i></i><?php echo $text['center_top_menu'][1]; ?></li>
                         </ul>
                     </div><!-- .center_top_menu-->
 
