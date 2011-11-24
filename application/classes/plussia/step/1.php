@@ -5,7 +5,7 @@ class Plussia_Step_1 extends Plussia_Step {
     public static function canAccess() {
         $user = Plussia_Dispatcher::getUser();
         if(!$user) return false;
-        return $user->access('regstep1');
+        return true;
     }
 
     public function validate($data) {
@@ -32,7 +32,7 @@ class Plussia_Step_1 extends Plussia_Step {
         $user->save();
 
         $user->deleteRole(Model_Role::get('registration'));
-        $user->addRole(Model_Role::get('user_page'));
+        //$user->addRole(Model_Role::get('user_page'));
     }
 
     public function render_step($context) {

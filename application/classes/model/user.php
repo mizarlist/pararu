@@ -148,7 +148,7 @@ class Model_User extends Plussia_ORM {
         $cards = $this->getUserCards();
         $ansvers = explode(';', $str);
 
-        $this->set('afterlogin', 'registration');
+        $this->set('afterlogin', 'profile');
         $this->save();
 
         for ($i = 1; $i <= 5; $i++) {

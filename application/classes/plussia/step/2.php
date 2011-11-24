@@ -5,7 +5,7 @@ class Plussia_Step_2 extends Plussia_Step {
     public static function canAccess() {
         $user = Plussia_Dispatcher::getUser();
         if(!$user) return false;
-        return $user->access('regstep2');
+        return true;
     }
 
     public function validate($data) {
