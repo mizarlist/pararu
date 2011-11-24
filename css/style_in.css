@@ -236,6 +236,23 @@ html, body {
     vertical-align: top;
 
 }
+
+.bookmarks_menu .path a.go_hart{
+	display: block;
+	height: 19px;
+	width: 22px;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	background: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.bookmarks_menu .path a.last{
+	background: none;
+}
+
 .bookmarks_menu .path a:hover{
     text-decoration: underline;
 }
