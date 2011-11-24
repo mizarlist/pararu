@@ -437,7 +437,7 @@ function SendControlData(mode, user_id, reload_sputniks){
     },
     function(data) {
         do_not_unblock = false;
-        UpdateInterstCounts();
+
         if(data.substring(0,10) == 'show_text_'){
             blockPage_msg(data.substr(10));
             setTimeout(function(){
@@ -1536,20 +1536,54 @@ function StickersGroup(stik_parents, min, current, max, max_els, ids, callb_func
 */
 }	
 
-function blockPage_msg(){
-    $.blockUI({ 
-    message: '<img src="/images/ajax.gif" />',
-    backgroundColor: 'none',
-    overlayCSS:  { 
-        backgroundColor: '#FFF', 
-        opacity:         0.8 
-    }, 
-    css: { 
-        border: 'none', 
-        backgroundColor: 'none'
-    }}); 
- 
+function blockPage_msg(msg_to_show){
+
+    msg_to_show = msg_to_show || '';
+
+	if(msg_to_show == ''){
+	
+	    $.blockUI({ 
+	    message: '<img src="/images/ajax.gif" />',
+	    backgroundColor: 'none',
+	    overlayCSS:  { 
+	        backgroundColor: '#FFF', 
+	        opacity:         0.8 
+	    }, 
+	    css: { 
+	        border: 'none', 
+	        backgroundColor: 'none'
+	    }}); 
+	    
+	} else {
+
+	    css_bg_color = 'transparent';
+	    css_bg_op = 1;
+	
+	    if(msg_to_show != ''){
+	        msg_to_show = '<div class="msg_to_show"><br/><br/><br/>'+msg_to_show+'</div>';
+	        css_bg_color = 'white';
+	        css_bg_op = 0.85;
+	    }
+	    $.blockUI({
+	        message: msg_to_show,
+	        backgroundColor: 'none',
+	        overlayCSS:  {
+	            backgroundColor: css_bg_color,
+	            opacity:         css_bg_op,
+	            cursor:    'default'
+	        },
+	        fadeIn:  0,
+	        fadeOut:  0,
+	        css: {
+	            border: 'none',
+	            backgroundColor: 'none',
+	            cursor:    'default'
+	        }
+	    });
+	}
 }
+
+
 
 /* Переключалка страниц на странице регистрации (Шаг 2) */	
 	
