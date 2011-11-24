@@ -61,7 +61,7 @@ class Plussia_Pickup {
                 left join city_ city on city.city_id=ud2.city_id
                 left join region_ region on region.region_id=ud2.region_id
                 left join country_ country on country.country_id=ud2.country_id
-                where ud1.user_id=$ui";
+                where ud1.user_id=$ui and ud2.user_id is not null";
 
         $query = DB::query(Database::SELECT, $request);
         $results = $query->as_assoc()->execute();
