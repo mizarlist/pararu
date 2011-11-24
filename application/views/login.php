@@ -10,6 +10,7 @@
 
     </head>
     <body>
+        <?php echo $regblok; ?>
         <div id="content">
 
             <div class="register_head">
