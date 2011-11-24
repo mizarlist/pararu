@@ -1151,6 +1151,7 @@ html, body {
     position: absolute;
     top: 0px;
     left: 220px;
+    z-index: 13;
 }
 
 .quick_search .rs1_save{
