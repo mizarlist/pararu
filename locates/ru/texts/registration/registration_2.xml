@@ -6,8 +6,8 @@
         <text>, по параметрам, которые Вы уже заполнили</text>
     </text>
     <text name='page'>Страница:</text>
-    <text name='register_create_page1'>Создать мою страницу!</text>
-    <text name='register_go_next2'>Продолжить заполнение Анкеты</text>
+    <text name='register_create_page1'>Перейти к моему профилю</text>
+    <text name='register_go_next2'>Начать заполнение ТЕСТА</text>
     <text name='card'>
         <text>Пользователь как и Вы любит:</text>
         <text>Совпадение по Гороскопу:</text>
