@@ -340,7 +340,10 @@ function CreateProfilePage(){
         	$('#sb_sput_comp').click();
         	window.scroll(0,0);
         };
-
+		
+		$('#user_menu1').after('<div class="menu_line sputs_profile active"><i class="ico"></i><span>Профиль спутника</span></div>');
+		$('#user_menu1').removeClass('active');
+		
     }
     if($('#center_block').hasClass('center_myfvorits_block')){
     	$('#top_btn1').addClass('active');

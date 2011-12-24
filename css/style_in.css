@@ -531,6 +531,17 @@ html, body {
     color: white;
 }
 
+.user_menu .menu_line.sputs_profile{
+	padding-left: 44px;
+	
+}
+
+.user_menu .menu_line.sputs_profile i.ico{
+	background: url(/images/profile/sputsi.png) no-repeat left;
+    left: 29px;
+    top: -1px;	
+}
+
 .user_menu .menu_line i.ico{
     background: url(../images/profile/left_menu.png) no-repeat left;
     display: block;
