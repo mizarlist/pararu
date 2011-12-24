@@ -719,11 +719,14 @@ function CreateRegStep4(){
 	}
 	
 	function CompleteNicLi(clicked_li){
-		new_offset = $('#nic_top_li'+next_step).position();
-		clicked_li.css('position', 'absolute').removeClass('new_li');
+		new_offset = $('#nic_top_li'+next_step);//.position();
+		new_offset.html(clicked_li.html()).addClass('added');
+		clicked_li.fadeOut('slow');
+		
+	/*	clicked_li.css('position', 'absolute').removeClass('new_li');
 		clicked_li.animate({
-		    left: new_offset.left,
-		    top: new_offset.top,
+		    left: new_offset.left-clicked_li.position().left,
+		    top: new_offset.top-clicked_li.position().top,
 			width: '84px',
 			height: '29px',
 			fontSize: '10px',
@@ -732,7 +735,7 @@ function CreateRegStep4(){
 			    SetSelLiPositions();
 				next_step++;		    
 		  });
-
+*/
 	}
 	
 	function createChecksLimit(){
