@@ -260,8 +260,39 @@ function CreateLangSelector(){
 
 }
 
+function Set_icon_buttons(){
+	$('#top_btn1').bind({  click: function() {    
+		document.location = '/profile';
+	}});
+
+	$('#top_btn2').bind({  click: function() {    
+		document.location = '/profile/#spt_intrme';
+	}});
+	
+	
+	$('#top_btn3').bind({  click: function() {    
+		document.location = '/actions';
+	}});
+	
+	$('#top_btn4, #edit_user_name').bind({  click: function() {    
+		document.location = '/account';
+	}});
+
+	$('#user_complete_help, #user_complete_help_block .close').bind({  click: function() {   
+		if($('#user_complete_help_block').hasClass('show')){
+			$('#user_complete_help_block').fadeOut().removeClass('show');
+		} else {
+			$('#user_complete_help_block').fadeIn().addClass('show');		
+		}
+		
+	}});
+	
+
+}
+
 /* Внутренний раздел */
 function CreateProfilePage(){
+	Set_icon_buttons();
     //Страница спутника
     if($('#center_block').hasClass('center_sputnik_block')){
         window.top_profile_menu = new SetTopProfileMenu('sputnik_centerblock', '#center_top_menu', document.location.pathname, '#center_block', '#sputkin_r_menu');
@@ -312,6 +343,7 @@ function CreateProfilePage(){
 
     }
     if($('#center_block').hasClass('center_myfvorits_block')){
+    	$('#top_btn1').addClass('active');
         //Страница со спутниками в профиле пользователя
         window.top_profile_menu = new SetTopProfileMenu('profile_centerblock', '#center_top_menu', '/profile', '#center_block','#left_block .user_menu');
         window.top_profile_menu.CallAfterLoad = function(){
@@ -322,6 +354,13 @@ function CreateProfilePage(){
         ActivateVizitkaControls();
         SetMainLeftMenu();
         $('#user_menu1').addClass('active');
+        
+        if(document.location.hash == '#spt_intrme'){
+        	$('#spt_intrme').click();
+        	window.scroll(0,0);
+        	$('#top_btn1').removeClass('active');
+        	$('#top_btn2').addClass('active');        	
+        };        
     }
     if($('#center_block').hasClass('center_account_block')){
         //Страница пользователя
@@ -340,6 +379,8 @@ function CreateProfilePage(){
         if($('#ct_help').attr('class')=='active'){
             CreateHelpPage();
         }
+        
+        $('#top_btn4').addClass('active');
     }
     if($('#center_block').hasClass('center_aboutme_block')){
         //Страница пользователя
@@ -412,6 +453,7 @@ function CreateProfilePage(){
     }
 
     if($('#center_block').hasClass('center_actions_block')){
+    	$('#top_btn3').addClass('active');
         //Страница пользователя
         window.top_profile_menu = new SetTopProfileMenu('actions_centerblock', '#center_top_menu', '/actions');
         window.top_profile_menu.CallAfterLoad = function(){

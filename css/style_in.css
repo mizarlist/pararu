@@ -657,11 +657,104 @@ html, body {
     cursor: pointer;
     float: right;
     margin-right: 6px;
+    position: relative;
+
 }
+
+#user_complete_help_block .title{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 16px;
+	color: black;
+}
+
+#user_complete_help_block .text{
+	font-size: 12px;
+	line-height: 13px;
+	margin-bottom: 10px;
+	color: rgb(102,102,102);
+}
+
+#user_complete_help_block ul li{
+	padding-left: 20px;
+	position: relative;
+	color: #3366CC;
+	text-decoration: underline;
+	font-size: 12px;
+	margin-bottom: 9px;
+}
+
+#user_complete_help_block ul li:after{
+	display: block;
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 14px;
+	width: 14px;
+    background: url(/images/register/checkbox.png) no-repeat left top;
+}
+
+#user_complete_help_block ul li.active:after{
+    background: url(/images/register/checkbox_active.png) no-repeat left top;
+}
+
+
+#user_complete_help_block:after{
+	display: block;
+	content: '';
+	z-index: 4;
+	width: 13px;
+	height: 19px;
+	background: url(/images/register/help_corn.png);
+	position: absolute;
+	top: 10px;
+	left: -13px;
+}
+#user_complete_help_block{
+	position: absolute;	
+	width: 220px;
+	padding: 14px;
+	z-index: 10;
+	
+	display: none;		
+	-moz-box-shadow: 0px 0px 9px #ccc;
+	-webkit-box-shadow: 0px 0px 9px #ccc;
+	box-shadow: 0px 0px 9px #ccc;	
+    
+background: rgb(255,255,255);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,247,253,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,247,253,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,247,253,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,247,253,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,247,253,1) 100%);
+background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,247,253,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5f7fd',GradientType=0 );
+
+    
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;	
+	
+	border: 1px solid #a2b1cf;	
+	
+	right: -259px;
+	top: -1px;
+}
+
+#user_complete_help_block .close{
+	height: 13px;
+	width: 13px;
+	background: url(/images/register/close.png);
+	position: absolute;
+	right: 7px;
+	top: 8px;
+	cursor: pointer;
+}
+
 
 #left_block_load{
     margin-top: 17px;
-
 }
 
 .p_title_1{
