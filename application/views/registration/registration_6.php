@@ -14,7 +14,7 @@
         <li><a href="#"><span><?php echo $text["congrat_ul"][3]; ?></span></a></li>
     </ul>
 
-    <div id="register_go_next6"><?php echo $text["register_go_next6"]; ?></div>
+    <a href="/profile" id="register_go_next6"><?php echo $text["register_go_next6"]; ?></a>
 
     <div style="display:none;" id="right_col_load">
         <div class="reg3_r_col">

@@ -46,6 +46,7 @@
                     </div><!-- .center_top_menu-->
 
                     <div id="center_block" class="center_sputnik_block">
+                    	<a name="sb_sput_comp"></a><a name="#sb_sput_comp"></a>                    	
                         <?php echo $centerblock; ?>
                     </div><!-- #center_block -->
                 </div><!-- #center_block -->

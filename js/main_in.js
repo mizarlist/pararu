@@ -286,6 +286,8 @@ function CreateProfilePage(){
             }
 
             ActivateWanaBeTogether();
+            
+            
         }
         CreateleftSonic();
         CreateCheckBox();
@@ -302,6 +304,11 @@ function CreateProfilePage(){
             window.myphoto = new SputnikSomePhoto();
             window.myphoto.initStart();
         }
+        
+        if(document.location.hash == '#sb_sput_comp'){
+        	$('#sb_sput_comp').click();
+        	window.scroll(0,0);
+        };
 
     }
     if($('#center_block').hasClass('center_myfvorits_block')){
@@ -1121,7 +1128,7 @@ function ActivateVizitkaControls(full_activate){
         });
         $('.do_count',this_profile).bind({
             click: function() {
-                document.location = '/id'+this_user_url;
+                document.location = '/id'+this_user_url+'#sb_sput_comp';
             }
         });
         $('.do_send_msg',this_profile).bind({

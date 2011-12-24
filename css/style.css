@@ -2773,6 +2773,8 @@ background-position: 0 0;
 	margin-top: 31px;
 	position: relative;
 	float: left;
+	display: block;
+	text-decoration: none;
 }
 
 #nic_sel_li4{
