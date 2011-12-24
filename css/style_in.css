@@ -17,7 +17,7 @@ html, body {
     height:auto !important;
     height:100%;
 }
-#empty { height:73px;}
+#empty { height:133px;}
 .clear{ clear: both;}
 #footer {
     position:relative;
@@ -1143,7 +1143,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .right_art_month .art_text{
     margin-top: 9px;
-    font-size: 10px;
+    font-size: 11px;
+    line-height: 13px;
     color: #666666;
 }
 
