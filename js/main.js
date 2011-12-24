@@ -852,7 +852,7 @@ function CreateRegStep5(){
 	// Включение 4 дольки пирога	
 	window.my_regPie.set_active(4);
 	// Изменение прогресса регистрации	
-	SetRegProcess(window.translation[7], 93);
+	SetRegProcess(window.translation[7], 100);
     // Загрузка содержимого в правую колонку
    	$('#right_col_postload').html($('#right_col_load').html()).fadeIn(300);	
 	//Разблокирвка экрана
