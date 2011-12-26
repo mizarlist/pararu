@@ -1,6 +1,6 @@
 <?php
 if(!isset($cards_only) || !$cards_only) {
-    echo '<div class="step_title">'.$text['step_title'][0].$name.$text['step_title'][1].'</div>
+    echo '<div class="step_title">'.$name.$text['step_title'][1].'</div>
             <div id="register_step2">
             <div id="register_step2_cards">';
 }
