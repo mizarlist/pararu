@@ -3669,16 +3669,93 @@ border: none; }
 
 
 
+.storys_main .one_quick_card{
+	border-bottom: 1px solid #c0d1e0;
+	padding-bottom: 19px;
+	position: relative;
+	margin-bottom: 21px;	
+}
+.storys_main .one_quick_card.last{
+	border-bottom: none;
+}
+
+.storys_main .one_quick_card .photo,
+.storys_main .one_quick_card .text{
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;	
+	position: relative;
+}
+
+.ie7 .storys_main .one_quick_card .photo,
+.ie7 .storys_main .one_quick_card .text{
+	zoom: 1;
+	display: inline;
+}
+
+.storys_main .one_quick_card .photo{
+	width: 110px;
+	height: 110px;
+	overflow: hidden;
+	border: 1px solid #b0b2b3;
+	
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;		
+	margin-right: 5px;
+	background-color: white;
+	padding: 4px;	
+	
+	position: relative;
+}
+.storys_main .one_quick_card .photo img{
+	width: 110px;
+	height: 110px;
+}
+
+.storys_main .one_quick_card .text{
+	width: 460px;
+}
 
 
+.storys_main .one_quick_card .text .card_name{
+	font-size: 14px;
+	color: #0082be;
+	font-weight: bold;
+}
+.storys_main .one_quick_card .text .card_location{
+	font-size: 10px;
+	color: #acacac;
+}
 
+.storys_main .one_quick_card .text .card_location{
+	margin-top: 4px; margin-bottom: 12px;
+}
+.storys_main .one_quick_card .text .card_user_love ul{
+	margin-top: 5px;
+	clear: both;
+}
+.storys_main .one_quick_card .card_descr{
+	font-size: 12px;
+	line-height: 14px;
+	padding-bottom: 20px;
+}
+.storys_main .one_quick_card a{
+	color: #3366cc;
+}
 
+.storys_main .one_quick_card .card_controls{
+	font-size: 11px;
+}
 
+.storys_main .one_quick_card .card_controls b{
+	padding-left: 4px; 
+	padding-right: 4px;
+}
 
-
-
-
-
+.storys_main .one_quick_card:last-child{
+	border-bottom: none;
+}
 
 
 
