@@ -1557,6 +1557,7 @@ left: 6px; top: 9px;
 	top: 0px;
 	right: auto;
 	bottom: auto;
+	position: relative;
 }
 
 .why_we_are_main .micro_help{
@@ -3592,6 +3593,168 @@ border: none; }
 .storys_main .find_2_part:hover{
 	text-decoration: underline;
 }
+
+.storys_main .photo_storys{
+	width: 593px;
+	margin-top: 40px;
+}
+
+.storys_main .photo_storys #albums{
+	background: url(/images/ajax1.gif);
+	opacity: 0.2;
+	padding-top: 473px;	
+	margin-bottom: 40px;		
+}
+
+.storys_main .right_menu_col{
+	margin-top: 58px;
+	min-height: 250px;
+	border-left: 1px solid #b9cfe0;
+	padding-left: 12px;
+	margin-bottom: 40px;	
+	margin-left: 30px; 
+	width: 261px;
+}
+
+.storys_main .right_menu_col a.baner{
+	display: block;
+	margin-bottom: 40px;
+}
+
+.storys_main .right_menu_col .title{
+	font-size: 18px;
+	font-weight: bold;
+	color: #959595;
+	margin-bottom: 18px;
+}
+
+.storys_main .right_menu_col ul li{
+	margin-bottom: 8px;
+	padding-left: 12px;
+	background: url(/images/why_we_are/ulli.png) no-repeat left 4px;
+}
+
+.storys_main .right_menu_col ul li a{
+	color: #3366cc;
+	text-decoration: underline;
+	font-size: 12px;
+}
+
+.storys_main .right_menu_col ul li a:hover{
+	text-decoration: none;
+}
+
+.storys_main .bottom_in_block_2{
+	margin-bottom: 40px;
+	height: 48px;
+}
+
+.storys_main .bottom_in_block_2 .yellow_button{
+	float: right;
+}
+
+.storys_main .bottom_in_block_2 .green_button{
+	float: left;
+}
+
+.yellow_button.green_button{
+	background: url(/images/why_we_are/addstory.png);
+	text-shadow: 0 -1px 0 #0092ff;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
