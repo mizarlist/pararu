@@ -10,6 +10,18 @@ html, body {
 .ie6 html, .ie6 body, .ie7 html, .ie7 body {
 
 }
+
+.inline{
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.ie7{
+	zoom: 1;
+	display: inline;
+}
+
 #content {
 	position:relative;
 	min-height:100%;
@@ -1408,12 +1420,12 @@ left: 6px; top: 9px;
 	padding-left: 8px;
 }
 
-.why_we_are_main .goods_menu ul li.active{background-color: #98e4fd;}
+.why_we_are_main .goods_menu ul li.active{background-color: #b0e0f9;}
 .why_we_are_main .goods_menu ul li.active a{color: #333333;}
 .why_we_are_main .goods_menu ul li.active.compl a{color: #a6a6a6;}
 .why_we_are_main .goods_menu ul li.active i{color: #00aff0;}
 
-.why_we_are_main .goods_menu ul li:hover{background-color: #98e4fd;}
+.why_we_are_main .goods_menu ul li:hover{background-color: #b0e0f9;}
 .why_we_are_main .goods_menu ul li:hover a{color: #333333;}
 .why_we_are_main .goods_menu ul li:hover i{color: #00aff0;}
 
@@ -1520,7 +1532,8 @@ left: 6px; top: 9px;
     font-weight: bold;
     width: 385px;
 }
-.why_we_are_main .get_in_now .get_in_btn{
+.why_we_are_main .get_in_now .get_in_btn,
+.yellow_button{
 	position: absolute;
 	left: 77%;
 	margin-left: -109px;
@@ -1536,6 +1549,14 @@ left: 6px; top: 9px;
 	font-weight: bold;
 	line-height: 45px;
 	cursor: pointer;
+}
+
+.yellow_button{
+	margin: 0px;
+	left: 0px;
+	top: 0px;
+	right: auto;
+	bottom: auto;
 }
 
 .why_we_are_main .micro_help{
@@ -3442,6 +3463,142 @@ border: none; }
 	margin-top: 10px;
 	display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 04.01.2012 */
+
+.storys_main .margins{
+	padding-top: 23px;
+	position: relative;
+}
+
+
+.storys_main .greed_block{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 0px;
+}
+
+.storys_main .greed_block > a{
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+	height: 163px;
+	width: 238px;
+	color: white;
+	text-decoration: none;
+	background: #00aff0;
+	font-size: 24px;
+	position: relative;
+	overflow: hidden;	
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+.ie7 .storys_main .greed_block > a{
+	zoom: 1;
+	display: inline;
+}
+
+.storys_main .greed_block > a span{
+    display: table-cell;
+    vertical-align: middle;
+	height: 163px;
+	width: 238px;
+	text-align: center;
+	background: #00aff0;
+	padding: 10px;	
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+
+	-webkit-transition: opacity 0.37s ease;
+	-o-transition: opacity 0.37s ease;
+	-moz-transition: opacity 0.37s ease;	
+	transition: opacity 0.37s ease;	
+}
+
+.storys_main .greed_block > a:hover span{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+.storys_main .reg_block{
+	width: 300px;
+	position: relative;
+}
+
+.storys_main .one_story{
+	width: 650px;
+}
+
+.storys_main .one_story .name{
+	color: #0082be;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 17px;
+}
+
+.storys_main .one_story .name span{
+	font-size: 11px;
+	font-weight: normal;
+	color: #acacac;
+	padding-left: 10px;
+}
+
+.storys_main .one_story .text{
+	font-size: 12px;
+	color: #666666;
+	line-height: 14px;
+}
+
+.storys_main .one_story .text a{
+	color: #3366cc;
+}
+
+.storys_main .one_story .text a:hover{
+	text-decoration: none;
+}
+
+.storys_main .find_2_part{
+	color: #3366cc;
+	text-decoration: none;
+	font-size: 16px;
+	position: absolute;
+	right: 0px;
+	top: 30px;
+	background: url(/images/why_we_are/step_next.png) no-repeat right center;
+	padding-right: 19px;
+}
+
+.storys_main .find_2_part:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
 
 
 

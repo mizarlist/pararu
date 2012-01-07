@@ -1,4 +1,3 @@
-
 html, body {
     margin:0;
     padding:0;
@@ -4763,13 +4762,13 @@ img.btn_close {
 
 
 
-.t {background: url(../images/temp_samples/dot.gif) 0 0 repeat-x; max-width: 460px}
-.b {background: url(../images/temp_samples/dot.gif) 0 100% repeat-x}
-.l {background: url(../images/temp_samples/dot.gif) 0 0 repeat-y}
-.r {background: url(../images/temp_samples/dot.gif) 100% 0 repeat-y}
-.bl {background: url(../images/temp_samples/bl_r.gif) 0 100% no-repeat}
-.br {background: url(../images/temp_samples/br_r.gif) 100% 100% no-repeat}
-.tl {background: url(../images/temp_samples/tl_r.gif) 0 0 no-repeat}
+.t {background: url(../images/temp_samples/dot.gif) 0 0 repeat-x; max-width: 460px;}
+.b {background: url(../images/temp_samples/dot.gif) 0 100% repeat-x;}
+.l {background: url(../images/temp_samples/dot.gif) 0 0 repeat-y;}
+.r {background: url(../images/temp_samples/dot.gif) 100% 0 repeat-y;}
+.bl {background: url(../images/temp_samples/bl_r.gif) 0 100% no-repeat;}
+.br {background: url(../images/temp_samples/br_r.gif) 100% 100% no-repeat;}
+.tl {background: url(../images/temp_samples/tl_r.gif) 0 0 no-repeat;}
 .tr {background: url(../images/temp_samples/tr_r.gif) 100% 0 no-repeat; padding:10px}
 .tr_bbl {background: url(../images/temp_samples/tr_bbl.gif) 100% 0 no-repeat; padding:10px; }
 
@@ -4903,6 +4902,99 @@ m_fix{
 	width: 20px;
 	background: url(/images/black_line.png);
 }
+
+/*
+07.01.2012
+*/
+
+#content{
+	width: 100%;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

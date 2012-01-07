@@ -7,7 +7,7 @@
         <text>Поиск</text>
     </text>
     <text name='center_top_menu'>
-        <text>Быстрый </text>
-        <text>Расширенный </text>
+        <text>Быстрый поиск</text>
+        <text>Расширенный поиск</text>
     </text>
 </root>
