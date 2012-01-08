@@ -4914,9 +4914,77 @@ m_fix{
 
 
 
+/*
+08.01.2012
+*/
 
 
 
+.center_search_mode .thr_title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.center_search_mode{
+	background: url(/images/profile/search_shi.png);
+	background-repeat: no-repeat;
+	background-position: 408px 35px;
+	min-height: 262px !important;
+
+}
+
+.center_search_mode .one_line .line_name{
+	width: 66px;
+	margin-right: 8px;
+	font-size: 12px;
+	text-align: right;
+	text-align: right;
+	line-height: 21px;
+	height: 22px;
+}
+
+.center_search_mode .one_line .line_in{
+	width: 380px;
+	font-size: 12px;
+	line-height: 21px;	
+}
+
+.center_search_mode .one_line .p_checkbox{
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.center_search_mode .one_line .in_combo input{
+	width: 237px;
+}
+
+.center_search_mode .one_line{
+	margin-bottom: 8px;
+}
+
+.center_search_mode .one_line .just_text{
+	height: 15px;
+	border: 1px solid #CCCCCC;
+	line-height: 21px;
+	color: #999999;
+    font-family: Arial;
+    font-size: 11px;
+	width: 40px;
+	text-align: center;
+	margin-right: 8px;
+}
+
+.center_search_mode .one_line .rs1_find{
+	margin-left: 79px;
+	width: 212px;
+	margin-top: 22px;
+}
+
+.center_search_mode #search_results{
+	margin-top: 45px;
+}
 
 
 
