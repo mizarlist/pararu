@@ -16,7 +16,7 @@ class Plussia_Test_Character {
         return $rows;
     }
 
-    public function getUserPercent($user_id){
+    public function getUserPercent($user_id) {
         $ans = $this->getAnswers($user_id);
         $result = array();
         $all = 0;
@@ -24,7 +24,7 @@ class Plussia_Test_Character {
             $all += $ans[$i];
         }
         for ($i = 1; $i <= 6; $i++) {
-            $result[$i] = $ans[$i] / $all;
+            $result[$i] = $all ? $ans[$i] / $all : 0;
             $result[$i] *= 100;
         }
         return $result;

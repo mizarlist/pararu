@@ -53,7 +53,7 @@
 
 
     <div style="padding-top:5px;margin-left:-10px;margin-top:45px;width:550px;height:18px;background-image:url('resource/blue_line.png');">
-        <div style="margin-left:10px;float:left;font-family:Arial;font-size:12px;color:#0082BE;font-weight:normal;">Фотографии Маргариты</div>
+        <div style="margin-left:10px;float:left;font-family:Arial;font-size:12px;color:#0082BE;font-weight:normal;">Фотографии</div>
         <div style="margin-top:0px;margin-left:10px;float:right;font-family:Arial;font-size:10px;color:#666666;font-weight:normal;">нажмите на фотографию, чтобы увеличить</div>
 
     </div>

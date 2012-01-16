@@ -91,7 +91,7 @@ class Model_User extends Plussia_ORM {
 
     public function getLastStatus() {
         $status = new stdClass();
-        $status->text = 'I believe that we are fundamentally the same and have the same basic potential.';
+        $status->text = '';
         $status->time = 12;
         $status->time_spec = 'hour';
         return $status;
@@ -321,6 +321,45 @@ class Model_User extends Plussia_ORM {
             }
         }
         return $rscount_cach[$type];
+    }
+
+    public function getPagecomplete() {
+        $res = array('value' => 0, 'punkts' => array(false, false, false, false));
+
+        //взгляды
+        $userData = $this->getUserData();
+        $res['value'] += 10;
+        $res['punkts'][0] = true;
+        foreach($userData->getFields() as $f) {
+            if( $userData->$f === NULL || $userData->$f === '' ) {
+                $res['value'] -= 10;
+                $res['punkts'][0] = false;
+                break;
+            }
+        }
+
+        //увлечения
+        if(!Model_UserCard::getRandomEmptyCardId()) {
+            $res['value'] += 30;
+            $res['punkts'][1] = true;
+        }
+
+        //nic
+        if($this->validateNic()) {
+            $res['value'] += 40;
+            $res['punkts'][2] = true;
+        }
+
+        //photo
+        $request = 'select 1 as cou from photo p where user_id='.$this->user_id.' limit 1';
+        $query = DB::query(Database::SELECT, $request);
+        $results = $query->as_assoc()->execute();
+        if($results && $results[0] && $results[0]['cou']) {
+            $res['value'] += 20;
+            $res['punkts'][3] = true;
+        }
+
+        return $res;
     }
 
 }

@@ -40,6 +40,10 @@ class Model_UserData extends Plussia_ORM {
     public $languages;              // языки, на которых говорите
     public $zodiac_id;              // идентификатор знака зодиака
 
+    public function getFields() {
+        return self::$_fields;
+    }
+
     public static function validateData($data) {
         if (isset($data['is_woman']) && !(intval($data['is_woman']) == 0 || intval($data['is_woman']) == 1)) {
             return false;
