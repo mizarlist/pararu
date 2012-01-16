@@ -13,7 +13,11 @@
             document.location.href = '/aboutme?page=photo';
         }
     </script>
-    <div id="edit_user_photo" onclick="perdej()"></div>
+    <?php
+    if($isMy) {
+        echo '<div id="edit_user_photo" onclick="perdej()"></div>';
+    }
+    ?>
     <div class="user_photo_in">
         <img src="<?php echo $photo; ?>" />
     </div>

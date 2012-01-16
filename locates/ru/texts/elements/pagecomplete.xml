@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <text name='page_complete'>Страница заполнена на </text>
+    <text name='title'>Заполинте свой профиль</text>
+    <text name='text'>Как отличается Психология от Ноэтики? До сих пор не понятно как ты хочешь, чтобы считался процент... мне вот хоть 100500 пунктов. </text>
+    <text name='punkts'>
+        <text>Взгляды</text>
+        <text>Увлечения</text>
+        <text>Тест S.O.N.I.C.</text>
+        <text>Фотографии</text>
+    </text>
+    
+</root>

@@ -77,7 +77,7 @@ if (getenv('KOHANA_ENV') !== FALSE) {
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
 Kohana::init(array(
-        'base_url'   => '217.15.192.172',
+        'base_url'   => 'plussia',
 ));
 
 /**

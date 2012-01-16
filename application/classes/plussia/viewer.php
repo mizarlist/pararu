@@ -91,14 +91,15 @@ class Plussia_Viewer {
             "/images/profile/gift1.png"
         );
         $view->photo = Plussia_Linker::getMainPhotoLink($user_id, 1);
+        $view->isMy = $user_id==Plussia_Dispatcher::getUserId();
         return $view->render();
     }
 
     public static function getPagecoplete() {
         $view = View::factory('elements/pagecomplete');
-        $t = XML_Texts::factory('elements/elements')->getAssoc();
-        $view->text = $t['page_complete'];
-        $view->value = 73;
+        $t = XML_Texts::factory('elements/pagecomplete')->getAssoc();
+        $view->text = $t;
+        $view->pagecomplete = Plussia_Dispatcher::getUser()->getPagecomplete();
         return $view->render();
     }
 
