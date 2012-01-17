@@ -14,7 +14,7 @@ class Controller_Nic extends Plussia_Controller {
 
         $view = $this->view;
         $view->text = XML_Texts::factory('nic_text')->getAssoc();
-        $view->centerblock = Plussia_Viewer::getNicCenterblock();
+        $view->centerblock = Controller_Nic::getNicCenterblock();
         $view->leftuserinfo = Plussia_Viewer::getLeftuserinfo();
         $view->loveusers = Plussia_Viewer::getLoveusers();
         $view->rightartmonth = Plussia_Viewer::getRightartmonth();
@@ -35,6 +35,14 @@ class Controller_Nic extends Plussia_Controller {
 
     protected function getView() {
         return View::factory('nic');
+    }
+
+    public static function getNicCenterblock($page = 1) {
+        $view = View::factory('nic/nic_' . $page);
+        $view->text = XML_Texts::factory('nic/nic_' . $page)->getAssoc();
+        $provider_fn = 'page_' . $page;
+        Plussia_Provider_Nic::$provider_fn($view);
+        return $view->render();
     }
 
 }

@@ -4,6 +4,8 @@ defined('SYSPATH') or die('No direct script access.');
 
 class Controller_Profile extends Plussia_Controller {
 
+    public static $page;
+
     public function  validate() {
         $user = Plussia_Dispatcher::getUser();
         return $user && true;
@@ -14,7 +16,7 @@ class Controller_Profile extends Plussia_Controller {
         
         $view = $this->view;
         $view->text = XML_Texts::factory('profile_text')->getAssoc();
-        $view->centerblock = Plussia_Viewer::getProfileCenterblock();
+        $view->centerblock = Controller_Profile::getProfileCenterblock();
         $view->leftuserinfo = Plussia_Viewer::getLeftuserinfo();
         $view->leftusersonic = Plussia_Viewer::getLeftusersonic();
         $view->loveusers = Plussia_Viewer::getLoveusers();
@@ -36,6 +38,28 @@ class Controller_Profile extends Plussia_Controller {
 
     protected function getView() {
         return View::factory('profile');
+    }
+
+    public static function getProfileCenterblock($page = 1, $cardsPage = 1) {
+
+        $max = 5;
+        self::$page = $cardsPage;
+
+        $types = array('', 'new', 'interesme', 'interes', 'saved', 'ignor');
+        $type = $types[$page];
+        $user = Plussia_Dispatcher::getUser();
+        $user instanceof Model_User;
+
+        $view = View::factory('profile/profile_' . $page);
+        $view->text = XML_Texts::factory('profile/profile_' . $page)->getAssoc();
+
+        $view->count = $user->getRSCount($type);
+        $view->max_pages = ceil($view->count / $max);
+        $view->user_name = $user->getUserData()->name;
+        $view->user_blocks = Plussia_Viewer::getRSCards($type, $cardsPage);
+        $view->curPage = self::$page;
+
+        return $view->render();
     }
 
 }

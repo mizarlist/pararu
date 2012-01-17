@@ -72,6 +72,8 @@ function CreateRegFormInit(){
 	 "{ functional: 'get_arials', data: { arial_class: 'country', conditions: { str: self.combo_input.val()}} }" , "country");
 	window.ajaxCombo_1 = new ajaxCombo("#me_city",
 	 "{ functional: 'get_arials', data: { arial_class: 'city', conditions: { str: self.combo_input.val(), country_id: window.ajaxCombo_2.currentValueId}} }","city", "me_region");
+	 
+//function ajaxCombo(combo_name, post_obj, id_modif, second_hide_input){	 
 /* Вывод формы регистрации */ 
     $('.get_in_now .get_in_btn').bind({
         click: function() {

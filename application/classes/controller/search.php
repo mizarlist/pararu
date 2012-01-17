@@ -10,7 +10,7 @@ class Controller_Search extends Plussia_Controller {
     public function index() {
         $view = $this->view;
         $view->text = XML_Texts::factory('search_text')->getAssoc();
-        $view->centerblock = Plussia_Viewer::getSearchCenterblock();
+        $view->centerblock = Controller_Search::getSearchCenterblock();
         $view->leftuserinfo = Plussia_Viewer::getLeftuserinfo();
         $view->leftusersonic = Plussia_Viewer::getLeftusersonic();
         $view->loveusers = Plussia_Viewer::getLoveusers();
@@ -25,6 +25,23 @@ class Controller_Search extends Plussia_Controller {
 
     protected function getView() {
         return View::factory('search');
+    }
+
+    public static function getSearchCenterblock($page = 1) {
+        if ($page == 1) {
+            $view = View::factory('search/search_1');
+
+            $user = Plussia_Dispatcher::getUser();
+            $sputnikData = $user->getSputnikData();
+            $view->findWoman = $sputnikData->is_woman;
+
+            $view->text = XML_Texts::factory('search/search_1')->getAssoc();
+            return $view->render();
+        } else if ($page == 2) {
+            $view = View::factory('search/search_2');
+            $view->text = XML_Texts::factory('search/search_2')->getAssoc();
+            return $view->render();
+        }
     }
 
 }

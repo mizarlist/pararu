@@ -16,7 +16,7 @@ class Controller_Account extends Plussia_Controller {
         $view = $this->view;
         $view->page = $page;
         $view->text = XML_Texts::factory('account_text')->getAssoc();
-        $view->centerblock = Plussia_Viewer::getAccountCenterblock($page);
+        $view->centerblock = Controller_Account::getAccountCenterblock($page);
         $view->leftuserinfo = Plussia_Viewer::getLeftuserinfo();
         $view->leftusersonic = Plussia_Viewer::getLeftusersonic();
         $view->loveusers = Plussia_Viewer::getLoveusers();
@@ -32,6 +32,17 @@ class Controller_Account extends Plussia_Controller {
 
     protected function getView() {
         return View::factory('account');
+    }
+
+    public static function getAccountCenterblock($page = 1) {
+        $view = View::factory('account/account_' . $page);
+        if ($page == 6) {
+            $view->helpText = XML_Texts::factory('help')->getAssoc();
+        }
+        $view->text = XML_Texts::factory('account/account_' . $page)->getAssoc();
+        $view->broad = $page == 1 ? XML_Base::factory('broad')->getAssoc() : null;
+        $view->options = Plussia_Dispatcher::getUser()->getUserOptions();
+        return $view->render();
     }
 
 }

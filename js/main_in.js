@@ -292,9 +292,10 @@ function Set_icon_buttons(){
 
 /* Внутренний раздел */
 function CreateProfilePage(){
+	var $center_block = $('#center_block');
 	Set_icon_buttons();
     //Страница спутника
-    if($('#center_block').hasClass('center_sputnik_block')){
+    if($center_block.hasClass('center_sputnik_block')){
         window.top_profile_menu = new SetTopProfileMenu('sputnik_centerblock', '#center_top_menu', document.location.pathname, '#center_block', '#sputkin_r_menu');
         window.top_profile_menu.CallAfterLoad = function(){
             if(arguments.callee.caller.menu_link == 'ct_sput_comp'){
@@ -345,7 +346,7 @@ function CreateProfilePage(){
 		$('#user_menu1').removeClass('active');
 		
     }
-    if($('#center_block').hasClass('center_myfvorits_block')){
+    if($center_block.hasClass('center_myfvorits_block')){
     	$('#top_btn1').addClass('active');
         //Страница со спутниками в профиле пользователя
         window.top_profile_menu = new SetTopProfileMenu('profile_centerblock', '#center_top_menu', '/profile', '#center_block','#left_block .user_menu');
@@ -365,7 +366,7 @@ function CreateProfilePage(){
         	$('#top_btn2').addClass('active');        	
         };        
     }
-    if($('#center_block').hasClass('center_account_block')){
+    if($center_block.hasClass('center_account_block')){
         //Страница пользователя
         window.top_profile_menu = new SetTopProfileMenu('account_centerblock', '#center_top_menu', '/account');
         window.top_profile_menu.CallAfterLoad = function(){
@@ -385,7 +386,7 @@ function CreateProfilePage(){
         
         $('#top_btn4').addClass('active');
     }
-    if($('#center_block').hasClass('center_aboutme_block')){
+    if($center_block.hasClass('center_aboutme_block')){
         //Страница пользователя
         window.top_profile_menu = new SetTopProfileMenu('aboutme_centerblock', '#center_top_menu', '/aboutme');
         window.top_profile_menu.CallAfterLoad = function(){
@@ -405,7 +406,7 @@ function CreateProfilePage(){
         window.myphoto = new MySomePhoto();
         window.myphoto.initStart();
     }
-    if($('#center_block').hasClass('center_nic1_mode')){
+    if($center_block.hasClass('center_nic1_mode')){
         //Страница NIC
         window.top_profile_menu = new SetTopProfileMenu('nic_centerblock', '#center_top_menu', '/nic');
         window.top_profile_menu.CallAfterLoad = function(){
@@ -455,7 +456,7 @@ function CreateProfilePage(){
 
     }
 
-    if($('#center_block').hasClass('center_actions_block')){
+    if($center_block.hasClass('center_actions_block')){
     	$('#top_btn3').addClass('active');
         //Страница пользователя
         window.top_profile_menu = new SetTopProfileMenu('actions_centerblock', '#center_top_menu', '/actions');
@@ -481,6 +482,21 @@ function CreateProfilePage(){
             });
         }
     }
+    
+    if($center_block.hasClass('center_search_mode')){
+		window.ajaxCombo_2 = new ajaxCombo("#find_country","{ functional: 'get_arials', data: { arial_class: 'country', conditions: { str: self.combo_input.val()}} }" , "country");
+		window.ajaxCombo_1 = new ajaxCombo("#find_area",
+		 "{ functional: 'get_arials', data: { arial_class: 'region', conditions: { str: self.combo_input.val(), country_id: window.ajaxCombo_2.currentValueId}} }", "region");    
+		 
+		window.ajaxCombo_3 = new ajaxCombo("#find_city",
+		 "{ functional: 'get_arials', data: { arial_class: 'city', conditions: { str: self.combo_input.val(), region_id: window.ajaxCombo_1.currentValueId,  country_id: window.ajaxCombo_2.currentValueId}} }",
+		  "city");    
+
+
+    
+    }
+    
+    
 
 
 
@@ -1693,170 +1709,156 @@ function easyCombo(combo_name){
 
 //Ajax-всплывалка
 function ajaxCombo(combo_name, post_obj, id_modif, second_hide_input){
-    var self = this;
-    self.combo_name = combo_name;
-    self.combo_obj = $(combo_name);
-    self.combo_input = self.combo_obj.children('input.send_name');
-    self.combo_input_id = self.combo_obj.children('input.send_id');
-    self.combo_variants = self.combo_obj.children('.combo_variants')
+	var self = this;
+	self.combo_name = combo_name;
+	self.combo_obj = $(combo_name);
+	self.combo_input = self.combo_obj.children('input.send_name');
+	self.combo_input_id = self.combo_obj.children('input.send_id');
+	self.combo_variants = self.combo_obj.children('.combo_variants')	
 
-    self.show_state = false;
-    self.hide_timer;
-    self.currentValue = self.combo_input.val();
-    self.currentValueId = self.combo_input_id.val();
+	self.show_state = false;
+	self.hide_timer;
+	self.currentValue = self.combo_input.val();
+	self.currentValueId = self.combo_input_id.val();
 
-    self.post_obj = post_obj || "{}";
-    self.id_modif = id_modif || "ajax_comb";
+	self.post_obj = post_obj || "{}";
+	self.id_modif = id_modif || "ajax_comb";
+	
+	self.second_hide_input = second_hide_input || false; 
+	if(self.second_hide_input != false) self.second_hide_val = 0; else self.second_hide_val = false;
+ 	
+	self.init = function(){
+		self.combo_input.bind({  click: function() { 
+			$(this).val("");
+			
+			 delay(function(){
+				self.update_combo();	
+				self.show_list();	
+		    }, 100);			
+		}})
+		.focusin(function(){
+				self.combo_input.val("");
+			 delay(function(){
+				self.update_combo();	
+				self.show_list();	
+		    }, 100);			
+		})
 
-    self.second_hide_input = second_hide_input || false;
-    if(self.second_hide_input != false) self.second_hide_val = 0; else self.second_hide_val = false;
+		.focusout(function(){
+			$(this).val(self.currentValue);
+			self.hide_list();
+		})
+		.keydown(function(event){
+			if(event.keyCode == 38) {
 
-    self.init = function(){
-        self.combo_input.bind({
-            click: function() {
-                $(this).val("");
+				if(!self.combo_variants.children('.one_combo').hasClass('hover')){
+					self.combo_variants.children('.one_combo:last').addClass('hover')
+				} else {
+					self.combo_variants.children('.one_combo.hover').removeClass('hover').prev().addClass('hover');
+					if(!self.combo_variants.children('.one_combo').hasClass('hover')) self.combo_variants.children('.one_combo:last').addClass('hover');
+				}			
 
-                delay(function(){
-                    self.update_combo();
-                    self.show_list();
-                }, 100);
-            }
-        })
-        .focusin(function(){
-            self.combo_input.val("");
-            delay(function(){
-                self.update_combo();
-                self.show_list();
-            }, 100);
-        })
-
-        .focusout(function(){
-            $(this).val(self.currentValue);
-            self.hide_list();
-        })
-        .keydown(function(event){
-            if(event.keyCode == 38) {
-
-                if(!self.combo_variants.children('.one_combo').hasClass('hover')){
-                    self.combo_variants.children('.one_combo:last').addClass('hover')
-                } else {
-                    self.combo_variants.children('.one_combo.hover').removeClass('hover').prev().addClass('hover');
-                    if(!self.combo_variants.children('.one_combo').hasClass('hover')) self.combo_variants.children('.one_combo:last').addClass('hover');
-                }
-
-            } else if (event.keyCode == 40) {
-                if(!self.combo_variants.children('.one_combo').hasClass('hover')){
-                    self.combo_variants.children('.one_combo:first').addClass('hover')
-                } else {
-                    self.combo_variants.children('.one_combo.hover').removeClass('hover').next().addClass('hover');
-                    if(!self.combo_variants.children('.one_combo').hasClass('hover')) self.combo_variants.children('.one_combo:first').addClass('hover');
-                }
-            } else if (event.keyCode == 13) {
-                self.new_selection(self.combo_variants.children('.one_combo.hover'));
-            } else {
-                //				console.log(event.keyCode);
-                if((event.keyCode > 1039 && event.keyCode < 1106) || (event.keyCode > 63 && event.keyCode < 123) || (event.keyCode == 0) || (event.keyCode == 8)){
-                    delay(function(){
-                        self.update_combo();
-                        clearTimeout(self.hide_timer);
-                    }, 400);
-                }
-
-
-            }
-        });
+			} else if (event.keyCode == 40) {
+				if(!self.combo_variants.children('.one_combo').hasClass('hover')){
+					self.combo_variants.children('.one_combo:first').addClass('hover')
+				} else {
+					self.combo_variants.children('.one_combo.hover').removeClass('hover').next().addClass('hover');
+					if(!self.combo_variants.children('.one_combo').hasClass('hover')) self.combo_variants.children('.one_combo:first').addClass('hover');
+				}			
+			} else if (event.keyCode == 13) {
+				self.new_selection(self.combo_variants.children('.one_combo.hover'));			
+			} else {
+//				console.log(event.keyCode);
+				if((event.keyCode > 1039 && event.keyCode < 1106) || (event.keyCode > 63 && event.keyCode < 123) || (event.keyCode == 0) || (event.keyCode == 8)){
+				 delay(function(){
+					self.update_combo();
+					clearTimeout(self.hide_timer);
+			    }, 400);
+			    }
+			
+			
+			}
+		});
 
 
-        self.combo_obj.children('.easy_mask').bind({
-            click: function() {
-
-                self.update_combo();
-                self.show_list();
-
-            }
-        });
-
-
-
-        self.combo_obj.bind({
-            mouseover: function() {
-                clearTimeout(self.hide_timer);
-            },
-            mouseout: function() {
-                self.hide_timer = setTimeout(self.hide_list, 2500);
-            }
-        });
-    }
-
-    self.update_combo = function(){
-        self.combo_variants.children('.one_combo.hover').removeClass('hover');
-        $.post("/", eval( "(" +self.post_obj+")"),
+		self.combo_obj.children('.easy_mask').bind({  click: function() { 
+		
+			self.update_combo();	
+			self.show_list();	
+		
+		}});
+		
+			
+	    	
+		self.combo_obj.bind({
+		    mouseover: function() {
+				clearTimeout(self.hide_timer);
+		    },
+		    mouseout: function() {
+		    	self.hide_timer = setTimeout(self.hide_list, 2500);
+		    }
+		});	    	
+	}
+	
+		self.update_combo = function(){
+			self.combo_variants.children('.one_combo.hover').removeClass('hover');			
+			$.post("/", eval( "(" +self.post_obj+")"),
             function(data) {
                 if(data){
-                    var new_data = data;
-                    new_data = eval(new_data);
-                    new_html = '';
-                    for (var i = 0, length = new_data.length; i < length; i++) {
-                        if (i in new_data) {
+					var new_data = data;
+					new_data = eval(new_data);
+					new_html = '';
+					for (var i = 0, length = new_data.length; i < length; i++) {
+					    if (i in new_data) {			  
+ 	
+					    	if((new_data[i].region_name == undefined) || new_data[i].region_name == 'undefined')
+						        new_html += '<div class="one_combo" id="'+self.id_modif+new_data[i].id+'">'+new_data[i].name+'</div>';
+						    else {
+			    			        new_html += '<div class="one_combo" id="'+self.id_modif+new_data[i].id+'">'+new_data[i].name+'<span>'+new_data[i].region_name+'</span></div>';														if(self.second_hide_input != false) self.second_hide_val = new_data[i].region_id;	
+    			        	}
 
-                            if((new_data[i].region_name == undefined) || new_data[i].region_name == 'undefined')
-                                new_html += '<div class="one_combo" id="'+self.id_modif+new_data[i].id+'">'+new_data[i].name+'</div>';
-                            else {
-                                new_html += '<div class="one_combo" id="'+self.id_modif+new_data[i].id+'">'+new_data[i].name+'<span>'+new_data[i].region_name+'</span></div>';
-                                if(self.second_hide_input != false) self.second_hide_val = new_data[i].region_id;
-                            }
-
-                        }
-                    }
-                    self.combo_variants.html(new_html);
-                    self.combo_variants.children('.one_combo:first').addClass('hover');
-                    self.set_one_combo_click();
+					    }
+					}			
+					self.combo_variants.html(new_html);
+					self.combo_variants.children('.one_combo:first').addClass('hover');
+					self.set_one_combo_click();
 
 
                 } else {
                     alert('Error Reg Form');
                 }
             }
-            );
-
-    }
-
-    self.set_one_combo_click = function (){
-        self.combo_variants.children('.one_combo').bind({
-            click: function() {
-                self.new_selection($(this));
-            },
-            mouseover: function() {
-                self.combo_variants.children('.one_combo').removeClass('hover');
-                $(this).addClass('hover');
-            }
-        });
-    }
-    self.show_list = function(){
-        self.combo_obj.children('.combo_variants').fadeIn();
-        self.show_state = true;
-    }
-    self.hide_list = function(){
-        self.combo_obj.children('.combo_variants').fadeOut();
-        self.show_state = false;
-    }
-
-    self.new_selection = function(clicked_obj){
-        self.currentValueId = clicked_obj.attr('id').substr(self.id_modif.length);
-        clicked_name = clicked_obj.html();
-        if(clicked_name.indexOf('<') > 0) clicked_name = clicked_name.substr(0,clicked_name.indexOf('<'));
-        self.currentValue = clicked_name;
-        self.combo_input.val(clicked_name);
-        self.combo_input_id.val(self.currentValueId);
-        if(self.second_hide_input != false){
-            self.combo_obj.children('.easy_mask').html('<input type="hidden" name="'+self.second_hide_input+'" value="'+self.second_hide_val+'">');
-        }
-
-        self.hide_list();
-    }
-
-    self.init();
+            );			
+			
+		}		
+	
+	self.set_one_combo_click = function (){	
+		self.combo_variants.children('.one_combo').bind({  click: function() { self.new_selection($(this)); },
+			mouseover: function() {  self.combo_variants.children('.one_combo').removeClass('hover');
+			$(this).addClass('hover');
+			}		
+		});
+	}
+	self.show_list = function(){ self.combo_obj.children('.combo_variants').fadeIn(); self.show_state = true;}
+	self.hide_list = function(){ self.combo_obj.children('.combo_variants').fadeOut(); self.show_state = false;}
+	
+	self.new_selection = function(clicked_obj){
+		self.currentValueId = clicked_obj.attr('id').substr(self.id_modif.length);
+		clicked_name = clicked_obj.html();
+		if(clicked_name.indexOf('<') > 0) clicked_name = clicked_name.substr(0,clicked_name.indexOf('<'));
+		self.currentValue = clicked_name; 
+		self.combo_input.val(clicked_name);
+		self.combo_input_id.val(self.currentValueId);
+		if(self.second_hide_input != false){
+			self.combo_obj.children('.easy_mask').html('<input type="hidden" name="'+self.second_hide_input+'" value="'+self.second_hide_val+'">');  
+		}		
+		 
+		self.hide_list();
+	}
+	
+	self.init();
 }
+
 
 /* Функция, эмитирующая задержку с очередью в один элемент*/
 var delay = (function(){

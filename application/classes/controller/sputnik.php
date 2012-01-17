@@ -43,12 +43,36 @@ class Controller_Sputnik extends Plussia_Controller {
         $view->usertopmenu = Plussia_Viewer::getUsertopmenu();
         $view->loveusers = Plussia_Viewer::getLoveusers();
         $view->adr = $rController;
-        $view->centerblock = Plussia_Viewer::getSputnikCenterblock($page);
+        $view->centerblock = Controller_Sputnik::getSputnikCenterblock($page);
         $this->response->body($view);
     }
 
     protected function getView() {
         return View::factory('sputnik');
+    }
+
+    public static function getSputnikCenterblock($page = 1) {
+        $view = View::factory('sputnik/sputnik_' . $page);
+        $view->text = XML_Texts::factory('sputnik/sputnik_' . $page)->getAssoc();
+
+        $view->somephoto = View::factory('elements/somephoto');
+        $view->somephoto->text = $view->text;
+        $view->somephoto->is_sputnik_page = true;
+
+        $view->is_sputnik_page = true;
+        $view->wanabet = Plussia_Viewer::getWanabet();
+        $fn = 'page_' . $page;
+        $elseResult = Plussia_Provider_Sputnik::$fn($view);
+        return $elseResult ? $elseResult : $view->render();
+    }
+
+    public static function getCompareCenterblock($page = 1) {
+        $view = View::factory('compare/compare_' . $page);
+        $view->text = XML_Texts::factory('compare/compare_' . $page)->getAssoc();
+        $view->wanabet = Plussia_Viewer::getWanabet();
+        $fn = 'page_' . $page;
+        $elseResult = Plussia_Provider_Compare::$fn($view);
+        return $elseResult ? $elseResult : $view->render();
     }
 
 }

@@ -1018,49 +1018,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     cursor: pointer;
 }
 
-#me_city .one_combo{
-    text-align: right;
-    height: 28px;
-    padding-right: 20px;
-    line-height: 12px;
-    padding-top: 5px;
-}
-#me_city .one_combo span{
-    font-size: 9px;
-    display: block;
-}
-#me_city .easy_mask{
-    left: auto;
-    right: 0px;
-    width: 19px;
-}
-/*#me_city .one_combo:hover{
-	background-color: white;
-	color: #666666;
-}*/
 
-
-
-#me_country .one_combo{
+#find_country .one_combo,
+#find_city .one_combo,
+#find_area .one_combo {
     text-align: right;
     padding-right: 20px;
     line-height: 19px;
 
 }
-#me_country .one_combo span{
+#find_country .one_combo span,
+#find_city .one_combo span,
+#find_area .one_combo span{
     font-size: 9px;
     display: block;
 }
-#me_country .easy_mask{
+#find_country .easy_mask,
+#find_city .easy_mask,
+#find_area .easy_mask{
     left: auto;
     right: 0px;
     width: 19px;
 }
-/*#me_country .one_combo:hover{
-	background-color: white;
-	color: #666666;
-}
-*/
 
 
 .in_combo .easy_mask{

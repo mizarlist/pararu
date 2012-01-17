@@ -12,7 +12,7 @@ class Controller_Actions extends Plussia_Controller {
     public function index() {
         $view = $this->view;
         $view->text = XML_Texts::factory('actions_text')->getAssoc();
-        $view->centerblock = Plussia_Viewer::getActionsCenterblock();
+        $view->centerblock = Controller_Actions::getActionsCenterblock();
         $view->leftuserinfo = Plussia_Viewer::getLeftuserinfo();
         $view->leftusersonic = Plussia_Viewer::getLeftusersonic();
         $view->loveusers = Plussia_Viewer::getLoveusers();
@@ -28,6 +28,18 @@ class Controller_Actions extends Plussia_Controller {
 
     protected function getView() {
         return View::factory('actions');
+    }
+
+    public static function getActionsCenterblock($page = 1) {
+        $view = View::factory('actions/actions_' . $page);
+        $view->text = XML_Texts::factory('actions/actions_' . $page)->getAssoc();
+        if ($page == 1) {
+            $view->contacts = Plussia_Message::getContactsHtml();
+        } else if ($page == 2) {
+            $view->messages = Plussia_Message::getAdminMessagesHtml();
+            Plussia_Message::admin_message_asReaded();
+        }
+        return $view->render();
     }
 
 }

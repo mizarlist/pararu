@@ -14,7 +14,7 @@ class Controller_Aboutme extends Plussia_Controller {
         $view = $this->view;
         $view->page = $page;
         $view->text = XML_Texts::factory('aboutme_text')->getAssoc();
-        $view->centerblock = Plussia_Viewer::getAboutmeCenterblock($page);
+        $view->centerblock = Controller_Aboutme::getAboutmeCenterblock($page);
         $view->leftuserinfo = Plussia_Viewer::getLeftuserinfo();
         $view->leftusersonic = Plussia_Viewer::getLeftusersonic();
         $view->loveusers = Plussia_Viewer::getLoveusers();
@@ -30,6 +30,24 @@ class Controller_Aboutme extends Plussia_Controller {
 
     protected function getView() {
         return View::factory('aboutme');
+    }
+
+    public static function getAboutmeCenterblock($page = 1) {
+        if ($page == 1) {
+            $view = View::factory('sputnik/sputnik_1');
+            $view->text = XML_Texts::factory('sputnik/sputnik_1')->getAssoc();
+
+            $view->somephoto = View::factory('elements/somephoto');
+            $view->somephoto->text = $view->text;
+            $view->somephoto->is_sputnik_page = false;
+
+            $view->is_sputnik_page = false;
+            $elseResult = Plussia_Provider_Sputnik::page_1($view, true);
+            return $elseResult ? $elseResult : $view->render();
+        } else if ($page == 2) {
+            $view = View::factory('photo/myphotos');
+            return $view->render();
+        }
     }
 
 }
