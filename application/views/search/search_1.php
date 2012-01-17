@@ -2,7 +2,7 @@
 
 <div class="one_line">
     <div class="line_name inline"><?php echo $text["isearch"]; ?></div>
-    <div class="line_in inline">
+    <div class="line_in radio_group inline">
         <div class="p_checkbox<?php echo ($findWoman ? ' active' : ''); ?>" id="find_woman"><?php echo $text["w"]; ?></div>
         <div class="p_checkbox<?php echo ($findWoman ? '' : ' active'); ?>" id="find_man"><?php echo $text["m"]; ?></div>
     </div>
