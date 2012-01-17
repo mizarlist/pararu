@@ -493,6 +493,21 @@ function CreateProfilePage(){
     	 
     	 ActivateSearchCombos();
     	 JustText();
+    	 $('#start_search').bind({  click: function() {  
+    
+		    	blockPage_msg();
+				$.post("/search", { functional: "search_fast", data: CollectSearchData()  },	    	
+	            function(data) {
+	                if(data){
+	                    $('#search_results').html(data);
+	                } else {
+	                    alert('Internal error #725128. Please, contact administrator.');
+	                }
+	            }
+	            );
+	    
+	    	 
+	    }});
     
         CreateleftSonic();
         ActivateControls();
@@ -527,8 +542,27 @@ function CreateProfilePage(){
 		});	
 	}    
 	
+	function CollectSearchData(){
+		var $search_form = $('#search_form');
+		var collected = {};
+
+		collected['cheks'] = {};
+		collected['inputs'] = {};
+		
+		$search_form.find(".p_checkbox.active").each( function() { 
+			check_name = $(this).attr('id');
+			collected['cheks'][check_name] = 'true';				
+		});
+
+		$search_form.find('input').each( function() { 
+			input_name = $(this).attr('name');
+			collected['inputs'][input_name] = $(this).val();				
+		});	
+		
+		return collected;
+	}
 	
-    
+	   
     function ActivateSearchCombos(){
 		window.ajaxCombo_2 = new ajaxCombo("#find_country","{ functional: 'get_arials', data: { arial_class: 'country', conditions: { str: self.combo_input.val()}} }" , "country");
 		window.ajaxCombo_1 = new ajaxCombo("#find_area",
