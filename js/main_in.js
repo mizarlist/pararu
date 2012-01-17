@@ -486,22 +486,14 @@ function CreateProfilePage(){
         
     
     if($center_block.hasClass('center_search_mode')){
-    	 window.top_profile_menu = new SetTopProfileMenu('search_cebterblock', '#center_top_menu', '/search');
+    	 window.top_profile_menu = new SetTopProfileMenu('search_centerblock', '#center_top_menu', '/search');
     	 window.top_profile_menu.CallAfterLoad = function(){
-    	 
-    	 
-    	 
+    	 	    	     	 
     	 };
     	 
+    	 ActivateSearchCombos();
+    	 
     
-		window.ajaxCombo_2 = new ajaxCombo("#find_country","{ functional: 'get_arials', data: { arial_class: 'country', conditions: { str: self.combo_input.val()}} }" , "country");
-		window.ajaxCombo_1 = new ajaxCombo("#find_area",
-		 "{ functional: 'get_arials', data: { arial_class: 'region', conditions: { str: self.combo_input.val(), country_id: window.ajaxCombo_2.currentValueId}} }", "region");    
-		 
-		window.ajaxCombo_3 = new ajaxCombo("#find_city",
-		 "{ functional: 'get_arials', data: { arial_class: 'city', conditions: { str: self.combo_input.val(), region_id: window.ajaxCombo_1.currentValueId,  country_id: window.ajaxCombo_2.currentValueId}} }",
-		  "city");    
-
         CreateleftSonic();
         ActivateControls();
         SetMainLeftMenu();
@@ -510,6 +502,41 @@ function CreateProfilePage(){
     }
     
     
+	function JustText(){
+		$('input.just_text').each( function() { 
+			SetNumsOnly($(this));
+		});
+	
+	}
+    
+	function SetNumsOnly($obj_name){
+		$obj_name.keydown(function(event) { 
+			if ( event.keyCode == 46 || event.keyCode == 8 ) { 
+			} else { 
+			if (event.keyCode < 95) { 
+				if (event.keyCode < 48 || event.keyCode > 57 ) { 
+					event.preventDefault();	
+				} 
+			} else { 
+				if (event.keyCode < 96 || event.keyCode > 105 ) { 
+					event.preventDefault();	
+			} 
+			} 
+		} 
+		});	
+	}    
+    
+    function ActivateSearchCombos(){
+		window.ajaxCombo_2 = new ajaxCombo("#find_country","{ functional: 'get_arials', data: { arial_class: 'country', conditions: { str: self.combo_input.val()}} }" , "country");
+		window.ajaxCombo_1 = new ajaxCombo("#find_area",
+		 "{ functional: 'get_arials', data: { arial_class: 'region', conditions: { str: self.combo_input.val(), country_id: window.ajaxCombo_2.currentValueId}} }", "region");    
+		 
+		window.ajaxCombo_3 = new ajaxCombo("#find_city",
+		 "{ functional: 'get_arials', data: { arial_class: 'city', conditions: { str: self.combo_input.val(), region_id: window.ajaxCombo_1.currentValueId,  country_id: window.ajaxCombo_2.currentValueId}} }",
+		  "city");    
+
+    
+    }
 
 
 
