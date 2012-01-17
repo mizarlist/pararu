@@ -6,7 +6,7 @@ class Ajax_Account {
         $allowed = array("ct_options", "ct_remind", "ct_apps", "ct_mobile", "ct_adv", "ct_help");
         if ($data && in_array($data, $allowed)) {
             $page = array_search($data, $allowed) + 1;
-            return Plussia_Viewer::getAccountCenterblock($page);
+            return Controller_Account::getAccountCenterblock($page);
         }
         return '';
     }

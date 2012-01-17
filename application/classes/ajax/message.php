@@ -5,7 +5,7 @@ class Ajax_Message {
     public static function actions_centerblock($data) {
         $functions = array('ct_contacts', 'ct_admin');
         if (in_array($data, $functions)) {
-            return Plussia_Viewer::getActionsCenterblock(array_search($data, $functions) + 1);
+            return Controller_Actions::getActionsCenterblock(array_search($data, $functions) + 1);
         }
         return null;
     }

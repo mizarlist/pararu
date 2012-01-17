@@ -2,8 +2,6 @@
 
 class Plussia_Viewer {
 
-    public static $page;
-
     public static function getFooter() {
         $view = View::factory('footer');
         $view->lang = Plussia_Config::currentLang();
@@ -126,65 +124,6 @@ class Plussia_Viewer {
         return $view->render();
     }
 
-    public static function getSputnikCenterblock($page = 1) {
-        $view = View::factory('sputnik/sputnik_' . $page);
-        $view->text = XML_Texts::factory('sputnik/sputnik_' . $page)->getAssoc();
-
-        $view->somephoto = View::factory('elements/somephoto');
-        $view->somephoto->text = $view->text;
-        $view->somephoto->is_sputnik_page = true;
-
-        $view->is_sputnik_page = true;
-        $view->wanabet = Plussia_Viewer::getWanabet();
-        $fn = 'page_' . $page;
-        $elseResult = Plussia_Provider_Sputnik::$fn($view);
-        return $elseResult ? $elseResult : $view->render();
-    }
-
-    public static function getAboutmeCenterblock($page = 1) {
-        if ($page == 1) {
-            $view = View::factory('sputnik/sputnik_1');
-            $view->text = XML_Texts::factory('sputnik/sputnik_1')->getAssoc();
-
-            $view->somephoto = View::factory('elements/somephoto');
-            $view->somephoto->text = $view->text;
-            $view->somephoto->is_sputnik_page = false;
-
-            $view->is_sputnik_page = false;
-            $elseResult = Plussia_Provider_Sputnik::page_1($view, true);
-            return $elseResult ? $elseResult : $view->render();
-        } else if ($page == 2) {
-            $view = View::factory('photo/myphotos');
-            return $view->render();
-        }
-    }
-
-    public static function getSearchCenterblock($page = 1) {
-        if ($page == 1) {
-            $view = View::factory('search/search_1');
-            
-            $user = Plussia_Dispatcher::getUser();
-            $sputnikData = $user->getSputnikData();
-            $view->findWoman = $sputnikData->is_woman;
-
-            $view->text = XML_Texts::factory('search/search_1')->getAssoc();
-            return $view->render();
-        } else if ($page == 2) {
-            $view = View::factory('search/search_2');
-            $view->text = XML_Texts::factory('search/search_2')->getAssoc();
-            return $view->render();
-        }
-    }
-
-    public static function getCompareCenterblock($page = 1) {
-        $view = View::factory('compare/compare_' . $page);
-        $view->text = XML_Texts::factory('compare/compare_' . $page)->getAssoc();
-        $view->wanabet = Plussia_Viewer::getWanabet();
-        $fn = 'page_' . $page;
-        $elseResult = Plussia_Provider_Compare::$fn($view);
-        return $elseResult ? $elseResult : $view->render();
-    }
-
     public static function getWanabet() {
         $sputnik = Model_User::get(Request::$current->controllerNameStore);
         $sputnik_id = $sputnik->user_id;
@@ -197,37 +136,6 @@ class Plussia_Viewer {
         } else {
             return '';
         }
-    }
-
-    public static function getAccountCenterblock($page = 1) {
-        $view = View::factory('account/account_' . $page);
-        if ($page == 6) {
-            $view->helpText = XML_Texts::factory('help')->getAssoc();
-        }
-        $view->text = XML_Texts::factory('account/account_' . $page)->getAssoc();
-        $view->broad = $page == 1 ? XML_Base::factory('broad')->getAssoc() : null;
-        $view->options = Plussia_Dispatcher::getUser()->getUserOptions();
-        return $view->render();
-    }
-
-    public static function getActionsCenterblock($page = 1) {
-        $view = View::factory('actions/actions_' . $page);
-        $view->text = XML_Texts::factory('actions/actions_' . $page)->getAssoc();
-        if ($page == 1) {
-            $view->contacts = Plussia_Message::getContactsHtml();
-        } else if ($page == 2) {
-            $view->messages = Plussia_Message::getAdminMessagesHtml();
-            Plussia_Message::admin_message_asReaded();
-        }
-        return $view->render();
-    }
-
-    public static function getNicCenterblock($page = 1) {
-        $view = View::factory('nic/nic_' . $page);
-        $view->text = XML_Texts::factory('nic/nic_' . $page)->getAssoc();
-        $provider_fn = 'page_' . $page;
-        Plussia_Provider_Nic::$provider_fn($view);
-        return $view->render();
     }
 
     public static function getNictestResult($type = 'psy') {
@@ -269,28 +177,6 @@ class Plussia_Viewer {
         $view->title = $helpText['title'] . ': ' . $helpText['columns'][$column][$punkt]['title'];
         $view->img = $helpText['columns'][$column][$punkt]['img'];
         $view->text = $helpText['columns'][$column][$punkt]['text'];
-
-        return $view->render();
-    }
-
-    public static function getProfileCenterblock($page = 1, $cardsPage = 1) {
-
-        $max = 5;
-        self::$page = $cardsPage;
-
-        $types = array('', 'new', 'interesme', 'interes', 'saved', 'ignor');
-        $type = $types[$page];
-        $user = Plussia_Dispatcher::getUser();
-        $user instanceof Model_User;
-
-        $view = View::factory('profile/profile_' . $page);
-        $view->text = XML_Texts::factory('profile/profile_' . $page)->getAssoc();
-
-        $view->count = $user->getRSCount($type);
-        $view->max_pages = ceil($view->count / $max);
-        $view->user_name = $user->getUserData()->name;
-        $view->user_blocks = self::getRSCards($type, $cardsPage);
-        $view->curPage = self::$page;
 
         return $view->render();
     }

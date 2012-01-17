@@ -38,7 +38,7 @@ class Plussia_Provider_Sputnik {
 
         $view->allprocent = Plussia_Calc::all(Plussia_Dispatcher::getUserId(), $sputnik_id);
 
-        $view->centerblock = Plussia_Viewer::getCompareCenterblock();
+        $view->centerblock = Controller_Sputnik::getCompareCenterblock();
         $eqs = Plussia_Comparator::getCardsEqualsCount($userData->user_id, $sputnikData->user_id);
         $eqMaxInd = (count($eqs) ? array_search(max($eqs), $eqs) : -1) + 1;
         $icons = array(

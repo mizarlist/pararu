@@ -9,7 +9,7 @@ class Ajax_Nic {
         $allowed = self::$allowed;
         if ($type && in_array($type, $allowed)) {
             $typePage = array_search($type, $allowed) + 1;
-            return Plussia_Viewer::getNicCenterblock($typePage);
+            return Controller_Nic::getNicCenterblock($typePage);
         }
         return '';
     }

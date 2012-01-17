@@ -10,7 +10,7 @@ class Ajax_Profile {
         $allowed = self::$allowed;
         if ($type && in_array($type, $allowed)) {
             $typePage = array_search($type, $allowed) + 1;
-            return Plussia_Viewer::getProfileCenterblock($typePage, $page);
+            return Controller_Profile::getProfileCenterblock($typePage, $page);
         }
         return '';
     }
