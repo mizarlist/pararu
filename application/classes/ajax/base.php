@@ -54,6 +54,7 @@ class Ajax_Base {
         'message_deleteHistory' => 'Ajax_Message',
         'message_deleteAdminMessage' => 'Ajax_Message',
 
+        'search_centerblock' => 'Ajax_Search',
         'search_fast' => 'Ajax_Search',
         'search_full' => 'Ajax_Search',
         'search_saveSputnikData' => 'Ajax_Search',
