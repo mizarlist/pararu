@@ -3,8 +3,8 @@
 <div class="one_line">
     <div class="line_name inline"><?php echo $text["isearch"]; ?></div>
     <div class="line_in inline">
-        <div class="p_checkbox active" id="find_woman"><?php echo $text["w"]; ?></div>
-        <div class="p_checkbox" id="find_man"><?php echo $text["m"]; ?></div>
+        <div class="p_checkbox<?php echo ($findWoman ? ' active' : ''); ?>" id="find_woman"><?php echo $text["w"]; ?></div>
+        <div class="p_checkbox<?php echo ($findWoman ? '' : ' active'); ?>" id="find_man"><?php echo $text["m"]; ?></div>
     </div>
 </div><!-- .one_line-->
 
@@ -44,8 +44,8 @@
 <div class="one_line">
     <div class="line_name inline"><?php echo $text["age"]; ?></div>
     <div class="line_in inline">
-	<?php echo $text["from"]; ?> <input type="text" class="just_text" name="find_age_from" />
-	<?php echo $text["to"]; ?> <input type="text" class="just_text" name="find_age_to" />
+	<?php echo $text["from"]; ?> <input type="text" class="just_text" name="find_age_from" value="18" />
+	<?php echo $text["to"]; ?> <input type="text" class="just_text" name="find_age_to" value="90" />
         <div class="p_checkbox active" id="find_photo"><?php echo $text["with_photo"]; ?></div>
         <div class="p_checkbox" id="find_online"><?php echo $text["online"]; ?></div>
     </div>

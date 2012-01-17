@@ -91,7 +91,7 @@ class Plussia_Viewer {
             "/images/profile/gift1.png"
         );
         $view->photo = Plussia_Linker::getMainPhotoLink($user_id, 1);
-        $view->isMy = $user_id==Plussia_Dispatcher::getUserId();
+        $view->isMy = $user_id == Plussia_Dispatcher::getUserId();
         return $view->render();
     }
 
@@ -162,6 +162,11 @@ class Plussia_Viewer {
     public static function getSearchCenterblock($page = 1) {
         if ($page == 1) {
             $view = View::factory('search/search_1');
+            
+            $user = Plussia_Dispatcher::getUser();
+            $sputnikData = $user->getSputnikData();
+            $view->findWoman = $sputnikData->is_woman;
+
             $view->text = XML_Texts::factory('search/search_1')->getAssoc();
             return $view->render();
         } else if ($page == 2) {
@@ -210,7 +215,7 @@ class Plussia_Viewer {
         $view->text = XML_Texts::factory('actions/actions_' . $page)->getAssoc();
         if ($page == 1) {
             $view->contacts = Plussia_Message::getContactsHtml();
-        } else if($page==2) {
+        } else if ($page == 2) {
             $view->messages = Plussia_Message::getAdminMessagesHtml();
             Plussia_Message::admin_message_asReaded();
         }

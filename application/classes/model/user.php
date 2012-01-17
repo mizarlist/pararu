@@ -192,6 +192,16 @@ class Model_User extends Plussia_ORM {
     }
 
     /**
+     * @return Model_SputnikData
+     */
+    public function getSputnikData() {
+        if (!isset($this->hash['sputnik_data'])) {
+            $this->hash['sputnik_data'] = Model_SputnikData::findOneBy(array('user_id' => $this->user_id));
+        }
+        return $this->hash['sputnik_data'];
+    }
+
+    /**
      * @return Model_UserOptions
      */
     public function getUserOptions() {

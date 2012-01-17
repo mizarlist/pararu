@@ -52,7 +52,12 @@ class Ajax_Base {
         'message_deleteMessage' => 'Ajax_Message',
         'message_spam' => 'Ajax_Message',
         'message_deleteHistory' => 'Ajax_Message',
-        'message_deleteAdminMessage' => 'Ajax_Message');
+        'message_deleteAdminMessage' => 'Ajax_Message',
+
+        'search_fast' => 'Ajax_Search',
+        'search_full' => 'Ajax_Search',
+        'search_saveSputnikData' => 'Ajax_Search',
+        );
 
     public static function ajax($data){
         if(!isset($_POST['functional'])) {
