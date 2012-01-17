@@ -1,5 +1,6 @@
 <div class="thr_title"><?php echo $text["thr_title"]; ?></div>
 
+<div id="search_form">
 <div class="one_line">
     <div class="line_name inline"><?php echo $text["isearch"]; ?></div>
     <div class="line_in radio_group inline">
@@ -61,5 +62,7 @@
 <div class="one_line">
     <div id="start_search" class="rs1_save rs1_find"><?php echo $text["find"]; ?><i></i></div>
 </div><!-- .one_line-->
+
+</div>
 
 <div id="search_results"></div>

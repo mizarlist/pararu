@@ -492,7 +492,7 @@ function CreateProfilePage(){
     	 };
     	 
     	 ActivateSearchCombos();
-    	 
+    	 JustText();
     
         CreateleftSonic();
         ActivateControls();
@@ -511,6 +511,7 @@ function CreateProfilePage(){
     
 	function SetNumsOnly($obj_name){
 		$obj_name.keydown(function(event) { 
+			
 			if ( event.keyCode == 46 || event.keyCode == 8 ) { 
 			} else { 
 			if (event.keyCode < 95) { 
@@ -525,6 +526,8 @@ function CreateProfilePage(){
 		} 
 		});	
 	}    
+	
+	
     
     function ActivateSearchCombos(){
 		window.ajaxCombo_2 = new ajaxCombo("#find_country","{ functional: 'get_arials', data: { arial_class: 'country', conditions: { str: self.combo_input.val()}} }" , "country");
@@ -534,7 +537,6 @@ function CreateProfilePage(){
 		window.ajaxCombo_3 = new ajaxCombo("#find_city",
 		 "{ functional: 'get_arials', data: { arial_class: 'city', conditions: { str: self.combo_input.val(), region_id: window.ajaxCombo_1.currentValueId,  country_id: window.ajaxCombo_2.currentValueId}} }",
 		  "city");    
-
     
     }
 
