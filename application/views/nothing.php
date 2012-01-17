@@ -1,0 +1,1 @@
+<center><h3><?php echo $text['nothing'] ?></h3></center>

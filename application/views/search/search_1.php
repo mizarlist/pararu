@@ -15,7 +15,7 @@
         <div class="in_combo" id="find_country">
             <div class="easy_mask"></div>
             <input class="send_name" type="text" value="<?php echo $text["any_country"]; ?>" name="find_country" />
-            <input class="send_id" type="hidden" name="find_country_id" />
+            <input class="send_id" type="hidden" value="0" name="find_country_id" />
             <div class="combo_variants"></div>
         </div>
     </div>
@@ -28,7 +28,7 @@
         <div class="in_combo" id="find_area">
             <div class="easy_mask"></div>
             <input class="send_name" type="text" value="<?php echo $text['any_region']; ?>" name="find_area" />
-            <input class="send_id" type="hidden" value="1" name="find_area_id" />
+            <input class="send_id" type="hidden" value="0" name="find_area_id" />
             <div class="combo_variants"></div>
         </div>    
         
@@ -42,7 +42,7 @@
         <div class="in_combo" id="find_city">
             <div class="easy_mask"></div>
             <input class="send_name" type="text" value="<?php echo $text['any_city']; ?>" name="find_city" />
-            <input class="send_id" type="hidden" value="1" name="find_city_id" />
+            <input class="send_id" type="hidden" value="0" name="find_city_id" />
             <div class="combo_variants"></div>
         </div>       
 

@@ -43,12 +43,13 @@ class Plussia_Dispatcher {
 
     public static function updateActive($is_login = false) {
         $user = Plussia_Dispatcher::getUser();
+        $update = "UPDATE user SET last_active=NOW()";
         if ($user) {
-            $user->last_active = date(Plussia_Help::$ddtFormat);
             if ($is_login) {
-                $user->last_login = date(Plussia_Help::$ddtFormat);
+                $update. ' last_login=NOW()';
             }
-            $user->save();
+            $update .= " where user_id = {$user->user_id}";
+            DB::query(Database::UPDATE, $update)->execute();
         }
     }
 

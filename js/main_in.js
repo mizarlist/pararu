@@ -496,7 +496,7 @@ function CreateProfilePage(){
     	 $('#start_search').bind({  click: function() {  
     
 		    	blockPage_msg();
-				$.post("/search", { functional: "search_fast", data: CollectSearchData()  },	    	
+				$.post("/search", { functional: "search_fast", data: CollectSearchData(), ahah: true  },
 	            function(data) {
 	                if(data){
 	                    $('#search_results').html(data);

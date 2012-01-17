@@ -181,22 +181,12 @@ class Plussia_Viewer {
         return $view->render();
     }
 
-    public static function getRSCards($type, $page = 1) {
+    public static function getVisitkas($user_cards, $type) {
+
+        //необходимы user_id, name, username, birthday, ball, is_woman,
+        //active, registration_date, last_active, country, city, dt_added если rs
 
         $answer = '';
-        $max = 5;
-        $offset = ($page - 1) * $max;
-        $limit = $max;
-
-        $user_cards = Plussia_Dispatcher::getUser()->getRS($type, $offset, $limit);
-
-        if (!$user_cards && $page > 1) {
-            $page = $page - 1;
-            self::$page = $page;
-            $offset = ($page - 1) * $max;
-            $limit = $max;
-            $user_cards = Plussia_Dispatcher::getUser()->getRS($type, $offset, $limit);
-        }
 
         $actions = array(
             'new' => array('do_send_msg', 'do_save', 'do_add_favor', 'do_nosearch'),
@@ -204,6 +194,8 @@ class Plussia_Viewer {
             'interes' => array('do_send_msg', 'do_save', 'do_delete'),
             'saved' => array('do_send_msg', 'do_add_favor', 'do_delete'),
             'ignor' => array('do_save', 'do_add_favor', 'do_delete'),
+
+            'search' => array('do_send_msg', 'do_save', 'do_add_favor', 'do_nosearch'),
         );
 
         $view = View::factory('vizitka');
@@ -255,6 +247,25 @@ class Plussia_Viewer {
         }
 
         return $answer;
+    }
+
+    public static function getRSCards($type, $page = 1) {
+
+        $max = 5;
+        $offset = ($page - 1) * $max;
+        $limit = $max;
+
+        $user_cards = Plussia_Dispatcher::getUser()->getRS($type, $offset, $limit);
+
+        if (!$user_cards && $page > 1) {
+            $page = $page - 1;
+            self::$page = $page;
+            $offset = ($page - 1) * $max;
+            $limit = $max;
+            $user_cards = Plussia_Dispatcher::getUser()->getRS($type, $offset, $limit);
+        }
+
+        return Plussia_Viewer::getVisitkas($user_cards, $type);
     }
 
 }

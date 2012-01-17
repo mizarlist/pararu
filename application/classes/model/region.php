@@ -10,7 +10,7 @@ class Model_Region extends Model {
     public $region_name_ru;     //русское название региона
     public $region_name_en;     //английское название региона
 
-    public static function getAssoc($str, $country_id = null) {
+    public static function getAssoc($str, $region_id = null, $country_id = null) {
         $locate = Plussia_Help::getFirstCharLocate($str);
         $locate = !$locate ? (Plussia_Config::currentLang()=='ru' ? 'ru' : 'en') : $locate;
         if(!$locate) {

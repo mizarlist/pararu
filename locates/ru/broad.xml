@@ -38,4 +38,5 @@
     <node name='city'>Город/Район</node>
     <node name='region'>Область</node>
     <node name='not_spec'>не указано</node>
+    <node name='nothing'>Ничего не найдено</node>
 </root>

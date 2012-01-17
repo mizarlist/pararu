@@ -18,7 +18,7 @@ class Model_City extends Model {
             return array();
         }
 
-        $query = $region_id ? DB::select(array('city_.city_id', 'id'),
+        $query = $region_id!==NULL ? DB::select(array('city_.city_id', 'id'),
                 array('city_.city_name_'.$locate, 'name')) :
                 DB::select(array('city_.city_id', 'id'),
                 'city_.region_id',
