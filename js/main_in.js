@@ -483,7 +483,17 @@ function CreateProfilePage(){
         }
     }
     
+        
+    
     if($center_block.hasClass('center_search_mode')){
+    	 window.top_profile_menu = new SetTopProfileMenu('search_cebterblock', '#center_top_menu', '/search');
+    	 window.top_profile_menu.CallAfterLoad = function(){
+    	 
+    	 
+    	 
+    	 };
+    	 
+    
 		window.ajaxCombo_2 = new ajaxCombo("#find_country","{ functional: 'get_arials', data: { arial_class: 'country', conditions: { str: self.combo_input.val()}} }" , "country");
 		window.ajaxCombo_1 = new ajaxCombo("#find_area",
 		 "{ functional: 'get_arials', data: { arial_class: 'region', conditions: { str: self.combo_input.val(), country_id: window.ajaxCombo_2.currentValueId}} }", "region");    
@@ -492,6 +502,9 @@ function CreateProfilePage(){
 		 "{ functional: 'get_arials', data: { arial_class: 'city', conditions: { str: self.combo_input.val(), region_id: window.ajaxCombo_1.currentValueId,  country_id: window.ajaxCombo_2.currentValueId}} }",
 		  "city");    
 
+        CreateleftSonic();
+        ActivateControls();
+        SetMainLeftMenu();
 
     
     }
