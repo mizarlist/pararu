@@ -19,8 +19,6 @@ class Controller_Authentication extends Controller {
                 Plussia_Info::factory('OutOfAuthTime');
             } else {
                 $mp = Model_MailProve::findOneBy(array('password'=>$_GET['password']));
-                $user->set('afterlogin', 'registration');
-                $user->save();
                 Plussia_Dispatcher::setUser($user);
                 $mp && $mp->delete();
 

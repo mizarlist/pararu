@@ -74,11 +74,11 @@
                 <div class="' . $userData['meta'][$key]['type'] . '">';
 
         for ($i = $inc; $i < count($values); $i++) {
-            echo '<div class="p_checkbox" id="' . $key . ($i + $incid) . '">' . $values[$i] . '</div>';
+            echo '<div class="p_checkbox'.($sputnikData->findKey($key, ($i + $incid)) ? ' active' : '').'" id="' . $key . ($i + $incid) . '">' . $values[$i] . '</div>';
         }
 
         if ($inc) {
-            echo '<div class="p_checkbox" id="' . $key . '0">' . $values[0] . '</div>';
+            echo '<div class="p_checkbox'.($sputnikData->findKey($key, 0) ? ' active' : '').'" id="' . $key . '0">' . $values[0] . '</div>';
         }
 
         echo '</div><!-- .radio_group-->

@@ -85,4 +85,9 @@ class Model_SputnikData extends Plussia_ORM {
         return true;
     }
 
+    public function findKey($key, $variant) {
+        $pos = stripos($this->$key, ';'.$variant.';');
+        return $pos >= 0 && $pos!==FALSE;
+    }
+
 }
