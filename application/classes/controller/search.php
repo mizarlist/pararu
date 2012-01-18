@@ -38,6 +38,8 @@ class Controller_Search extends Plussia_Controller {
             $user = Plussia_Dispatcher::getUser();
             $view->sputnikData = $user->getSputnikData();
             $view->findWoman = $view->sputnikData->is_woman;
+
+            $view->userData = XML_WithMeta::factory('sputnik_data')->getAssoc();
             
             $view->text = XML_Texts::factory('search/search_2')->getAssoc();
             return $view->render();

@@ -59,6 +59,38 @@
     </div>
 </div><!-- .one_line-->
 
+<?php
+    $first = true;
+    foreach ($userData['assoc'] as $key => $values) {
+        $inc = $userData['meta'][$key]['other'] == 'true' ? 1 : 0;
+        $incid = $userData['meta'][$key]['other'] == 'true' ? 0 : 1;
+        $active = $first ? ' active' : '';
+        $minus = $first ? '-' : '+';
+        $style = $first ? ' style="display: block;"' : '';
+
+        echo '<div class="reg3_pers_block' . $active . '" id="' . $key . '">
+            <div class="reg3_pers_block_name"><span>' . $minus . '</span>' . $userData['meta'][$key]['print'] . '</div>
+            <div class="reg3_pers_block_in"' . $style . '>
+                <div class="' . $userData['meta'][$key]['type'] . '">';
+
+        for ($i = $inc; $i < count($values); $i++) {
+            echo '<div class="p_checkbox" id="' . $key . ($i + $incid) . '">' . $values[$i] . '</div>';
+        }
+
+        if ($inc) {
+            echo '<div class="p_checkbox" id="' . $key . '0">' . $values[0] . '</div>';
+        }
+
+        echo '</div><!-- .radio_group-->
+            </div><!-- .reg3_pers_block_in-->
+        </div><!-- .reg3_pers_block-->';
+
+        if ($first) {
+            $first = false;
+        }
+    }
+    ?>
+
 <div class="one_line">
     <div id="start_search" class="rs1_save rs1_find"><?php echo $text["find"]; ?><i></i></div>
 </div><!-- .one_line-->
