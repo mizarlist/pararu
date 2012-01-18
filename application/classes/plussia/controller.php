@@ -16,11 +16,13 @@ abstract class Plussia_Controller extends Controller {
     }
 
     public function validate() {
-        return true;
+        $user = Plussia_Dispatcher::getUser();
+        return $user && $user->active == 1;
     }
 
     public function invalid() {
-
+        header('Location: /');
+        die;
     }
 
     public function action_index() {

@@ -27,6 +27,8 @@ class Plussia_Finder {
                     from user_card uc1
                     left join user_card uc2
                         on uc2.user_id!=uc1.user_id
+                    left join user u2
+                        on u2.user_id=uc2.user_id
                     left join sputnik_data sd
                         on sd.user_id=uc1.user_id
                     left join user_data userdata
@@ -35,7 +37,7 @@ class Plussia_Finder {
                         on ud.user_id=uc2.user_id
                     left join zodiac_harmony zh
                         on userdata.zodiac_id=zh.zodiac_id and zh.sputnik_zodiac like CONCAT('%;', ud.zodiac_id, ';%')
-                    where uc1.user_id=$id
+                    where uc1.user_id=$id and u2.active=1
                     $addition
                     group by uc2.user_id
                     order by summ DESC";
@@ -70,6 +72,7 @@ class Plussia_Finder {
         $locate = Plussia_Config::currentLang() == 'ru' ? 'ru' : 'en';
 
         $conditions = array();
+        $conditions[] = "u2.active = 1";
         $conditions[] = 
         "u2.user_id not in (
             select sputnik_id from rs_new where user_id = {$user->user_id}

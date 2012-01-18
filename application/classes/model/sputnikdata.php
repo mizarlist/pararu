@@ -19,6 +19,7 @@ class Model_SputnikData extends Plussia_ORM {
     public $city_id;                // город\район
     public $eyescolor;              // цвет глаз
     public $haircolor;              // цвет волос
+    public $growth;                 // минимальный рост
     public $growth_min;             // минимальный рост
     public $growth_max;             // цмаксимальный рост
     public $physique;               // телосложение

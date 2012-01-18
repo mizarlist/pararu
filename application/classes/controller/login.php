@@ -4,6 +4,10 @@ defined('SYSPATH') or die('No direct script access.');
 
 class Controller_Login extends Plussia_Controller {
 
+    public function validate() {
+        return true;
+    }
+
     public function index() {
         $array = $_POST;
         if ($array) {

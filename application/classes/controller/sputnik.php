@@ -4,11 +4,6 @@ defined('SYSPATH') or die('No direct script access.');
 
 class Controller_Sputnik extends Plussia_Controller {
 
-    public function validate() {
-        $user = Plussia_Dispatcher::getUser();
-        return $user && true;
-    }
-
     public function index() {
 
         $page = (isset($_GET['page']) && $_GET['page'] == 'communication') ? 4 : 1;

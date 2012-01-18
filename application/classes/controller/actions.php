@@ -4,11 +4,6 @@ defined('SYSPATH') or die('No direct script access.');
 
 class Controller_Actions extends Plussia_Controller {
 
-    public function  validate() {
-        $user = Plussia_Dispatcher::getUser();
-        return $user && true;
-    }
-
     public function index() {
         $view = $this->view;
         $view->text = XML_Texts::factory('actions_text')->getAssoc();

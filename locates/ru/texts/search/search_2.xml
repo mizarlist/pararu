@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <root>
-
+    <text name="thr_title">Быстрый поиск</text>
+    <text name="isearch">Я ищу</text>
+    <text name="w">женщину</text>
+    <text name="m">мужчину</text>
+    <text name="country">Страна</text>
+    <text name="any_country">Любая страна</text>
+    <text name="region">Область</text>
+    <text name="any_region">Любая область</text>
+    <text name="city">Город</text>
+    <text name="any_city">Любой город</text>
+    <text name="age">Возраст</text>
+    <text name="from">от</text>
+    <text name="to">до</text>
+    <text name="with_photo">с фото</text>
+    <text name="online">онлайн</text>
+    <text name="find">Найти мою половинку</text>
 </root>

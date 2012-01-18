@@ -39,6 +39,8 @@ class Plussia_Post_Registration {
 
     public function do_post() {
 
+        Plussia_Dispatcher::logout();
+
         $reg_date = date(Plussia_Help::$ddtFormat);
 
         $user = array('email' => $_POST['me_mail'],
@@ -81,8 +83,16 @@ class Plussia_Post_Registration {
         $sd->fromArray($sputnik_data);
 
         $u->save();
+
+        $u->addRole(Model_Role::get('login'));
+        $u->addRole(Model_Role::get('registration'));
+        $u->addRole(Model_Role::get('regstep1'));
+
         $u->set('standart_username', Model_User::getUsername($u->user_id));
         $u->update(true);
+
+        Plussia_Dispatcher::setUser($u);
+
         $ud->set('user_id', $u->user_id);
         $ud->updateZodiak();
         $sd->set('user_id', $u->user_id);
@@ -108,11 +118,15 @@ class Plussia_Post_Registration {
         $view->text = $texts['text'];
         $view->link = '//' . URL::base() . Plussia_Dispatcher::lang() . '/authentication?password=' . $password;
         $mail->setAdress($user['email'])->setTheme($texts['title'])->addText($view->render())->send();
-        if (!$mail->lastResult) {
+        header('Location: /registration');
+        die;
+        /* if (!$mail->lastResult) {
             Plussia_Error::call(4);
         } else {
-            Plussia_Info::factory('MailSended', array('name' => $user_data['name'], 'email' => $user['email']));
-        }
+            header('Location: /registration');
+            die;
+            //Plussia_Info::factory('MailSended', array('name' => $user_data['name'], 'email' => $user['email']));
+        } */
     }
 
 }

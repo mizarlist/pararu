@@ -108,6 +108,7 @@ class Tables {
             `haircolor` VARCHAR (64) CHARACTER SET utf8,
             `growth_min` INT,
             `growth_max` INT,
+            `growth` INT,
             `physique` VARCHAR (64) CHARACTER SET utf8,
             `ethnos` VARCHAR (64) CHARACTER SET utf8,
             `relationshep_status` VARCHAR (64) CHARACTER SET utf8,

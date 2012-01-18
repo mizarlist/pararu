@@ -6,11 +6,6 @@ class Controller_Profile extends Plussia_Controller {
 
     public static $page;
 
-    public function  validate() {
-        $user = Plussia_Dispatcher::getUser();
-        return $user && true;
-    }
-
     public function index() {
         $user = Plussia_Dispatcher::getUser();
         

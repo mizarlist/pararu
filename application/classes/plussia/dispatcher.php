@@ -29,8 +29,14 @@ class Plussia_Dispatcher {
         return self::$current_user;
     }
 
+    public static function logout() {
+        self::$current_user = NULL;
+        Session::instance()->delete('user_id');
+    }
+
     public static function setUser($user) {
         self::$current_user = $user;
+        Session::instance()->bind('user_id', $user->user_id);
     }
 
     public static function getUserId() {

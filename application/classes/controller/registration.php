@@ -8,7 +8,7 @@ class Controller_Registration extends Plussia_Controller {
 
     public function validate() {
         $user = Plussia_Dispatcher::getUser();
-        return Request::$current->is_ajax() || ($user && $user->access('registration')) || true;
+        return Request::$current->is_ajax() || ($user && $user->access('registration'));
     }
 
     public function invalid() {

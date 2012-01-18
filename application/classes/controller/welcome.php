@@ -2,6 +2,10 @@
 
 class Controller_Welcome extends Plussia_Controller {
 
+    public function validate() {
+        return true;
+    }
+
     public function index() {
         $view = $this->view;
         $view->text = XML_Texts::factory('index_text')->getAssoc();

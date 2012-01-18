@@ -4,11 +4,6 @@ defined('SYSPATH') or die('No direct script access.');
 
 class Controller_Nic extends Plussia_Controller {
 
-    public function  validate() {
-        $user = Plussia_Dispatcher::getUser();
-        return $user && true;
-    }
-
     public function index() {
         $user = Plussia_Dispatcher::getUser();
 

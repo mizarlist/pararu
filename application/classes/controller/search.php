@@ -2,11 +2,6 @@
 
 class Controller_Search extends Plussia_Controller {
 
-    public function  validate() {
-        $user = Plussia_Dispatcher::getUser();
-        return $user && true;
-    }
-
     public function index() {
         $view = $this->view;
         $view->text = XML_Texts::factory('search_text')->getAssoc();
@@ -32,13 +27,18 @@ class Controller_Search extends Plussia_Controller {
             $view = View::factory('search/search_1');
 
             $user = Plussia_Dispatcher::getUser();
-            $sputnikData = $user->getSputnikData();
-            $view->findWoman = $sputnikData->is_woman;
+            $view->sputnikData = $user->getSputnikData();
+            $view->findWoman = $view->sputnikData->is_woman;
 
             $view->text = XML_Texts::factory('search/search_1')->getAssoc();
             return $view->render();
         } else if ($page == 2) {
             $view = View::factory('search/search_2');
+
+            $user = Plussia_Dispatcher::getUser();
+            $view->sputnikData = $user->getSputnikData();
+            $view->findWoman = $view->sputnikData->is_woman;
+            
             $view->text = XML_Texts::factory('search/search_2')->getAssoc();
             return $view->render();
         }
