@@ -4973,13 +4973,67 @@ m_fix{
 
 
 
+.reg3_pers_block{
+	height: 17px;
+	overflow: hidden;
+}
+
+.reg3_pers_block_in{
+	/*display: none;*/
+
+}
+.reg3_pers_block.active .reg3_pers_block_in{
+	height: auto;
+}
+.reg3_pers_block.active{
+	/*padding-bottom: 16px;*/
+}
+.reg3_pers_block{
+	margin-bottom: 16px;
+}
 
 
+.reg3_pers_block .p_checkbox{
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 8px;
+	width: 25%;
+	margin-right: 12px;
+	margin-left: 10px;
+	color: #808080;
+}
+.ie7 .reg3_pers_block .p_checkbox{
+	zoom: 1;
+	display: inline;
+}
+
+.reg3_pers_block_name{
+	font-size: 14px;
+	font-weight: bold;
+	color: #0082be;
+	border-bottom: 1px solid #bccfe0;
+	padding-bottom: 2px;
+	margin-bottom: 13px;
+	cursor: pointer;
+}
+.reg3_pers_block.active .reg3_pers_block_name{
+	color: #e81e25;
+	border-bottom: 1px solid #f6cacb;
+}
+.reg3_pers_block.complete .reg3_pers_block_name{
+	color: #12a104;
+	border-bottom: 1px solid #c4e8c1;
+}
 
 
+.center_search_mode #search_params{
+	margin-top: 55px;
+}
 
-
-
+.center_search_mode .rs1_find_ver2{
+	margin-left: 0px !important;
+}
 
 
 

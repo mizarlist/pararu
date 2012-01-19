@@ -488,18 +488,73 @@ function CreateProfilePage(){
     if($center_block.hasClass('center_search_mode')){
     	 window.top_profile_menu = new SetTopProfileMenu('search_centerblock', '#center_top_menu', '/search');
     	 window.top_profile_menu.CallAfterLoad = function(){
-    	 	    	     	 
-    	 };
+    	 	ActivateSearchCombos();		
+    	 	JustText();    	     	 
+    	 	BindSearchButton();
+    	 	
+    	 	if(arguments.callee.caller.menu_link == 'ct_search2'){
+				$('.reg3_pers_block_name').bind({  click: function() {  ToggleBlockFlap($(this).parent());  }});
+				CreateCheckBox('#search_params .p_checkbox');
+				InitClicks();
+    	 	}
+    	 }
     	 
-    	 ActivateSearchCombos();
-    	 JustText();
+   	 	ActivateSearchCombos();		
+   	 	JustText();    	     	 
+   	 	BindSearchButton();
+    	     	     	
+        CreateleftSonic();
+        ActivateControls();
+        SetMainLeftMenu();
+        
+		function ToggleBlockFlap(jq_block){
+			if(jq_block.hasClass('active')){
+				jq_block.removeClass('active');
+				jq_block.animate({height: "17px"}, { duration: 500, queue: false });
+				jq_block.children('.reg3_pers_block_name').children('span').html('+');			
+			} else {
+				var new_h = jq_block.children('.reg3_pers_block_in').height() + 22;
+				jq_block.addClass('active');
+				jq_block.animate({height: new_h+"px"}, { duration: 500, queue: false });
+				jq_block.children('.reg3_pers_block_name').children('span').html('-');
+			}
+		}      
+		
+		function OpenBlockFlap(jq_block){
+				var new_h = jq_block.children('.reg3_pers_block_in').height() + 22;
+				jq_block.addClass('active');
+				jq_block.animate({height: new_h+"px"}, { duration: 500, queue: false });
+				jq_block.children('.reg3_pers_block_name').children('span').html('-');				
+		}		
+		
+		function InitClicks(){
+			//Работа галочек
+			$('#search_params').find('.p_checkbox').bind({   click: function() { 		
+				var parent_in = $(this).parent().parent().parent('.reg3_pers_block');//.parent('.reg3_pers_block');		
+				if(parent_in.find('.active').length){
+					parent_in.addClass('complete');
+					OpenBlockFlap(parent_in.next());
+				} else {
+					parent_in.removeClass('complete');			
+				}
+			}});
+			
+		}		  
+		    
+    }
+
+	function BindSearchButton(){
     	 $('#start_search').bind({  click: function() {  
-    
-		    	blockPage_msg();
-				$.post("/search", { functional: "search_fast", data: CollectSearchData(), ahah: true  },
+				var send_functional = "search_fast";
+				if(document.getElementById('search_params')!=null){
+					send_functional = 'search_full';	
+				}
+		    	blockPage_msg();  
+				$.post("/search", { functional: send_functional, data: CollectSearchData(), ahah: true  },
 	            function(data) {
 	                if(data){
 	                    $('#search_results').html(data);
+	                    $.unblockUI();
 	                } else {
 	                    alert('Internal error #725128. Please, contact administrator.');
 	                }
@@ -507,15 +562,8 @@ function CreateProfilePage(){
 	            );
 	    
 	    	 
-	    }});
-    
-        CreateleftSonic();
-        ActivateControls();
-        SetMainLeftMenu();
-
-    
-    }
-    
+	    }});	
+	}
     
 	function JustText(){
 		$('input.just_text').each( function() { 
@@ -549,7 +597,7 @@ function CreateProfilePage(){
 		collected['cheks'] = {};
 		collected['inputs'] = {};
 		
-		$search_form.find(".p_checkbox.active").each( function() { 
+		$search_form.find(".one_line .p_checkbox.active").each( function() { 
 			check_name = $(this).attr('id');
 			collected['cheks'][check_name] = 'true';				
 		});
@@ -558,6 +606,20 @@ function CreateProfilePage(){
 			input_name = $(this).attr('name');
 			collected['inputs'][input_name] = $(this).val();				
 		});	
+		
+		if(document.getElementById('search_params')!=null){
+			collected['find_params'] = {};
+			$(".reg3_pers_block.complete").each( function() { 
+				block_name = $(this).attr('id');
+				collected['find_params'][block_name] = {};
+				
+				$(this).find('.active').each( function() { 
+					collected['find_params'][block_name][$(this).attr('id')] = 'true';
+				});
+	
+	
+			});			
+		}
 		
 		return collected;
 	}
@@ -1619,13 +1681,14 @@ function blockPage_msg(msg_to_show){
 }
 
 // Включение CheckBox-а
-function CreateCheckBox(){
+function CreateCheckBox(custom_class){
+	var custom_class = custom_class || '.p_checkbox';
 
-    $(".p_checkbox").each( function() {
-        if($(this).children('input:checked').length) $('.p_checkbox').addClass('active');
+    $(custom_class).each( function() {
+        if($(this).children('input:checked').length) $(this).addClass('active');
     });
 
-    $('.p_checkbox').bind({
+    $(custom_class).bind({
         click: function() {
             if(!$(this).hasClass('max5sonic') && !$(this).hasClass('disabled')){
 

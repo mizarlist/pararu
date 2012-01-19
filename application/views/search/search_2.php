@@ -59,16 +59,18 @@
     </div>
 </div><!-- .one_line-->
 
+<div id="search_params">
 <?php
     $first = true;
     foreach ($userData['assoc'] as $key => $values) {
         $inc = $userData['meta'][$key]['other'] == 'true' ? 1 : 0;
         $incid = $userData['meta'][$key]['other'] == 'true' ? 0 : 1;
         $active = $first ? ' active' : '';
+        $first_height = $first ? ' style="height: auto;"' : '';
         $minus = $first ? '-' : '+';
         $style = $first ? ' style="display: block;"' : '';
 
-        echo '<div class="reg3_pers_block' . $active . '" id="' . $key . '">
+        echo '<div ' . $first_height . ' class="reg3_pers_block' . $active . '" id="' . $key . '">
             <div class="reg3_pers_block_name"><span>' . $minus . '</span>' . $userData['meta'][$key]['print'] . '</div>
             <div class="reg3_pers_block_in"' . $style . '>
                 <div class="' . $userData['meta'][$key]['type'] . '">';
@@ -90,9 +92,9 @@
         }
     }
     ?>
-
+</div>
 <div class="one_line">
-    <div id="start_search" class="rs1_save rs1_find"><?php echo $text["find"]; ?><i></i></div>
+    <div id="start_search" class="rs1_save rs1_find rs1_find_ver2"><?php echo $text["find"]; ?><i></i></div>
 </div><!-- .one_line-->
 
 </div>
