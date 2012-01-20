@@ -13,6 +13,7 @@
         <script type="text/javascript" src="/js/jquery.js"></script>
         <script type="text/javascript" src="/js/plugins.js"></script>
         <script type="text/javascript" src="/js/main_in.js"></script>
+        <script type="text/javascript" src="/js/jquery.limit.js"></script>        
     </head>
 
     <body>

@@ -554,6 +554,8 @@ function CreateProfilePage(){
 	            function(data) {
 	                if(data){
 	                    $('#search_results').html(data);
+	                    InitEngineTalk();
+	                    ActivateVizitkaControls();
 	                    $.unblockUI();
 	                } else {
 	                    alert('Internal error #725128. Please, contact administrator.');
